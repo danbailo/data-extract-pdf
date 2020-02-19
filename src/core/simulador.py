@@ -2,6 +2,7 @@ import textract
 import platform
 import os
 import re
+from collections import defaultdict
 
 SYSTEM = platform.system()
 months = ["Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro"]
@@ -12,6 +13,11 @@ class Simulador:
         self.path = path
         self.file = os.path.isdir(path)
         self.phone = re.compile(r"\(\d\d\)\W\d{4,5}\W\d{4,5}")
+        self.years = re.compile(r"anos")
+        self.age_range = re.compile(r"(Faixa Etária)|(Faixa)")
+        self.age = re.compile(r"(anos)")
+        self.value = re.compile(r"R\$\s(.+\d$)|((\d+.\d+\.\d+.+)|(\d+\.\d+.+)|(\d+\,\d+))")
+        
 
     def get_data(self):
         if self.file:
@@ -26,21 +32,13 @@ class Simulador:
             need_path = True
 
         for pdf in pdfs:
-
+            
             m1 = ''
-            m2 = ''
-            m5 = ''
-            m6 = ''
-            v1 = ''
-            v2 = ''
-            v3 = ''
-            v4 = ''
-            v5 = ''
-            v6 = ''
-            v7 = ''
-            v8 = ''
-            v9 = ''
-            v10 = ''
+            table = []
+            tables = defaultdict(lambda: defaultdict(list))
+            n = 0
+            indexes = []
+            symbols = []
 
             if need_path:
                 text = textract.process(os.path.join(self.path, pdf))
@@ -66,28 +64,38 @@ class Simulador:
                         state = 2
                     else:
                         m1 = m1 + text_splitted[i] + " "
-                elif state == 2:
-                    m2 = text_splitted[i]
-                    state = 3
-                elif state == 3:
-                    m3 = text_splitted[i]
-                    for month in months:
-                        if month in text_splitted[i]:
-                            m3 = ''
-                            break
-                    state = 4
-                elif state == 4:
-                    m4 = text_splitted[i]
-                    for month in months:
-                        if month in text_splitted[i]:
-                            m4 = ''
-                            break                    
-                    state = 5                                       
+                
+                match_age_range = self.age_range.match(text_splitted[i])
+
+                if match_age_range:
+                    if match_age_range.string == "Faixa Etária":
+                        k = 1
+                        m = 1
+                        while not re.match(r"0.+", text_splitted[i+k]):
+                            print(text_splitted[i+k])
+                            k += 1
+                        print()
+                    if match_age_range.string == "Faixa":
+                        while not re.match(r"0.+", text_splitted[i+m]):
+                            if text_splitted[i+m] == "Etária":
+                                m += 1
+                                continue
+                            print(text_splitted[i+m])
+                            m += 1                     
+
+#                    tables[text_splitted[i-1]][].append()
+                
+                match_value = self.value.match(text_splitted[i])
+                if match_value:
+                    pass
+                    #print(re.sub(r"R\$ ", "", match_value.string))
 
             print("M1: ",m1)
-            print("M2: ",m2)
-            print("M3: ",m3)
-            print("M4: ",m4)
+            print("tables: ",tables)
+
+            # print("M4: ",m4)
+            # print("M5: ",m5)
+            # print("M6: ",m6)
             print("-"*30)
 
 
