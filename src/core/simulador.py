@@ -3,6 +3,8 @@ import platform
 import os
 import re
 from collections import defaultdict
+import json
+import itertools
 
 SYSTEM = platform.system()
 months = ["Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro"]
@@ -34,11 +36,9 @@ class Simulador:
         for pdf in pdfs:
             
             m1 = ''
-            table = []
-            tables = defaultdict(lambda: defaultdict(list))
+            tables = defaultdict(lambda: defaultdict(lambda: defaultdict(list)))
             n = 0
-            indexes = []
-            symbols = []
+            values = []
 
             if need_path:
                 text = textract.process(os.path.join(self.path, pdf))
@@ -72,7 +72,7 @@ class Simulador:
                         k = 1
                         m = 1
                         while not re.match(r"0.+", text_splitted[i+k]):
-                            print(text_splitted[i+k])
+                            tables[n][text_splitted[i-1]][text_splitted[i+k]] = []
                             k += 1
                         print()
                     if match_age_range.string == "Faixa":
@@ -80,18 +80,39 @@ class Simulador:
                             if text_splitted[i+m] == "Etária":
                                 m += 1
                                 continue
-                            print(text_splitted[i+m])
+                            tables[n][text_splitted[i-1]][text_splitted[i+m]] = []
                             m += 1                     
+                    n += 1
 
-#                    tables[text_splitted[i-1]][].append()
-                
+
+
                 match_value = self.value.match(text_splitted[i])
                 if match_value:
-                    pass
                     #print(re.sub(r"R\$ ", "", match_value.string))
+                    values.append(re.sub(r"R\$ ", "", match_value.string))
 
+                #end of tables
+                if text_splitted[i] == "Taxas":
+                    break
+
+            print("PDF:", pdf)
             print("M1: ",m1)
-            print("tables: ",tables)
+            #print(json.dumps(tables, indent=4))
+            #print(values)
+
+            for n_table in tables:
+                for class_ in tables[n_table]:
+                    n_symbols = len(tables[n_table][class_])
+                    len_table = n_symbols * 10
+                    
+                    values_of_table = values[:len_table].copy()
+                    del values[:len_table]
+
+                    for symbol, row in zip(tables[n_table][class_], range(n_symbols)):
+                        tables[n_table][class_][symbol] = list(itertools.islice(values_of_table, row, len_table, n_symbols))
+
+            print("NEW TABLES")
+            print(json.dumps(tables, indent=4))
 
             # print("M4: ",m4)
             # print("M5: ",m5)
