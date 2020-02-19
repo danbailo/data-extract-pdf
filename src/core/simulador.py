@@ -22,6 +22,8 @@ class Simulador:
         self.age = re.compile(r"(anos)")
         self.value = re.compile(r"R\$\s(.+\d$)|((\d+.\d+\.\d+.+)|(\d+\.\d+.+)|(\d+\,\d+))")
         self.msg = re.compile(r"(Tabela\sde\s\d+\sà\s\d+\svidas\/beneficiários)")
+
+        self.data = {}
         
 
     def get_data(self):
@@ -40,7 +42,7 @@ class Simulador:
             
             m1 = ''
             tables = defaultdict(lambda: defaultdict(lambda: defaultdict(list)))
-            n = 0
+            n = 1
             values = []
 
             if need_path:
@@ -116,20 +118,19 @@ class Simulador:
                     for symbol, row in zip(tables[n_table][class_], range(n_symbols)):
                         tables[n_table][class_][symbol] = list(itertools.islice(values_of_table, row, len_table, n_symbols))
 
-            data = json.loads(json.dumps(tables))
+            data = json.loads(json.dumps(tables))          
 
-            print("PDF:", pdf)
-            print("m1: ",m1)
-            print("m2: ",m2)
-            print("m3: ",m3)
-            print("m4: ",m4)
+            data["0"] = {"m1": re.sub(r"\s$", "", m1), "m2": m2, "m3": m3, "m4": m4}
 
-            for 
+            # print("PDF:", pdf)
+            # print("m1: ",m1)
+            # print("m2: ",m2)
+            # print("m3: ",m3)
+            # print("m4: ",m4)
 
             #print(data)
-            #print(json.dumps(data, indent=4, ensure_ascii=False))
+            #print(json.dumps(data, indent=4, ensure_ascii=False, sort_keys=True))
 
-            print("-"*30)
-
+            self.data[pdf] = list(data.values())
 
 
