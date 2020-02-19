@@ -7,8 +7,6 @@ import json
 import itertools
 
 SYSTEM = platform.system()
-months = ["Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro"]
-
 
 class Simulador:
     def __init__(self, path):
@@ -101,7 +99,11 @@ class Simulador:
 
                 match_value = self.value.match(text_splitted[i])
                 if match_value:
-                    values.append(re.sub(r"R\$ ", "", match_value.string))
+                    new_value = match_value.string
+                    if new_value[:3] != "R$ ":
+                        new_value = "R$ " + match_value.string
+                    values.append(new_value)
+                    #values.append(re.sub(r"R\$ ", "", match_value.string)) #without cypher
 
                 #end of tables
                 if text_splitted[i] == "Taxas":
