@@ -14,11 +14,14 @@ class Simulador:
     def __init__(self, path):
         self.path = path
         self.file = os.path.isdir(path)
+
+        #patterns
         self.phone = re.compile(r"\(\d\d\)\W\d{4,5}\W\d{4,5}")
         self.years = re.compile(r"anos")
         self.age_range = re.compile(r"(Faixa Etária)|(Faixa)")
         self.age = re.compile(r"(anos)")
         self.value = re.compile(r"R\$\s(.+\d$)|((\d+.\d+\.\d+.+)|(\d+\.\d+.+)|(\d+\,\d+))")
+        self.msg = re.compile(r"(Tabela\sde\s\d+\sà\s\d+\svidas\/beneficiários)")
         
 
     def get_data(self):
@@ -62,6 +65,13 @@ class Simulador:
                     match_phone = self.phone.match(text_splitted[i])
                     if match_phone:
                         state = 2
+                        m2 = text_splitted[i+1]
+                        m3 = text_splitted[i+2]
+                        m4 = text_splitted[i+3]
+                        if self.msg.match(m3):
+                            m3 = ""
+                        if self.msg.match(m4):
+                            m4 = ""                            
                     else:
                         m1 = m1 + text_splitted[i] + " "
                 
@@ -71,17 +81,20 @@ class Simulador:
                     if match_age_range.string == "Faixa Etária":
                         k = 1
                         m = 1
-                        while not re.match(r"0.+", text_splitted[i+k]):
+                        while not re.match(r"0.+", text_splitted[i+k]):                            
                             tables[n][text_splitted[i-1]][text_splitted[i+k]] = []
                             k += 1
-                        print()
                     if match_age_range.string == "Faixa":
                         while not re.match(r"0.+", text_splitted[i+m]):
                             if text_splitted[i+m] == "Etária":
                                 m += 1
                                 continue
                             tables[n][text_splitted[i-1]][text_splitted[i+m]] = []
-                            m += 1                     
+                            m += 1
+                    if m3 == text_splitted[i-1]:
+                        m3 = ""                              
+                    if m4 == text_splitted[i-1]:
+                        m4 = ""          
                     n += 1
 
                 match_value = self.value.match(text_splitted[i])
@@ -91,9 +104,6 @@ class Simulador:
                 #end of tables
                 if text_splitted[i] == "Taxas":
                     break
-
-            print("PDF:", pdf)
-            print("M1: ",m1)
 
             for n_table in tables:
                 for class_ in tables[n_table]:
@@ -106,14 +116,20 @@ class Simulador:
                     for symbol, row in zip(tables[n_table][class_], range(n_symbols)):
                         tables[n_table][class_][symbol] = list(itertools.islice(values_of_table, row, len_table, n_symbols))
 
-            print("NEW TABLES")
-            print(json.dumps(tables, indent=4))
+            data = json.loads(json.dumps(tables))
 
-            # print("M4: ",m4)
-            # print("M5: ",m5)
-            # print("M6: ",m6)
+            print("PDF:", pdf)
+            print("m1: ",m1)
+            print("m2: ",m2)
+            print("m3: ",m3)
+            print("m4: ",m4)
+
+            for 
+
+            #print(data)
+            #print(json.dumps(data, indent=4, ensure_ascii=False))
+
             print("-"*30)
-
 
 
 
