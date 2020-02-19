@@ -84,11 +84,8 @@ class Simulador:
                             m += 1                     
                     n += 1
 
-
-
                 match_value = self.value.match(text_splitted[i])
                 if match_value:
-                    #print(re.sub(r"R\$ ", "", match_value.string))
                     values.append(re.sub(r"R\$ ", "", match_value.string))
 
                 #end of tables
@@ -97,8 +94,6 @@ class Simulador:
 
             print("PDF:", pdf)
             print("M1: ",m1)
-            #print(json.dumps(tables, indent=4))
-            #print(values)
 
             for n_table in tables:
                 for class_ in tables[n_table]:
