@@ -19,7 +19,7 @@ class Simulador:
         self.age_range = re.compile(r"(Faixa Etária)|(Faixa)")
         self.age = re.compile(r"(anos)")
         self.value = re.compile(r"R\$\s(.+\d$)|((\d+.\d+\.\d+.+)|(\d+\.\d+.+)|(\d+\,\d+))")
-        self.msg = re.compile(r"(Tabela\sde\s\d+\sà\s\d+\svidas\/beneficiários)")
+        self.msg = re.compile(r"(Tabela\sde\s\d+\sà\s\d+\svidas\/beneficiários)|(Faixa Etária)")
 
         self.data = {}
         
@@ -33,6 +33,10 @@ class Simulador:
     def get_text(self):
         pdfs = self.get_data()
         need_path = False
+
+        state_pdf = 1
+        index_range = 30
+
         if len(pdfs) != 1:
             need_path = True
 
@@ -55,25 +59,51 @@ class Simulador:
 
             for empty in text_splitted:
                 if empty == '': text_splitted.remove(empty)
+
+            for index_r in range(index_range):
+                if text_splitted[index_r] == "Total":
+                    state_pdf = 2
+                    total_pdf = index_r
             
-            text_splitted = text_splitted[2:]
+            if state_pdf == 1:
+                text_splitted = text_splitted[2:]
+
+            if state_pdf == 2:
+                text_splitted = text_splitted[total_pdf + 12:] #excluding the first table
+
+            print(text_splitted)
+            exit()
 
             state = 1
-
             for i in range(len(text_splitted)):
                 if state == 1:
-                    match_phone = self.phone.match(text_splitted[i])
-                    if match_phone:
-                        state = 2
+                    if state_pdf == 1:
+                        match_phone = self.phone.match(text_splitted[i])
+                        if match_phone:
+                            state = 2
+                            m2 = text_splitted[i+1]
+                            m3 = text_splitted[i+2]
+                            m4 = text_splitted[i+3]
+                            if self.msg.match(m3):
+                                m3 = ""
+                            if self.msg.match(m4):
+                                m4 = ""                            
+                        else:
+                            m1 = m1 + text_splitted[i] + " "
+                    elif state_pdf == 2:
+                        m1 = text_splitted[i]
                         m2 = text_splitted[i+1]
                         m3 = text_splitted[i+2]
                         m4 = text_splitted[i+3]
                         if self.msg.match(m3):
                             m3 = ""
                         if self.msg.match(m4):
-                            m4 = ""                            
-                    else:
-                        m1 = m1 + text_splitted[i] + " "
+                            m4 = ""                           
+                        state_pdf = 3
+
+
+                #TENTANDO PEGAR DADOS DO MODELO DE PDF Q COMECA COM UMA COLUNA
+
                 
                 match_age_range = self.age_range.match(text_splitted[i])
 
@@ -106,7 +136,7 @@ class Simulador:
                     #values.append(re.sub(r"R\$ ", "", match_value.string)) #without cypher
 
                 #end of tables
-                if text_splitted[i] == "Taxas":
+                if text_splitted[i] == "Taxas" or text_splitted[i] == "Carência":
                     break
 
             for n_table in tables:
