@@ -32,13 +32,10 @@ class Simulador:
 
     def get_text(self):
         pdfs = self.get_data()
-        need_path = False
+        need_path = True
 
-        state_pdf = 1
-        index_range = 30
-
-        if len(pdfs) != 1:
-            need_path = True
+        if len(pdfs) == 1:
+            need_path = False
 
         for pdf in pdfs:
             
@@ -60,51 +57,24 @@ class Simulador:
             for empty in text_splitted:
                 if empty == '': text_splitted.remove(empty)
 
-            for index_r in range(index_range):
-                if text_splitted[index_r] == "Total":
-                    state_pdf = 2
-                    total_pdf = index_r
-            
-            if state_pdf == 1:
-                text_splitted = text_splitted[2:]
-
-            if state_pdf == 2:
-                text_splitted = text_splitted[total_pdf + 12:] #excluding the first table
-
-            print(text_splitted)
-            exit()
+            text_splitted = text_splitted[2:]
 
             state = 1
             for i in range(len(text_splitted)):
                 if state == 1:
-                    if state_pdf == 1:
-                        match_phone = self.phone.match(text_splitted[i])
-                        if match_phone:
-                            state = 2
-                            m2 = text_splitted[i+1]
-                            m3 = text_splitted[i+2]
-                            m4 = text_splitted[i+3]
-                            if self.msg.match(m3):
-                                m3 = ""
-                            if self.msg.match(m4):
-                                m4 = ""                            
-                        else:
-                            m1 = m1 + text_splitted[i] + " "
-                    elif state_pdf == 2:
-                        m1 = text_splitted[i]
+                    match_phone = self.phone.match(text_splitted[i])
+                    if match_phone:
+                        state = 2
                         m2 = text_splitted[i+1]
                         m3 = text_splitted[i+2]
                         m4 = text_splitted[i+3]
                         if self.msg.match(m3):
                             m3 = ""
                         if self.msg.match(m4):
-                            m4 = ""                           
-                        state_pdf = 3
+                            m4 = ""                            
+                    else:
+                        m1 = m1 + text_splitted[i] + " "
 
-
-                #TENTANDO PEGAR DADOS DO MODELO DE PDF Q COMECA COM UMA COLUNA
-
-                
                 match_age_range = self.age_range.match(text_splitted[i])
 
                 if match_age_range:
@@ -150,19 +120,19 @@ class Simulador:
                     for symbol, row in zip(tables[n_table][class_], range(n_symbols)):
                         tables[n_table][class_][symbol] = list(itertools.islice(values_of_table, row, len_table, n_symbols))
 
-            data = json.loads(json.dumps(tables))          
+            tables[0] = (re.sub(r"\s$", "", m1), m2, m3, m4)
+            #print(tables)
 
-            data["0"] = {"m1": re.sub(r"\s$", "", m1), "m2": m2, "m3": m3, "m4": m4}
+            #temp = json.loads(json.dumps(tables))
+            
+            #temp["0"] = {"m1": re.sub(r"\s$", "", m1), "m2": m2, "m3": m3, "m4": m4}
 
-            # print("PDF:", pdf)
-            # print("m1: ",m1)
-            # print("m2: ",m2)
-            # print("m3: ",m3)
-            # print("m4: ",m4)
+            data = {}
+            for dict_keys in sorted(tables):
+                data[dict_keys] = tables[dict_keys]
 
-            #print(data)
-            #print(json.dumps(data, indent=4, ensure_ascii=False, sort_keys=True))
+            if not need_path:
+                pdf = pdf.split("/")[-1]
 
             self.data[pdf] = list(data.values())
-
 
