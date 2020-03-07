@@ -6,6 +6,8 @@ if __name__ == "__main__":
     simulador = Simulador(path)
     simulador.get_text()
 
+    exit()
+
     for pdf,values in simulador.data.items():
         pdf_name = pdf[:-4]
         print(pdf_name)

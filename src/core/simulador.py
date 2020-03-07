@@ -13,8 +13,6 @@ class Simulador:
         self.path = path
         self.file = os.path.isdir(path)
 
-        print(self.file)
-
         #patterns
         self.phone = re.compile(r"\(\d\d\)\W\d{4,5}\W\d{4,5}")
         self.years = re.compile(r"anos")
@@ -24,6 +22,7 @@ class Simulador:
         self.msg = re.compile(r"(Tabela\sde\s\d+\sà\s\d+\svidas\/beneficiários)|(Faixa Etária)")
 
         self.last_change = re.compile(r"(Última\sAlteração\W\s\d{2}\/\d{2}\/\d{2,4})")
+        self.table_title = re.compile(r"(\w+\s\W\w+\W)")
 
         self.data = {}
         
@@ -63,57 +62,109 @@ class Simulador:
 
             text_splitted = text_splitted[2:]
 
-            print(text_splitted)
-            exit()
-
             state = 1
+            first_page = True
             for i in range(len(text_splitted)):
-                if state == 1:
-                    match_phone = self.phone.match(text_splitted[i])
-                    if match_phone:
-                        state = 2
-                        m2 = text_splitted[i+1]
-                        m3 = text_splitted[i+2]
-                        m4 = text_splitted[i+3]
-                        if self.msg.match(m3):
-                            m3 = ""
-                        if self.msg.match(m4):
-                            m4 = ""                            
-                    else:
-                        m1 = m1 + text_splitted[i] + " "
 
-                match_age_range = self.age_range.match(text_splitted[i])
+                #table_title = self.table_title.match(text_splitted[i])
+                last_change = self.last_change.match(text_splitted[i])
 
-                if match_age_range:
-                    if match_age_range.string == "Faixa Etária":
-                        k = 1
-                        m = 1
-                        while not re.match(r"0.+", text_splitted[i+k]):                            
-                            tables[n][text_splitted[i-1]][text_splitted[i+k]] = []
-                            k += 1
-                    if match_age_range.string == "Faixa":
-                        while not re.match(r"0.+", text_splitted[i+m]):
-                            if text_splitted[i+m] == "Etária":
+                if first_page: #primeira tabela antes do "Última Alteração: xx/xx/xxxx"                    
+                    if state == 1:
+                        match_phone = self.phone.match(text_splitted[i])
+                        if match_phone:
+                            state = 2
+                            m2 = text_splitted[i+1]
+                            m3 = text_splitted[i+2]
+                            m4 = text_splitted[i+3]
+                            if self.msg.match(m3):
+                                m3 = ""
+                            if self.msg.match(m4):
+                                m4 = ""                            
+                        else:
+                            m1 = m1 + text_splitted[i] + " "
+
+                    match_age_range = self.age_range.match(text_splitted[i])
+
+                    if match_age_range:
+                        if match_age_range.string == "Faixa Etária":
+                            k = 1
+                            m = 1
+                            while not re.match(r"0.+", text_splitted[i+k]):                            
+                                tables[n][text_splitted[i-1]][text_splitted[i+k]] = []
+                                k += 1
+                        if match_age_range.string == "Faixa":
+                            while not re.match(r"0.+", text_splitted[i+m]):
+                                if text_splitted[i+m] == "Etária":
+                                    m += 1
+                                    continue
+                                tables[n][text_splitted[i-1]][text_splitted[i+m]] = []
                                 m += 1
-                                continue
-                            tables[n][text_splitted[i-1]][text_splitted[i+m]] = []
-                            m += 1
-                    if m3 == text_splitted[i-1]:
-                        m3 = ""                              
-                    if m4 == text_splitted[i-1]:
-                        m4 = ""          
-                    n += 1
+                        if m3 == text_splitted[i-1]:
+                            m3 = ""                              
+                        if m4 == text_splitted[i-1]:
+                            m4 = ""
+                        n += 1
+                
+                    match_value = self.value.match(text_splitted[i])
+                    if match_value:
+                        new_value = match_value.string
+                        if new_value[:3] != "R$ ":
+                            new_value = "R$ " + match_value.string
+                        values.append(new_value)
 
-                match_value = self.value.match(text_splitted[i])
-                if match_value:
-                    new_value = match_value.string
-                    if new_value[:3] != "R$ ":
-                        new_value = "R$ " + match_value.string
-                    values.append(new_value)
+                    if last_change:
+                        index = i
+                        first_page = False
+                                       
+                else:
+                    #print(index)
+                    last_change = self.last_change.match(text_splitted[index])
+                    table_title = self.table_title.match(text_splitted[index])
+                    if last_change:
+                        print(index, last_change.string)
+                        last_index = index
+                        m2 = text_splitted[index+1]
+                        m3 = text_splitted[index+2]
+                        m4 = text_splitted[index+3]
+                        print()
+                    if table_title:
+                        print(index, table_title.string)                        
+                        if last_index+1 == index:
+                            print("eh table\n")
 
-                #end of tables
-                if text_splitted[i] == "Taxas" or text_splitted[i] == "Carência":
-                    break
+                    match_age_range = self.age_range.match(text_splitted[i])
+
+                    if match_age_range:
+                        if match_age_range.string == "Faixa Etária":
+                            k = 1
+                            m = 1
+                            while not re.match(r"0.+", text_splitted[i+k]):                            
+                                tables[n][text_splitted[i-1]][text_splitted[i+k]] = [] # pega os titulos da tabela de acordo com o index da faixa etaria -1
+                                k += 1
+                        if match_age_range.string == "Faixa":
+                            while not re.match(r"0.+", text_splitted[i+m]):
+                                if text_splitted[i+m] == "Etária":
+                                    m += 1
+                                    continue
+                                tables[n][text_splitted[i-1]][text_splitted[i+m]] = [] # pega os titulos da tabela de acordo com o index da faixa etaria -1
+                                m += 1
+                        if m3 == text_splitted[i-1]:
+                            m3 = ""                              
+                        if m4 == text_splitted[i-1]:
+                            m4 = ""          
+                        n += 1
+
+                    match_value = self.value.match(text_splitted[i])
+                    if match_value:
+                        new_value = match_value.string
+                        if new_value[:3] != "R$ ":
+                            new_value = "R$ " + match_value.string
+                        values.append(new_value)
+                    
+                    index += 1
+                    
+            print(json.dumps(tables, indent=4, ensure_ascii=False))
 
             for n_table in tables:
                 for class_ in tables[n_table]:
@@ -123,14 +174,16 @@ class Simulador:
                     values_of_table = values[:len_table].copy()
                     del values[:len_table]
 
-                    for symbol, row in zip(tables[n_table][class_], range(n_symbols)):
+                    for symbol, row in zip(tables[n_table][class_], range(n_symbols)):                        
                         tables[n_table][class_][symbol] = list(itertools.islice(values_of_table, row, len_table, n_symbols))
 
-            tables[0] = (re.sub(r"\s$", "", m1), m2, m3, m4)
+            #tables[0] = (re.sub(r"\s$", "", m1), m2, m3, m4)
 
             data = {}
             for dict_keys in sorted(tables):
                 data[dict_keys] = tables[dict_keys]
+
+            #print(json.dumps(data, indent=4, ensure_ascii=False))
 
             if not need_path:
                 pdf = pdf.split("/")[-1]
