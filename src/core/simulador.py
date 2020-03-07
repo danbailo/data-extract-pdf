@@ -67,7 +67,6 @@ class Simulador:
             first_page = True
             for i in range(len(text_splitted)):
 
-                #title_table = self.title_table.match(text_splitted[i])
                 last_change = self.last_change.match(text_splitted[i])
 
                 if first_page: #primeira tabela antes do "Última Alteração: xx/xx/xxxx"                    
@@ -76,7 +75,6 @@ class Simulador:
                         if match_phone:
                             state = 2
                             m2 = text_splitted[i+1]
-                            #print("aqui:",m2)
                             m3 = text_splitted[i+2]
                             m4 = text_splitted[i+3]
                             if self.msg.match(m3):
@@ -119,8 +117,7 @@ class Simulador:
                         index = i
                         first_page = False
                                        
-                else:
-                    #print(index)
+                else: # tabelas apos a primeira ocorrendia do "Última Alteração: xx/xx/xxxx"
                     last_change = self.last_change.match(text_splitted[index])
                     title_table = self.title_table.match(text_splitted[index])
                     if last_change:
@@ -131,38 +128,25 @@ class Simulador:
                     if title_table:
                         index_title_table = index + 1
                         n_other_pages += 1
-                        #tables[n][title_table.string]["sub_tabela"] = []
 
                         match_age_range = self.age_range.match(text_splitted[index_title_table])
 
                         if match_age_range.group(1) == "Faixa Etária":
                             k = 1
-                            while not re.match(r"0.+", text_splitted[index_title_table+k]):                                
-                                # if text_splitted[index_title_table+k].split(" ")[-1].upper() == m2.upper():
-                                    # sub_table = text_splitted[index_title_table+k] + " " + text_splitted[index_title_table+k+1]
-                                    #print(sub_table)
-                                    # tables[n_other_pages][title_table.string][sub_table] = []
-                                # elif text_splitted[index_title_table+k+1].split(" ")[0].upper() == m2.upper():
-                                    # sub_table = text_splitted[index_title_table+k] + " " + text_splitted[index_title_table+k+1] + " " + text_splitted[index_title_table+k+2]
-                                    #print(sub_table)
-                                    # tables[n_other_pages][title_table.string][sub_table] = []
-                                print(text_splitted[index_title_table+k])                                                                                                
+                            while not re.match(r"0.+", text_splitted[index_title_table+k]):
+                                sub_table = text_splitted[index_title_table+k]
+                                tables[n][title_table.string][sub_table] = []
                                 k += 1
                         elif match_age_range.group(2) == "Faixa":
                             l = 2
                             while not re.match(r"0.+", text_splitted[index_title_table+l]):                                
                                 if text_splitted[index_title_table+l].split(" ")[-1].upper() == m2.upper():
                                     sub_table = text_splitted[index_title_table+l] + " " + text_splitted[index_title_table+l+1]
-                                    print(sub_table)
-                                    # tables[n_other_pages][title_table.string][sub_table] = []
                                 elif text_splitted[index_title_table+l+1].split(" ")[0].upper() == m2.upper():
                                     sub_table = text_splitted[index_title_table+l] + " " + text_splitted[index_title_table+l+1] + " " + text_splitted[index_title_table+l+2]
-                                    print(sub_table)
-                                    # tables[n_other_pages][title_table.string][sub_table] = []
-                                else:
-                                    pass
-                                    #print(text_splitted[index_title_table+l])                                                                                                
-                                l += 1                            
+                                tables[n][title_table.string][sub_table] = []                                                                                         
+                                l += 1
+                            n += 1                         
 
                     match_age_range = self.age_range.match(text_splitted[index])
 
@@ -175,10 +159,7 @@ class Simulador:
                     
                     index += 1
                     
-            #print(values)
-            print(json.dumps(tables, indent=4, ensure_ascii=False))
-
-            for n_table in tables:
+            for n_table in tables: #insercao dos valores nas tabelas
                 for class_ in tables[n_table]:
                     n_symbols = len(tables[n_table][class_])
                     len_table = n_symbols * 10
@@ -189,13 +170,12 @@ class Simulador:
                     for symbol, row in zip(tables[n_table][class_], range(n_symbols)):                        
                         tables[n_table][class_][symbol] = list(itertools.islice(values_of_table, row, len_table, n_symbols))
 
-            #tables[0] = (re.sub(r"\s$", "", m1), m2, m3, m4)
+            print(json.dumps(tables, indent=4, ensure_ascii=False))
 
             data = {}
             for dict_keys in sorted(tables):
                 data[dict_keys] = tables[dict_keys]
 
-            #print(json.dumps(data, indent=4, ensure_ascii=False))
 
             if not need_path:
                 pdf = pdf.split("/")[-1]
