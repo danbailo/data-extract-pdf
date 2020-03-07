@@ -2,13 +2,15 @@ from core import Simulador
 import os
 
 if __name__ == "__main__":
-    simulador = Simulador("../samples/")
+    path = os.path.join(".", "new_samples", "Adesao_Sulmareica_Qualicorp_Alagoas.pdf")
+    simulador = Simulador(path)
     simulador.get_text()
 
     for pdf,values in simulador.data.items():
         pdf_name = pdf[:-4]
+        print(pdf_name)
         state = 1
-        file = open(os.path.join("..", "output", pdf_name+".txt"), "w")
+        file = open(os.path.join(".", "output", pdf_name+".txt"), "w")
         file.write("Modelo: " + pdf_name + "\n\n")
         for tables in values:
             if state == 1:
@@ -18,7 +20,7 @@ if __name__ == "__main__":
                 for table_name, column in tables.items():
                     m5 = table_name
                     for column_name, column_values in column.items():
-                        m6 = column_name
+                        m6 = column_name                        
                         v1, v2, v3, v4, v5, v6, v7, v8, v9, v10 = column_values
 
                         file.write("m1: " + m1 + "\n")

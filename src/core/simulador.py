@@ -1,10 +1,10 @@
+from collections import defaultdict
+import itertools
 import textract
 import platform
+import json
 import os
 import re
-from collections import defaultdict
-import json
-import itertools
 
 SYSTEM = platform.system()
 
@@ -13,6 +13,8 @@ class Simulador:
         self.path = path
         self.file = os.path.isdir(path)
 
+        print(self.file)
+
         #patterns
         self.phone = re.compile(r"\(\d\d\)\W\d{4,5}\W\d{4,5}")
         self.years = re.compile(r"anos")
@@ -20,6 +22,8 @@ class Simulador:
         self.age = re.compile(r"(anos)")
         self.value = re.compile(r"R\$\s(.+\d$)|((\d+.\d+\.\d+.+)|(\d+\.\d+.+)|(\d+\,\d+))")
         self.msg = re.compile(r"(Tabela\sde\s\d+\sà\s\d+\svidas\/beneficiários)|(Faixa Etária)")
+
+        self.last_change = re.compile(r"(Última\sAlteração\W\s\d{2}\/\d{2}\/\d{2,4})")
 
         self.data = {}
         
@@ -34,7 +38,7 @@ class Simulador:
         pdfs = self.get_data()
         need_path = True
 
-        if len(pdfs) == 1:
+        if len(pdfs) == 1 and self.file is False:
             need_path = False
 
         for pdf in pdfs:
@@ -58,6 +62,9 @@ class Simulador:
                 if empty == '': text_splitted.remove(empty)
 
             text_splitted = text_splitted[2:]
+
+            print(text_splitted)
+            exit()
 
             state = 1
             for i in range(len(text_splitted)):
@@ -103,7 +110,6 @@ class Simulador:
                     if new_value[:3] != "R$ ":
                         new_value = "R$ " + match_value.string
                     values.append(new_value)
-                    #values.append(re.sub(r"R\$ ", "", match_value.string)) #without cypher
 
                 #end of tables
                 if text_splitted[i] == "Taxas" or text_splitted[i] == "Carência":
@@ -121,11 +127,6 @@ class Simulador:
                         tables[n_table][class_][symbol] = list(itertools.islice(values_of_table, row, len_table, n_symbols))
 
             tables[0] = (re.sub(r"\s$", "", m1), m2, m3, m4)
-            #print(tables)
-
-            #temp = json.loads(json.dumps(tables))
-            
-            #temp["0"] = {"m1": re.sub(r"\s$", "", m1), "m2": m2, "m3": m3, "m4": m4}
 
             data = {}
             for dict_keys in sorted(tables):
