@@ -134,24 +134,24 @@ class Simulador:
 
                         match_age_range = self.age_range.match(text_splitted[index_title_table])
 
-                        if match_age_range.group(1) == "Faixa Etária":
-                            k = 1
-                            while not re.match(r"0.+", text_splitted[index_title_table+k]):
-                                sub_table = text_splitted[index_title_table+k]
-                                tables[n][title_table.string][sub_table] = []
-                                k += 1
-                        elif match_age_range.group(2) == "Faixa":
-                            l = 2
-                            while not re.match(r"0.+", text_splitted[index_title_table+l]):                                
-                                if text_splitted[index_title_table+l].split(" ")[-1].upper() == m2.upper():
-                                    sub_table = text_splitted[index_title_table+l] + " " + text_splitted[index_title_table+l+1]
-                                elif text_splitted[index_title_table+l+1].split(" ")[0].upper() == m2.upper():
-                                    sub_table = text_splitted[index_title_table+l] + " " + text_splitted[index_title_table+l+1] + " " + text_splitted[index_title_table+l+2]
-                                tables[n][title_table.string][sub_table] = []                                                                                         
-                                l += 1
-                            n += 1                         
+                        if match_age_range:
+                            if match_age_range.group(1) == "Faixa Etária":
+                                k = 1
+                                while not re.match(r"0.+", text_splitted[index_title_table+k]):
+                                    sub_table = text_splitted[index_title_table+k]
+                                    tables[n][title_table.string][sub_table] = []
+                                    k += 1
+                            elif match_age_range.group(2) == "Faixa":
+                                l = 2
+                                while not re.match(r"0.+", text_splitted[index_title_table+l]):                                
+                                    if text_splitted[index_title_table+l].split(" ")[-1].upper() == m2.upper():
+                                        sub_table = text_splitted[index_title_table+l] + " " + text_splitted[index_title_table+l+1]
+                                    elif text_splitted[index_title_table+l+1].split(" ")[0].upper() == m2.upper():
+                                        sub_table = text_splitted[index_title_table+l] + " " + text_splitted[index_title_table+l+1] + " " + text_splitted[index_title_table+l+2]
+                                    tables[n][title_table.string][sub_table] = []                                                                                         
+                                    l += 1
+                                n += 1                         
 
-                    match_age_range = self.age_range.match(text_splitted[index])
 
                     match_value = self.value.match(text_splitted[index])
                     if match_value:
