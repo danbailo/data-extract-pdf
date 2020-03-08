@@ -1,26 +1,31 @@
 from core import Simulador
 import os
 import itertools
+import json
 
 if __name__ == "__main__":
     path = os.path.join(".", "new_samples", "Adesao_Sulmareica_Qualicorp_Alagoas.pdf")
     simulador = Simulador(path)
-    m_values = simulador.get_text()
+    pdfs = simulador.get_data()
 
-    # print(m_values)
+    simulador.get_text(pdfs)
+    data = simulador.data
 
-    # for pdf,values in simulador.data.items():
-    #     for m_value, table in zip(m_values, values):
-    #         print(m_value, table)
-    #         print()
-    
+    print(data)
+
+    exit()
+
     for pdf,values in simulador.data.items():
         pdf_name = pdf[:-4]
+        print(pdf_name)
         state = 1
         file = open(os.path.join(".", "output", pdf_name+".txt"), "w")
         file.write("Modelo: " + pdf_name + "\n\n")
-        for m_value, tables in zip(m_values, values):
-            m1, m2, m3, m4 = m_value
+        for header, tables in zip(headers, values):
+            for value in header.values():
+                for i in range(len(value)):
+                    m1, m2, m3, m4 = value[i]
+                    print(value[i])
             for table_name, column in tables.items():
                 m5 = table_name
                 for column_name, column_values in column.items():
@@ -43,6 +48,8 @@ if __name__ == "__main__":
                     file.write("v8: " + v8 + "\n")
                     file.write("v9: " + v9 + "\n")
                     file.write("v10: " + v10 + "\n\n")
+
         file.close()
+        print()
         
             

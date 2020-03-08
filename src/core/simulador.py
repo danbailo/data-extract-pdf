@@ -33,7 +33,7 @@ class Simulador:
             return pdfs
         return [self.path]
 
-    def get_text(self):
+    def get_text(self, pdfs):
         pdfs = self.get_data()
         need_path = True
 
@@ -44,8 +44,8 @@ class Simulador:
             
             m1 = ''
             tables = defaultdict(lambda: defaultdict(lambda: defaultdict(list)))
-            tables_m = {}
-            n = 0
+            headers = {}
+            n = 1
             n_other_pages = 1
             values = []
 
@@ -82,7 +82,7 @@ class Simulador:
                                 m3 = ""
                             if self.msg.match(m4):
                                 m4 = ""                            
-                            tables_m[n] = (m1,m2,m3,m4)
+                            headers[str(n*-1)] = (m1,m2,m3,m4)
                         else:
                             m1 = m1 + text_splitted[i] + " "
 
@@ -128,7 +128,7 @@ class Simulador:
                             m3 = text_splitted[index+2]
                             m4 = text_splitted[index+3]                        
                     if title_table:
-                        tables_m[n] = (m1,m2,m3,m4)
+                        headers[str(n*-1)] = (m1,m2,m3,m4)
                         index_title_table = index + 1
                         n_other_pages += 1
 
@@ -173,13 +173,11 @@ class Simulador:
                     for symbol, row in zip(tables[n_table][class_], range(n_symbols)):                        
                         tables[n_table][class_][symbol] = list(itertools.islice(values_of_table, row, len_table, n_symbols))
 
-            #print(json.dumps(tables, indent=4, ensure_ascii=False))
-
             data = json.loads(json.dumps(tables, ensure_ascii=False))
+            headers.update(data)
 
             if not need_path:
                 pdf = pdf.split("/")[-1]
 
-            self.data[pdf] = list(data.values())
-            return tables_m.values()
+            self.data[pdf] = list(headers.values())
 
