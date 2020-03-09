@@ -1,0 +1,138 @@
+Modelo: PJ_SaudeSim_Brasilia
+
+m1: SAÚDE SIM 
+m2: Taxas
+m3: Título
+m4: Valor
+m5: Ambulatório (AMB)
+m6: SIM ESSENCIAL
+v1: R$ 81,41
+v2: R$ 87,92
+v3: R$ 98,47
+v4: R$ 112,26
+v5: R$ 130,22
+v6: R$ 153,66
+v7: R$ 199,76
+v8: R$ 237,72
+v9: R$ 318,55
+v10: R$ 477,83
+
+m1: SAÚDE SIM 
+m2: Taxas
+m3: Título
+m4: Valor
+m5: Enfermaria (E)
+m6: SIM 10
+v1: R$ 132,00
+v2: R$ 142,56
+v3: R$ 159,67
+v4: R$ 182,03
+v5: R$ 211,15
+v6: R$ 249,16
+v7: R$ 323,91
+v8: R$ 385,46
+v9: R$ 516,52
+v10: R$ 774,80
+
+m1: SAÚDE SIM 
+m2: Taxas
+m3: Título
+m4: Valor
+m5: Enfermaria (E)
+m6: SIM 20
+v1: R$ 145,20
+v2: R$ 156,82
+v3: R$ 175,64
+v4: R$ 200,23
+v5: R$ 232,27
+v6: R$ 274,08
+v7: R$ 356,30
+v8: R$ 424,01
+v9: R$ 568,17
+v10: R$ 852,28
+
+m1: SAÚDE SIM 
+m2: Taxas
+m3: Título
+m4: Valor
+m5: Apartamento (A)
+m6: SIM 20
+v1: R$ 168,96
+v2: R$ 182,48
+v3: R$ 204,37
+v4: R$ 232,99
+v5: R$ 270,27
+v6: R$ 318,93
+v7: R$ 414,60
+v8: R$ 493,39
+v9: R$ 661,15
+v10: R$ 991,75
+
+m1: SAÚDE SIM 
+m2: Taxas
+m3: Título
+m4: Valor
+m5: Ambulatório (AMB)
+m6: SIM ESSENCIAL
+v1: R$ 81,41
+v2: R$ 87,92
+v3: R$ 98,47
+v4: R$ 112,26
+v5: R$ 130,22
+v6: R$ 153,66
+v7: R$ 199,76
+v8: R$ 237,72
+v9: R$ 318,55
+v10: R$ 477,83
+
+m1: SAÚDE SIM 
+m2: Taxas
+m3: Título
+m4: Valor
+m5: Enfermaria (E)
+m6: SIM 10
+v1: R$ 132,00
+v2: R$ 142,56
+v3: R$ 159,67
+v4: R$ 182,03
+v5: R$ 211,15
+v6: R$ 249,16
+v7: R$ 323,91
+v8: R$ 385,46
+v9: R$ 516,52
+v10: R$ 774,80
+
+m1: SAÚDE SIM 
+m2: Taxas
+m3: Título
+m4: Valor
+m5: Enfermaria (E)
+m6: SIM 20
+v1: R$ 145,20
+v2: R$ 156,82
+v3: R$ 175,64
+v4: R$ 200,23
+v5: R$ 232,27
+v6: R$ 274,08
+v7: R$ 356,30
+v8: R$ 424,01
+v9: R$ 568,17
+v10: R$ 852,28
+
+m1: SAÚDE SIM 
+m2: Taxas
+m3: Título
+m4: Valor
+m5: Apartamento (A)
+m6: SIM 20
+v1: R$ 168,96
+v2: R$ 182,48
+v3: R$ 204,37
+v4: R$ 232,99
+v5: R$ 270,27
+v6: R$ 318,93
+v7: R$ 414,60
+v8: R$ 493,39
+v9: R$ 661,15
+v10: R$ 991,75
+

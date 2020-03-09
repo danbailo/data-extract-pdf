@@ -1,0 +1,342 @@
+Modelo: PJ_HAPVIDA _Fortaleza
+
+m1: HAPVIDA COM COPARTICIPAÇÃO 
+m2: Taxas
+m3: Título
+m4: Valor
+m5: Ambulatório (AMB)
+m6: NOSSO PLANO AMB + ODONTO
+v1: R$ 94,44
+v2: R$ 118,44
+v3: R$ 156,64
+v4: R$ 232,97
+v5: R$ 495,05
+v6: R$ 127,23
+v7: R$ 142,49
+v8: R$ 159,57
+v9: R$ 183,50
+v10: R$ 211,01
+
+m1: HAPVIDA COM COPARTICIPAÇÃO 
+m2: Taxas
+m3: Título
+m4: Valor
+m5: Ambulatório (AMB)
+m6: NOSSO PLANO AMB
+v1: R$ 105,76
+v2: R$ 136,21
+v3: R$ 186,39
+v4: R$ 291,21
+v5: R$ 554,44
+v6: R$ 180,03
+v7: R$ 201,62
+v8: R$ 225,80
+v9: R$ 259,67
+v10: R$ 298,61
+
+m1: HAPVIDA COM COPARTICIPAÇÃO 
+m2: Taxas
+m3: Título
+m4: Valor
+m5: Enfermaria (E)
+m6: NOSSO PLANO + ODONTO
+v1: R$ 251,11
+v2: R$ 392,36
+v3: R$ 747,04
+v4: R$ 213,71
+v5: R$ 275,26
+v6: R$ 376,65
+v7: R$ 588,51
+v8: R$ 1.120,51
+v9: R$ 136,80
+v10: R$ 269,08
+
+m1: HAPVIDA COM COPARTICIPAÇÃO 
+m2: Taxas
+m3: Título
+m4: Valor
+m5: Enfermaria (E)
+m6: MIX + ODONTO
+v1: R$ 355,35
+v2: R$ 555,20
+v3: R$ 1.057,10
+v4: R$ 302,44
+v5: R$ 389,53
+v6: R$ 533,04
+v7: R$ 832,86
+v8: R$ 1.585,76
+v9: R$ 157,32
+v10: R$ 336,35
+
+m1: HAPVIDA COM COPARTICIPAÇÃO 
+m2: Taxas
+m3: Título
+m4: Valor
+m5: Enfermaria (E)
+m6: NOSSO PLANO
+v1: R$ 313,89
+v2: R$ 667,01
+v3: R$ 190,82
+v4: R$ 239,36
+v5: R$ 316,53
+v6: R$ 470,81
+v7: R$ 1.000,46
+v8: R$ 109,08
+v9: R$ 180,92
+v10: R$ 571,78
+
+m1: HAPVIDA COM COPARTICIPAÇÃO 
+m2: Taxas
+m3: Título
+m4: Valor
+m5: Enfermaria (E)
+m6: MIX
+v1: R$ 444,15
+v2: R$ 943,83
+v3: R$ 270,04
+v4: R$ 338,71
+v5: R$ 447,94
+v6: R$ 666,31
+v7: R$ 1.415,86
+v8: R$ 122,15
+v9: R$ 215,28
+v10: R$ 640,38
+
+m1: HAPVIDA COM COPARTICIPAÇÃO 
+m2: Taxas
+m3: Título
+m4: Valor
+m5: Apartamento (A)
+m6: NOSSO PLANO + ODONTO
+v1: R$ 146,95
+v2: R$ 184,30
+v3: R$ 243,72
+v4: R$ 362,54
+v5: R$ 770,40
+v6: R$ 220,40
+v7: R$ 276,46
+v8: R$ 365,59
+v9: R$ 543,79
+v10: R$ 1.155,53
+
+m1: HAPVIDA COM COPARTICIPAÇÃO 
+m2: Taxas
+m3: Título
+m4: Valor
+m5: Apartamento (A)
+m6: MIX + ODONTO
+v1: R$ 207,93
+v2: R$ 260,80
+v3: R$ 344,89
+v4: R$ 512,99
+v5: R$ 1.090,12
+v6: R$ 311,90
+v7: R$ 391,21
+v8: R$ 517,37
+v9: R$ 769,59
+v10: R$ 1.635,32
+
+m1: HAPVIDA COM COPARTICIPAÇÃO 
+m2: Taxas
+m3: Título
+m4: Valor
+m5: Apartamento (A)
+m6: NOSSO PLANO
+v1: R$ 164,58
+v2: R$ 211,94
+v3: R$ 290,03
+v4: R$ 453,18
+v5: R$ 862,83
+v6: R$ 246,84
+v7: R$ 317,93
+v8: R$ 435,03
+v9: R$ 679,73
+v10: R$ 1.294,19
+
+m1: HAPVIDA COM COPARTICIPAÇÃO 
+m2: Taxas
+m3: Título
+m4: Valor
+m5: Apartamento (A)
+m6: MIX
+v1: R$ 232,87
+v2: R$ 299,92
+v3: R$ 410,43
+v4: R$ 641,26
+v5: R$ 1.220,95
+v6: R$ 349,32
+v7: R$ 449,91
+v8: R$ 615,66
+v9: R$ 961,95
+v10: R$ 1.831,55
+
+m1: HAPVIDA COM COPARTICIPAÇÃO 
+m2: Taxas
+m3: Título
+m4: Valor
+m5: Ambulatório (AMB)
+m6: NOSSO PLANO AMB + ODONTO
+v1: R$ 94,44
+v2: R$ 118,44
+v3: R$ 156,64
+v4: R$ 232,97
+v5: R$ 495,05
+v6: R$ 127,23
+v7: R$ 142,49
+v8: R$ 159,57
+v9: R$ 183,50
+v10: R$ 211,01
+
+m1: HAPVIDA COM COPARTICIPAÇÃO 
+m2: Taxas
+m3: Título
+m4: Valor
+m5: Ambulatório (AMB)
+m6: NOSSO PLANO AMB
+v1: R$ 105,76
+v2: R$ 136,21
+v3: R$ 186,39
+v4: R$ 291,21
+v5: R$ 554,44
+v6: R$ 180,03
+v7: R$ 201,62
+v8: R$ 225,80
+v9: R$ 259,67
+v10: R$ 298,61
+
+m1: HAPVIDA COM COPARTICIPAÇÃO 
+m2: Taxas
+m3: Título
+m4: Valor
+m5: Enfermaria (E)
+m6: NOSSO PLANO + ODONTO
+v1: R$ 251,11
+v2: R$ 392,36
+v3: R$ 747,04
+v4: R$ 213,71
+v5: R$ 275,26
+v6: R$ 376,65
+v7: R$ 588,51
+v8: R$ 1.120,51
+v9: R$ 136,80
+v10: R$ 269,08
+
+m1: HAPVIDA COM COPARTICIPAÇÃO 
+m2: Taxas
+m3: Título
+m4: Valor
+m5: Enfermaria (E)
+m6: MIX + ODONTO
+v1: R$ 355,35
+v2: R$ 555,20
+v3: R$ 1.057,10
+v4: R$ 302,44
+v5: R$ 389,53
+v6: R$ 533,04
+v7: R$ 832,86
+v8: R$ 1.585,76
+v9: R$ 157,32
+v10: R$ 336,35
+
+m1: HAPVIDA COM COPARTICIPAÇÃO 
+m2: Taxas
+m3: Título
+m4: Valor
+m5: Enfermaria (E)
+m6: NOSSO PLANO
+v1: R$ 313,89
+v2: R$ 667,01
+v3: R$ 190,82
+v4: R$ 239,36
+v5: R$ 316,53
+v6: R$ 470,81
+v7: R$ 1.000,46
+v8: R$ 109,08
+v9: R$ 180,92
+v10: R$ 571,78
+
+m1: HAPVIDA COM COPARTICIPAÇÃO 
+m2: Taxas
+m3: Título
+m4: Valor
+m5: Enfermaria (E)
+m6: MIX
+v1: R$ 444,15
+v2: R$ 943,83
+v3: R$ 270,04
+v4: R$ 338,71
+v5: R$ 447,94
+v6: R$ 666,31
+v7: R$ 1.415,86
+v8: R$ 122,15
+v9: R$ 215,28
+v10: R$ 640,38
+
+m1: HAPVIDA COM COPARTICIPAÇÃO 
+m2: Taxas
+m3: Título
+m4: Valor
+m5: Apartamento (A)
+m6: NOSSO PLANO + ODONTO
+v1: R$ 146,95
+v2: R$ 184,30
+v3: R$ 243,72
+v4: R$ 362,54
+v5: R$ 770,40
+v6: R$ 220,40
+v7: R$ 276,46
+v8: R$ 365,59
+v9: R$ 543,79
+v10: R$ 1.155,53
+
+m1: HAPVIDA COM COPARTICIPAÇÃO 
+m2: Taxas
+m3: Título
+m4: Valor
+m5: Apartamento (A)
+m6: MIX + ODONTO
+v1: R$ 207,93
+v2: R$ 260,80
+v3: R$ 344,89
+v4: R$ 512,99
+v5: R$ 1.090,12
+v6: R$ 311,90
+v7: R$ 391,21
+v8: R$ 517,37
+v9: R$ 769,59
+v10: R$ 1.635,32
+
+m1: HAPVIDA COM COPARTICIPAÇÃO 
+m2: Taxas
+m3: Título
+m4: Valor
+m5: Apartamento (A)
+m6: NOSSO PLANO
+v1: R$ 164,58
+v2: R$ 211,94
+v3: R$ 290,03
+v4: R$ 453,18
+v5: R$ 862,83
+v6: R$ 246,84
+v7: R$ 317,93
+v8: R$ 435,03
+v9: R$ 679,73
+v10: R$ 1.294,19
+
+m1: HAPVIDA COM COPARTICIPAÇÃO 
+m2: Taxas
+m3: Título
+m4: Valor
+m5: Apartamento (A)
+m6: MIX
+v1: R$ 232,87
+v2: R$ 299,92
+v3: R$ 410,43
+v4: R$ 641,26
+v5: R$ 1.220,95
+v6: R$ 349,32
+v7: R$ 449,91
+v8: R$ 615,66
+v9: R$ 961,95
+v10: R$ 1.831,55
+

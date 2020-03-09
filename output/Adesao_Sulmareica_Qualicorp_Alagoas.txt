@@ -1,0 +1,1362 @@
+Modelo: Adesao_Sulmareica_Qualicorp_Alagoas
+
+m1: SULAMÉRICA COM COPART. (QUALICORP) 
+m2: Adesão
+m3: SUPREMO
+m4: ABRABDIR - Associação Brasileira de Advogados e Bacharéis em Direito
+m5: Enfermaria (E)
+m6: EXATO ADESÃO TRAD. 16 > 1.1
+v1: R$ 345,99
+v2: R$ 476,49
+v3: R$ 517,56
+v4: R$ 614,13
+v5: R$ 670,02
+v6: R$ 741,63
+v7: R$ 847,48
+v8: R$ 1.042,30
+v9: R$ 1.297,78
+v10: R$ 2.075,73
+
+m1: SULAMÉRICA COM COPART. (QUALICORP) 
+m2: Adesão
+m3: SUPREMO
+m4: ABRABDIR - Associação Brasileira de Advogados e Bacharéis em Direito
+m5: Apartamento (A)
+m6: EXATO ADESÃO TRAD. 16 > 1.1
+v1: R$ 378,07
+v2: R$ 520,68
+v3: R$ 565,55
+v4: R$ 671,07
+v5: R$ 732,14
+v6: R$ 810,43
+v7: R$ 926,05
+v8: R$ 1.138,96
+v9: R$ 1.418,13
+v10: R$ 2.268,21
+
+m1: SULAMÉRICA COM COPART. (QUALICORP) 
+m2: Adesão
+m3: SUPREMO
+m4: ABRABDIR - Associação Brasileira de Advogados e Bacharéis em Direito
+m5: Apartamento (A)
+m6: ESPECIAL ADESÃO TRAD. 16 > 2.9
+v1: R$ 502,70
+v2: R$ 692,33
+v3: R$ 752,01
+v4: R$ 892,34
+v5: R$ 973,53
+v6: R$ 1.077,61
+v7: R$ 1.231,37
+v8: R$ 1.514,46
+v9: R$ 1.885,67
+v10: R$ 3.016,02
+
+m1: SULAMÉRICA COM COPART. (QUALICORP) 
+m2: Adesão
+m3: SUPREMO
+m4: ABRABDIR - Associação Brasileira de Advogados e Bacharéis em Direito
+m5: Apartamento (A)
+m6: ESPECIAL ADESÃO TRAD. 16 > 3.4
+v1: R$ 525,15
+v2: R$ 723,23
+v3: R$ 785,57
+v4: R$ 932,16
+v5: R$ 1.016,99
+v6: R$ 1.125,70
+v7: R$ 1.286,34
+v8: R$ 1.582,07
+v9: R$ 1.969,84
+v10: R$ 3.150,65
+
+m1: SULAMÉRICA COM COPART. (QUALICORP) 
+m2: Adesão
+m3: SUPREMO
+m4: ABRABDIR - Associação Brasileira de Advogados e Bacharéis em Direito
+m5: Apartamento (A)
+m6: ESPECIAL ADESÃO TRAD. 16 > 5.1
+v1: R$ 606,33
+v2: R$ 835,02
+v3: R$ 906,99
+v4: R$ 1.076,24
+v5: R$ 1.174,17
+v6: R$ 1.299,70
+v7: R$ 1.485,17
+v8: R$ 1.826,61
+v9: R$ 2.274,30
+v10: R$ 3.637,66
+
+m1: SULAMÉRICA COM COPART. (QUALICORP) 
+m2: Adesão
+m3: SUPREMO
+m4: ABRABDIR - Associação Brasileira de Advogados e Bacharéis em Direito
+m5: Apartamento (A)
+m6: EXECUTIVO ADESÃO TRAD. 16 > 6.5
+v1: R$ 1.006,61
+v2: R$ 1.386,28
+v3: R$ 1.505,78
+v4: R$ 1.786,78
+v5: R$ 1.949,36
+v6: R$ 2.157,76
+v7: R$ 2.465,67
+v8: R$ 3.032,52
+v9: R$ 3.775,81
+v10: R$ 6.039,19
+
+m1: SULAMÉRICA COM COPART. (QUALICORP) 
+m2: Adesão
+m3: SUPREMO
+m4: ABRABDIR - Associação Brasileira de Advogados e Bacharéis em Direito
+m5: Apartamento (A)
+m6: EXECUTIVO ADESÃO TRAD. 16 > 8.0
+v1: R$ 1.207,30
+v2: R$ 1.662,71
+v3: R$ 1.806,03
+v4: R$ 2.143,05
+v5: R$ 2.338,05
+v6: R$ 2.587,98
+v7: R$ 2.957,30
+v8: R$ 3.637,18
+v9: R$ 4.528,66
+v10: R$ 7.243,36
+
+m1: SULAMÉRICA COM COPART. (QUALICORP) 
+m2: Adesão
+m3: SUPREMO
+m4: ABRABDIR - Associação Brasileira de Advogados e Bacharéis em Direito
+m5: Apartamento (A)
+m6: EXECUTIVO ADESÃO TRAD. 16 > 11.0
+v1: R$ 1.321,75
+v2: R$ 1.820,31
+v3: R$ 1.977,25
+v4: R$ 2.346,17
+v5: R$ 2.559,68
+v6: R$ 2.833,32
+v7: R$ 3.237,64
+v8: R$ 3.981,97
+v9: R$ 4.957,95
+v10: R$ 7.929,98
+
+m1: SULAMÉRICA COM COPART. (QUALICORP) 
+m2: Adesão
+m3: SUPREMO
+m4: ACRESP - Associação Cultural e Recreativa dos Servidores Públicos
+m5: Enfermaria (E)
+m6: EXATO ADESÃO TRAD. 16 > 1.1
+v1: R$ 345,99
+v2: R$ 476,49
+v3: R$ 517,56
+v4: R$ 614,13
+v5: R$ 670,02
+v6: R$ 741,63
+v7: R$ 847,48
+v8: R$ 1.042,30
+v9: R$ 1.297,78
+v10: R$ 2.075,73
+
+m1: SULAMÉRICA COM COPART. (QUALICORP) 
+m2: Adesão
+m3: SUPREMO
+m4: ACRESP - Associação Cultural e Recreativa dos Servidores Públicos
+m5: Apartamento (A)
+m6: EXATO ADESÃO TRAD. 16 > 1.1
+v1: R$ 378,07
+v2: R$ 520,68
+v3: R$ 565,55
+v4: R$ 671,07
+v5: R$ 732,14
+v6: R$ 810,43
+v7: R$ 926,05
+v8: R$ 1.138,96
+v9: R$ 1.418,13
+v10: R$ 2.268,21
+
+m1: SULAMÉRICA COM COPART. (QUALICORP) 
+m2: Adesão
+m3: SUPREMO
+m4: ACRESP - Associação Cultural e Recreativa dos Servidores Públicos
+m5: Apartamento (A)
+m6: ESPECIAL ADESÃO TRAD. 16 > 2.9
+v1: R$ 502,70
+v2: R$ 692,33
+v3: R$ 752,01
+v4: R$ 892,34
+v5: R$ 973,53
+v6: R$ 1.077,61
+v7: R$ 1.231,37
+v8: R$ 1.514,46
+v9: R$ 1.885,67
+v10: R$ 3.016,02
+
+m1: SULAMÉRICA COM COPART. (QUALICORP) 
+m2: Adesão
+m3: SUPREMO
+m4: ACRESP - Associação Cultural e Recreativa dos Servidores Públicos
+m5: Apartamento (A)
+m6: ESPECIAL ADESÃO TRAD. 16 > 3.4
+v1: R$ 525,15
+v2: R$ 723,23
+v3: R$ 785,57
+v4: R$ 932,16
+v5: R$ 1.016,99
+v6: R$ 1.125,70
+v7: R$ 1.286,34
+v8: R$ 1.582,07
+v9: R$ 1.969,84
+v10: R$ 3.150,65
+
+m1: SULAMÉRICA COM COPART. (QUALICORP) 
+m2: Adesão
+m3: SUPREMO
+m4: ACRESP - Associação Cultural e Recreativa dos Servidores Públicos
+m5: Apartamento (A)
+m6: ESPECIAL ADESÃO TRAD. 16 > 5.1
+v1: R$ 606,33
+v2: R$ 835,02
+v3: R$ 906,99
+v4: R$ 1.076,24
+v5: R$ 1.174,17
+v6: R$ 1.299,70
+v7: R$ 1.485,17
+v8: R$ 1.826,61
+v9: R$ 2.274,30
+v10: R$ 3.637,66
+
+m1: SULAMÉRICA COM COPART. (QUALICORP) 
+m2: Adesão
+m3: SUPREMO
+m4: ACRESP - Associação Cultural e Recreativa dos Servidores Públicos
+m5: Apartamento (A)
+m6: EXECUTIVO ADESÃO TRAD. 16 > 6.5
+v1: R$ 1.006,61
+v2: R$ 1.386,28
+v3: R$ 1.505,78
+v4: R$ 1.786,78
+v5: R$ 1.949,36
+v6: R$ 2.157,76
+v7: R$ 2.465,67
+v8: R$ 3.032,52
+v9: R$ 3.775,81
+v10: R$ 6.039,19
+
+m1: SULAMÉRICA COM COPART. (QUALICORP) 
+m2: Adesão
+m3: SUPREMO
+m4: ACRESP - Associação Cultural e Recreativa dos Servidores Públicos
+m5: Apartamento (A)
+m6: EXECUTIVO ADESÃO TRAD. 16 > 8.0
+v1: R$ 1.207,30
+v2: R$ 1.662,71
+v3: R$ 1.806,03
+v4: R$ 2.143,05
+v5: R$ 2.338,05
+v6: R$ 2.587,98
+v7: R$ 2.957,30
+v8: R$ 3.637,18
+v9: R$ 4.528,66
+v10: R$ 7.243,36
+
+m1: SULAMÉRICA COM COPART. (QUALICORP) 
+m2: Adesão
+m3: SUPREMO
+m4: ACRESP - Associação Cultural e Recreativa dos Servidores Públicos
+m5: Apartamento (A)
+m6: EXECUTIVO ADESÃO TRAD. 16 > 11.0
+v1: R$ 1.321,75
+v2: R$ 1.820,31
+v3: R$ 1.977,25
+v4: R$ 2.346,17
+v5: R$ 2.559,68
+v6: R$ 2.833,32
+v7: R$ 3.237,64
+v8: R$ 3.981,97
+v9: R$ 4.957,95
+v10: R$ 7.929,98
+
+m1: SULAMÉRICA COM COPART. (QUALICORP) 
+m2: Adesão
+m3: SUPREMO
+m4: ADPF - Associação Nacional dos Delegados de Polícia Federal
+m5: Enfermaria (E)
+m6: EXATO ADESÃO TRAD. 16 > 1.1
+v1: R$ 345,99
+v2: R$ 476,49
+v3: R$ 517,56
+v4: R$ 614,13
+v5: R$ 670,02
+v6: R$ 741,63
+v7: R$ 847,48
+v8: R$ 1.042,30
+v9: R$ 1.297,78
+v10: R$ 2.075,73
+
+m1: SULAMÉRICA COM COPART. (QUALICORP) 
+m2: Adesão
+m3: SUPREMO
+m4: ADPF - Associação Nacional dos Delegados de Polícia Federal
+m5: Apartamento (A)
+m6: EXATO ADESÃO TRAD. 16 > 1.1
+v1: R$ 378,07
+v2: R$ 520,68
+v3: R$ 565,55
+v4: R$ 671,07
+v5: R$ 732,14
+v6: R$ 810,43
+v7: R$ 926,05
+v8: R$ 1.138,96
+v9: R$ 1.418,13
+v10: R$ 2.268,21
+
+m1: SULAMÉRICA COM COPART. (QUALICORP) 
+m2: Adesão
+m3: SUPREMO
+m4: ADPF - Associação Nacional dos Delegados de Polícia Federal
+m5: Apartamento (A)
+m6: ESPECIAL ADESÃO TRAD. 16 > 2.9
+v1: R$ 502,70
+v2: R$ 692,33
+v3: R$ 752,01
+v4: R$ 892,34
+v5: R$ 973,53
+v6: R$ 1.077,61
+v7: R$ 1.231,37
+v8: R$ 1.514,46
+v9: R$ 1.885,67
+v10: R$ 3.016,02
+
+m1: SULAMÉRICA COM COPART. (QUALICORP) 
+m2: Adesão
+m3: SUPREMO
+m4: ADPF - Associação Nacional dos Delegados de Polícia Federal
+m5: Apartamento (A)
+m6: ESPECIAL ADESÃO TRAD. 16 > 3.4
+v1: R$ 525,15
+v2: R$ 723,23
+v3: R$ 785,57
+v4: R$ 932,16
+v5: R$ 1.016,99
+v6: R$ 1.125,70
+v7: R$ 1.286,34
+v8: R$ 1.582,07
+v9: R$ 1.969,84
+v10: R$ 3.150,65
+
+m1: SULAMÉRICA COM COPART. (QUALICORP) 
+m2: Adesão
+m3: SUPREMO
+m4: ADPF - Associação Nacional dos Delegados de Polícia Federal
+m5: Apartamento (A)
+m6: ESPECIAL ADESÃO TRAD. 16 > 5.1
+v1: R$ 606,33
+v2: R$ 835,02
+v3: R$ 906,99
+v4: R$ 1.076,24
+v5: R$ 1.174,17
+v6: R$ 1.299,70
+v7: R$ 1.485,17
+v8: R$ 1.826,61
+v9: R$ 2.274,30
+v10: R$ 3.637,66
+
+m1: SULAMÉRICA COM COPART. (QUALICORP) 
+m2: Adesão
+m3: SUPREMO
+m4: ADPF - Associação Nacional dos Delegados de Polícia Federal
+m5: Apartamento (A)
+m6: EXECUTIVO ADESÃO TRAD. 16 > 6.5
+v1: R$ 1.006,61
+v2: R$ 1.386,28
+v3: R$ 1.505,78
+v4: R$ 1.786,78
+v5: R$ 1.949,36
+v6: R$ 2.157,76
+v7: R$ 2.465,67
+v8: R$ 3.032,52
+v9: R$ 3.775,81
+v10: R$ 6.039,19
+
+m1: SULAMÉRICA COM COPART. (QUALICORP) 
+m2: Adesão
+m3: SUPREMO
+m4: ADPF - Associação Nacional dos Delegados de Polícia Federal
+m5: Apartamento (A)
+m6: EXECUTIVO ADESÃO TRAD. 16 > 8.0
+v1: R$ 1.207,30
+v2: R$ 1.662,71
+v3: R$ 1.806,03
+v4: R$ 2.143,05
+v5: R$ 2.338,05
+v6: R$ 2.587,98
+v7: R$ 2.957,30
+v8: R$ 3.637,18
+v9: R$ 4.528,66
+v10: R$ 7.243,36
+
+m1: SULAMÉRICA COM COPART. (QUALICORP) 
+m2: Adesão
+m3: SUPREMO
+m4: ADPF - Associação Nacional dos Delegados de Polícia Federal
+m5: Apartamento (A)
+m6: EXECUTIVO ADESÃO TRAD. 16 > 11.0
+v1: R$ 1.321,75
+v2: R$ 1.820,31
+v3: R$ 1.977,25
+v4: R$ 2.346,17
+v5: R$ 2.559,68
+v6: R$ 2.833,32
+v7: R$ 3.237,64
+v8: R$ 3.981,97
+v9: R$ 4.957,95
+v10: R$ 7.929,98
+
+m1: SULAMÉRICA COM COPART. (QUALICORP) 
+m2: Adesão
+m3: SUPREMO
+m4: AFB - Associação de Fisioterapeutas do Brasil
+m5: Enfermaria (E)
+m6: EXATO ADESÃO TRAD. 16 > 1.1
+v1: R$ 345,99
+v2: R$ 476,49
+v3: R$ 517,56
+v4: R$ 614,13
+v5: R$ 670,02
+v6: R$ 741,63
+v7: R$ 847,48
+v8: R$ 1.042,30
+v9: R$ 1.297,78
+v10: R$ 2.075,73
+
+m1: SULAMÉRICA COM COPART. (QUALICORP) 
+m2: Adesão
+m3: SUPREMO
+m4: AFB - Associação de Fisioterapeutas do Brasil
+m5: Apartamento (A)
+m6: EXATO ADESÃO TRAD. 16 > 1.1
+v1: R$ 378,07
+v2: R$ 520,68
+v3: R$ 565,55
+v4: R$ 671,07
+v5: R$ 732,14
+v6: R$ 810,43
+v7: R$ 926,05
+v8: R$ 1.138,96
+v9: R$ 1.418,13
+v10: R$ 2.268,21
+
+m1: SULAMÉRICA COM COPART. (QUALICORP) 
+m2: Adesão
+m3: SUPREMO
+m4: AFB - Associação de Fisioterapeutas do Brasil
+m5: Apartamento (A)
+m6: ESPECIAL ADESÃO TRAD. 16 > 2.9
+v1: R$ 502,70
+v2: R$ 692,33
+v3: R$ 752,01
+v4: R$ 892,34
+v5: R$ 973,53
+v6: R$ 1.077,61
+v7: R$ 1.231,37
+v8: R$ 1.514,46
+v9: R$ 1.885,67
+v10: R$ 3.016,02
+
+m1: SULAMÉRICA COM COPART. (QUALICORP) 
+m2: Adesão
+m3: SUPREMO
+m4: AFB - Associação de Fisioterapeutas do Brasil
+m5: Apartamento (A)
+m6: ESPECIAL ADESÃO TRAD. 16 > 3.4
+v1: R$ 525,15
+v2: R$ 723,23
+v3: R$ 785,57
+v4: R$ 932,16
+v5: R$ 1.016,99
+v6: R$ 1.125,70
+v7: R$ 1.286,34
+v8: R$ 1.582,07
+v9: R$ 1.969,84
+v10: R$ 3.150,65
+
+m1: SULAMÉRICA COM COPART. (QUALICORP) 
+m2: Adesão
+m3: SUPREMO
+m4: AFB - Associação de Fisioterapeutas do Brasil
+m5: Apartamento (A)
+m6: ESPECIAL ADESÃO TRAD. 16 > 5.1
+v1: R$ 606,33
+v2: R$ 835,02
+v3: R$ 906,99
+v4: R$ 1.076,24
+v5: R$ 1.174,17
+v6: R$ 1.299,70
+v7: R$ 1.485,17
+v8: R$ 1.826,61
+v9: R$ 2.274,30
+v10: R$ 3.637,66
+
+m1: SULAMÉRICA COM COPART. (QUALICORP) 
+m2: Adesão
+m3: SUPREMO
+m4: AFB - Associação de Fisioterapeutas do Brasil
+m5: Apartamento (A)
+m6: EXECUTIVO ADESÃO TRAD. 16 > 6.5
+v1: R$ 1.006,61
+v2: R$ 1.386,28
+v3: R$ 1.505,78
+v4: R$ 1.786,78
+v5: R$ 1.949,36
+v6: R$ 2.157,76
+v7: R$ 2.465,67
+v8: R$ 3.032,52
+v9: R$ 3.775,81
+v10: R$ 6.039,19
+
+m1: SULAMÉRICA COM COPART. (QUALICORP) 
+m2: Adesão
+m3: SUPREMO
+m4: AFB - Associação de Fisioterapeutas do Brasil
+m5: Apartamento (A)
+m6: EXECUTIVO ADESÃO TRAD. 16 > 8.0
+v1: R$ 1.207,30
+v2: R$ 1.662,71
+v3: R$ 1.806,03
+v4: R$ 2.143,05
+v5: R$ 2.338,05
+v6: R$ 2.587,98
+v7: R$ 2.957,30
+v8: R$ 3.637,18
+v9: R$ 4.528,66
+v10: R$ 7.243,36
+
+m1: SULAMÉRICA COM COPART. (QUALICORP) 
+m2: Adesão
+m3: SUPREMO
+m4: AFB - Associação de Fisioterapeutas do Brasil
+m5: Apartamento (A)
+m6: EXECUTIVO ADESÃO TRAD. 16 > 11.0
+v1: R$ 1.321,75
+v2: R$ 1.820,31
+v3: R$ 1.977,25
+v4: R$ 2.346,17
+v5: R$ 2.559,68
+v6: R$ 2.833,32
+v7: R$ 3.237,64
+v8: R$ 3.981,97
+v9: R$ 4.957,95
+v10: R$ 7.929,98
+
+m1: SULAMÉRICA COM COPART. (QUALICORP) 
+m2: Adesão
+m3: SUPREMO
+m4: AJUFE - Associação dos Juízes Federais do Brasil
+m5: Enfermaria (E)
+m6: EXATO ADESÃO TRAD. 16 > 1.1
+v1: R$ 345,99
+v2: R$ 476,49
+v3: R$ 517,56
+v4: R$ 614,13
+v5: R$ 670,02
+v6: R$ 741,63
+v7: R$ 847,48
+v8: R$ 1.042,30
+v9: R$ 1.297,78
+v10: R$ 2.075,73
+
+m1: SULAMÉRICA COM COPART. (QUALICORP) 
+m2: Adesão
+m3: SUPREMO
+m4: AJUFE - Associação dos Juízes Federais do Brasil
+m5: Apartamento (A)
+m6: EXATO ADESÃO TRAD. 16 > 1.1
+v1: R$ 378,07
+v2: R$ 520,68
+v3: R$ 565,55
+v4: R$ 671,07
+v5: R$ 732,14
+v6: R$ 810,43
+v7: R$ 926,05
+v8: R$ 1.138,96
+v9: R$ 1.418,13
+v10: R$ 2.268,21
+
+m1: SULAMÉRICA COM COPART. (QUALICORP) 
+m2: Adesão
+m3: SUPREMO
+m4: AJUFE - Associação dos Juízes Federais do Brasil
+m5: Apartamento (A)
+m6: ESPECIAL ADESÃO TRAD. 16 > 2.9
+v1: R$ 502,70
+v2: R$ 692,33
+v3: R$ 752,01
+v4: R$ 892,34
+v5: R$ 973,53
+v6: R$ 1.077,61
+v7: R$ 1.231,37
+v8: R$ 1.514,46
+v9: R$ 1.885,67
+v10: R$ 3.016,02
+
+m1: SULAMÉRICA COM COPART. (QUALICORP) 
+m2: Adesão
+m3: SUPREMO
+m4: AJUFE - Associação dos Juízes Federais do Brasil
+m5: Apartamento (A)
+m6: ESPECIAL ADESÃO TRAD. 16 > 3.4
+v1: R$ 525,15
+v2: R$ 723,23
+v3: R$ 785,57
+v4: R$ 932,16
+v5: R$ 1.016,99
+v6: R$ 1.125,70
+v7: R$ 1.286,34
+v8: R$ 1.582,07
+v9: R$ 1.969,84
+v10: R$ 3.150,65
+
+m1: SULAMÉRICA COM COPART. (QUALICORP) 
+m2: Adesão
+m3: SUPREMO
+m4: AJUFE - Associação dos Juízes Federais do Brasil
+m5: Apartamento (A)
+m6: ESPECIAL ADESÃO TRAD. 16 > 5.1
+v1: R$ 606,33
+v2: R$ 835,02
+v3: R$ 906,99
+v4: R$ 1.076,24
+v5: R$ 1.174,17
+v6: R$ 1.299,70
+v7: R$ 1.485,17
+v8: R$ 1.826,61
+v9: R$ 2.274,30
+v10: R$ 3.637,66
+
+m1: SULAMÉRICA COM COPART. (QUALICORP) 
+m2: Adesão
+m3: SUPREMO
+m4: AJUFE - Associação dos Juízes Federais do Brasil
+m5: Apartamento (A)
+m6: EXECUTIVO ADESÃO TRAD. 16 > 6.5
+v1: R$ 1.006,61
+v2: R$ 1.386,28
+v3: R$ 1.505,78
+v4: R$ 1.786,78
+v5: R$ 1.949,36
+v6: R$ 2.157,76
+v7: R$ 2.465,67
+v8: R$ 3.032,52
+v9: R$ 3.775,81
+v10: R$ 6.039,19
+
+m1: SULAMÉRICA COM COPART. (QUALICORP) 
+m2: Adesão
+m3: SUPREMO
+m4: AJUFE - Associação dos Juízes Federais do Brasil
+m5: Apartamento (A)
+m6: EXECUTIVO ADESÃO TRAD. 16 > 8.0
+v1: R$ 1.207,30
+v2: R$ 1.662,71
+v3: R$ 1.806,03
+v4: R$ 2.143,05
+v5: R$ 2.338,05
+v6: R$ 2.587,98
+v7: R$ 2.957,30
+v8: R$ 3.637,18
+v9: R$ 4.528,66
+v10: R$ 7.243,36
+
+m1: SULAMÉRICA COM COPART. (QUALICORP) 
+m2: Adesão
+m3: SUPREMO
+m4: AJUFE - Associação dos Juízes Federais do Brasil
+m5: Apartamento (A)
+m6: EXECUTIVO ADESÃO TRAD. 16 > 11.0
+v1: R$ 1.321,75
+v2: R$ 1.820,31
+v3: R$ 1.977,25
+v4: R$ 2.346,17
+v5: R$ 2.559,68
+v6: R$ 2.833,32
+v7: R$ 3.237,64
+v8: R$ 3.981,97
+v9: R$ 4.957,95
+v10: R$ 7.929,98
+
+m1: SULAMÉRICA COM COPART. (QUALICORP) 
+m2: Adesão
+m3: SUPREMO
+m4: AJUFE - Associação dos Juízes Federais do Brasil
+m5: Enfermaria (E)
+m6: EXATO ADESÃO TRAD. 16 > 1.1
+v1: R$ 345,99
+v2: R$ 476,49
+v3: R$ 517,56
+v4: R$ 614,13
+v5: R$ 670,02
+v6: R$ 741,63
+v7: R$ 847,48
+v8: R$ 1.042,30
+v9: R$ 1.297,78
+v10: R$ 2.075,73
+
+m1: SULAMÉRICA COM COPART. (QUALICORP) 
+m2: Adesão
+m3: SUPREMO
+m4: AJUFE - Associação dos Juízes Federais do Brasil
+m5: Apartamento (A)
+m6: EXATO ADESÃO TRAD. 16 > 1.1
+v1: R$ 378,07
+v2: R$ 520,68
+v3: R$ 565,55
+v4: R$ 671,07
+v5: R$ 732,14
+v6: R$ 810,43
+v7: R$ 926,05
+v8: R$ 1.138,96
+v9: R$ 1.418,13
+v10: R$ 2.268,21
+
+m1: SULAMÉRICA COM COPART. (QUALICORP) 
+m2: Adesão
+m3: SUPREMO
+m4: AJUFE - Associação dos Juízes Federais do Brasil
+m5: Apartamento (A)
+m6: ESPECIAL ADESÃO TRAD. 16 > 2.9
+v1: R$ 502,70
+v2: R$ 692,33
+v3: R$ 752,01
+v4: R$ 892,34
+v5: R$ 973,53
+v6: R$ 1.077,61
+v7: R$ 1.231,37
+v8: R$ 1.514,46
+v9: R$ 1.885,67
+v10: R$ 3.016,02
+
+m1: SULAMÉRICA COM COPART. (QUALICORP) 
+m2: Adesão
+m3: SUPREMO
+m4: AJUFE - Associação dos Juízes Federais do Brasil
+m5: Apartamento (A)
+m6: ESPECIAL ADESÃO TRAD. 16 > 3.4
+v1: R$ 525,15
+v2: R$ 723,23
+v3: R$ 785,57
+v4: R$ 932,16
+v5: R$ 1.016,99
+v6: R$ 1.125,70
+v7: R$ 1.286,34
+v8: R$ 1.582,07
+v9: R$ 1.969,84
+v10: R$ 3.150,65
+
+m1: SULAMÉRICA COM COPART. (QUALICORP) 
+m2: Adesão
+m3: SUPREMO
+m4: AJUFE - Associação dos Juízes Federais do Brasil
+m5: Apartamento (A)
+m6: ESPECIAL ADESÃO TRAD. 16 > 5.1
+v1: R$ 606,33
+v2: R$ 835,02
+v3: R$ 906,99
+v4: R$ 1.076,24
+v5: R$ 1.174,17
+v6: R$ 1.299,70
+v7: R$ 1.485,17
+v8: R$ 1.826,61
+v9: R$ 2.274,30
+v10: R$ 3.637,66
+
+m1: SULAMÉRICA COM COPART. (QUALICORP) 
+m2: Adesão
+m3: SUPREMO
+m4: AJUFE - Associação dos Juízes Federais do Brasil
+m5: Apartamento (A)
+m6: EXECUTIVO ADESÃO TRAD. 16 > 6.5
+v1: R$ 1.006,61
+v2: R$ 1.386,28
+v3: R$ 1.505,78
+v4: R$ 1.786,78
+v5: R$ 1.949,36
+v6: R$ 2.157,76
+v7: R$ 2.465,67
+v8: R$ 3.032,52
+v9: R$ 3.775,81
+v10: R$ 6.039,19
+
+m1: SULAMÉRICA COM COPART. (QUALICORP) 
+m2: Adesão
+m3: SUPREMO
+m4: AJUFE - Associação dos Juízes Federais do Brasil
+m5: Apartamento (A)
+m6: EXECUTIVO ADESÃO TRAD. 16 > 8.0
+v1: R$ 1.207,30
+v2: R$ 1.662,71
+v3: R$ 1.806,03
+v4: R$ 2.143,05
+v5: R$ 2.338,05
+v6: R$ 2.587,98
+v7: R$ 2.957,30
+v8: R$ 3.637,18
+v9: R$ 4.528,66
+v10: R$ 7.243,36
+
+m1: SULAMÉRICA COM COPART. (QUALICORP) 
+m2: Adesão
+m3: SUPREMO
+m4: AJUFE - Associação dos Juízes Federais do Brasil
+m5: Apartamento (A)
+m6: EXECUTIVO ADESÃO TRAD. 16 > 11.0
+v1: R$ 1.321,75
+v2: R$ 1.820,31
+v3: R$ 1.977,25
+v4: R$ 2.346,17
+v5: R$ 2.559,68
+v6: R$ 2.833,32
+v7: R$ 3.237,64
+v8: R$ 3.981,97
+v9: R$ 4.957,95
+v10: R$ 7.929,98
+
+m1: SULAMÉRICA COM COPART. (QUALICORP) 
+m2: Adesão
+m3: SUPREMO
+m4: AJUFE - Associação dos Juízes Federais do Brasil
+m5: Enfermaria (E)
+m6: EXATO ADESÃO TRAD. 16 > 1.1
+v1: R$ 345,99
+v2: R$ 476,49
+v3: R$ 517,56
+v4: R$ 614,13
+v5: R$ 670,02
+v6: R$ 741,63
+v7: R$ 847,48
+v8: R$ 1.042,30
+v9: R$ 1.297,78
+v10: R$ 2.075,73
+
+m1: SULAMÉRICA COM COPART. (QUALICORP) 
+m2: Adesão
+m3: SUPREMO
+m4: AJUFE - Associação dos Juízes Federais do Brasil
+m5: Apartamento (A)
+m6: EXATO ADESÃO TRAD. 16 > 1.1
+v1: R$ 378,07
+v2: R$ 520,68
+v3: R$ 565,55
+v4: R$ 671,07
+v5: R$ 732,14
+v6: R$ 810,43
+v7: R$ 926,05
+v8: R$ 1.138,96
+v9: R$ 1.418,13
+v10: R$ 2.268,21
+
+m1: SULAMÉRICA COM COPART. (QUALICORP) 
+m2: Adesão
+m3: SUPREMO
+m4: AJUFE - Associação dos Juízes Federais do Brasil
+m5: Apartamento (A)
+m6: ESPECIAL ADESÃO TRAD. 16 > 2.9
+v1: R$ 502,70
+v2: R$ 692,33
+v3: R$ 752,01
+v4: R$ 892,34
+v5: R$ 973,53
+v6: R$ 1.077,61
+v7: R$ 1.231,37
+v8: R$ 1.514,46
+v9: R$ 1.885,67
+v10: R$ 3.016,02
+
+m1: SULAMÉRICA COM COPART. (QUALICORP) 
+m2: Adesão
+m3: SUPREMO
+m4: AJUFE - Associação dos Juízes Federais do Brasil
+m5: Apartamento (A)
+m6: ESPECIAL ADESÃO TRAD. 16 > 3.4
+v1: R$ 525,15
+v2: R$ 723,23
+v3: R$ 785,57
+v4: R$ 932,16
+v5: R$ 1.016,99
+v6: R$ 1.125,70
+v7: R$ 1.286,34
+v8: R$ 1.582,07
+v9: R$ 1.969,84
+v10: R$ 3.150,65
+
+m1: SULAMÉRICA COM COPART. (QUALICORP) 
+m2: Adesão
+m3: SUPREMO
+m4: AJUFE - Associação dos Juízes Federais do Brasil
+m5: Apartamento (A)
+m6: ESPECIAL ADESÃO TRAD. 16 > 5.1
+v1: R$ 606,33
+v2: R$ 835,02
+v3: R$ 906,99
+v4: R$ 1.076,24
+v5: R$ 1.174,17
+v6: R$ 1.299,70
+v7: R$ 1.485,17
+v8: R$ 1.826,61
+v9: R$ 2.274,30
+v10: R$ 3.637,66
+
+m1: SULAMÉRICA COM COPART. (QUALICORP) 
+m2: Adesão
+m3: SUPREMO
+m4: AJUFE - Associação dos Juízes Federais do Brasil
+m5: Apartamento (A)
+m6: EXECUTIVO ADESÃO TRAD. 16 > 6.5
+v1: R$ 1.006,61
+v2: R$ 1.386,28
+v3: R$ 1.505,78
+v4: R$ 1.786,78
+v5: R$ 1.949,36
+v6: R$ 2.157,76
+v7: R$ 2.465,67
+v8: R$ 3.032,52
+v9: R$ 3.775,81
+v10: R$ 6.039,19
+
+m1: SULAMÉRICA COM COPART. (QUALICORP) 
+m2: Adesão
+m3: SUPREMO
+m4: AJUFE - Associação dos Juízes Federais do Brasil
+m5: Apartamento (A)
+m6: EXECUTIVO ADESÃO TRAD. 16 > 8.0
+v1: R$ 1.207,30
+v2: R$ 1.662,71
+v3: R$ 1.806,03
+v4: R$ 2.143,05
+v5: R$ 2.338,05
+v6: R$ 2.587,98
+v7: R$ 2.957,30
+v8: R$ 3.637,18
+v9: R$ 4.528,66
+v10: R$ 7.243,36
+
+m1: SULAMÉRICA COM COPART. (QUALICORP) 
+m2: Adesão
+m3: SUPREMO
+m4: AJUFE - Associação dos Juízes Federais do Brasil
+m5: Apartamento (A)
+m6: EXECUTIVO ADESÃO TRAD. 16 > 11.0
+v1: R$ 1.321,75
+v2: R$ 1.820,31
+v3: R$ 1.977,25
+v4: R$ 2.346,17
+v5: R$ 2.559,68
+v6: R$ 2.833,32
+v7: R$ 3.237,64
+v8: R$ 3.981,97
+v9: R$ 4.957,95
+v10: R$ 7.929,98
+
+m1: SULAMÉRICA COM COPART. (QUALICORP) 
+m2: Adesão
+m3: SUPREMO
+m4: AJUFE - Associação dos Juízes Federais do Brasil
+m5: Enfermaria (E)
+m6: EXATO ADESÃO TRAD. 16 > 1.1
+v1: R$ 345,99
+v2: R$ 476,49
+v3: R$ 517,56
+v4: R$ 614,13
+v5: R$ 670,02
+v6: R$ 741,63
+v7: R$ 847,48
+v8: R$ 1.042,30
+v9: R$ 1.297,78
+v10: R$ 2.075,73
+
+m1: SULAMÉRICA COM COPART. (QUALICORP) 
+m2: Adesão
+m3: SUPREMO
+m4: AJUFE - Associação dos Juízes Federais do Brasil
+m5: Apartamento (A)
+m6: EXATO ADESÃO TRAD. 16 > 1.1
+v1: R$ 378,07
+v2: R$ 520,68
+v3: R$ 565,55
+v4: R$ 671,07
+v5: R$ 732,14
+v6: R$ 810,43
+v7: R$ 926,05
+v8: R$ 1.138,96
+v9: R$ 1.418,13
+v10: R$ 2.268,21
+
+m1: SULAMÉRICA COM COPART. (QUALICORP) 
+m2: Adesão
+m3: SUPREMO
+m4: AJUFE - Associação dos Juízes Federais do Brasil
+m5: Apartamento (A)
+m6: ESPECIAL ADESÃO TRAD. 16 > 2.9
+v1: R$ 502,70
+v2: R$ 692,33
+v3: R$ 752,01
+v4: R$ 892,34
+v5: R$ 973,53
+v6: R$ 1.077,61
+v7: R$ 1.231,37
+v8: R$ 1.514,46
+v9: R$ 1.885,67
+v10: R$ 3.016,02
+
+m1: SULAMÉRICA COM COPART. (QUALICORP) 
+m2: Adesão
+m3: SUPREMO
+m4: AJUFE - Associação dos Juízes Federais do Brasil
+m5: Apartamento (A)
+m6: ESPECIAL ADESÃO TRAD. 16 > 3.4
+v1: R$ 525,15
+v2: R$ 723,23
+v3: R$ 785,57
+v4: R$ 932,16
+v5: R$ 1.016,99
+v6: R$ 1.125,70
+v7: R$ 1.286,34
+v8: R$ 1.582,07
+v9: R$ 1.969,84
+v10: R$ 3.150,65
+
+m1: SULAMÉRICA COM COPART. (QUALICORP) 
+m2: Adesão
+m3: SUPREMO
+m4: AJUFE - Associação dos Juízes Federais do Brasil
+m5: Apartamento (A)
+m6: ESPECIAL ADESÃO TRAD. 16 > 5.1
+v1: R$ 606,33
+v2: R$ 835,02
+v3: R$ 906,99
+v4: R$ 1.076,24
+v5: R$ 1.174,17
+v6: R$ 1.299,70
+v7: R$ 1.485,17
+v8: R$ 1.826,61
+v9: R$ 2.274,30
+v10: R$ 3.637,66
+
+m1: SULAMÉRICA COM COPART. (QUALICORP) 
+m2: Adesão
+m3: SUPREMO
+m4: AJUFE - Associação dos Juízes Federais do Brasil
+m5: Apartamento (A)
+m6: EXECUTIVO ADESÃO TRAD. 16 > 6.5
+v1: R$ 1.006,61
+v2: R$ 1.386,28
+v3: R$ 1.505,78
+v4: R$ 1.786,78
+v5: R$ 1.949,36
+v6: R$ 2.157,76
+v7: R$ 2.465,67
+v8: R$ 3.032,52
+v9: R$ 3.775,81
+v10: R$ 6.039,19
+
+m1: SULAMÉRICA COM COPART. (QUALICORP) 
+m2: Adesão
+m3: SUPREMO
+m4: AJUFE - Associação dos Juízes Federais do Brasil
+m5: Apartamento (A)
+m6: EXECUTIVO ADESÃO TRAD. 16 > 8.0
+v1: R$ 1.207,30
+v2: R$ 1.662,71
+v3: R$ 1.806,03
+v4: R$ 2.143,05
+v5: R$ 2.338,05
+v6: R$ 2.587,98
+v7: R$ 2.957,30
+v8: R$ 3.637,18
+v9: R$ 4.528,66
+v10: R$ 7.243,36
+
+m1: SULAMÉRICA COM COPART. (QUALICORP) 
+m2: Adesão
+m3: SUPREMO
+m4: AJUFE - Associação dos Juízes Federais do Brasil
+m5: Apartamento (A)
+m6: EXECUTIVO ADESÃO TRAD. 16 > 11.0
+v1: R$ 1.321,75
+v2: R$ 1.820,31
+v3: R$ 1.977,25
+v4: R$ 2.346,17
+v5: R$ 2.559,68
+v6: R$ 2.833,32
+v7: R$ 3.237,64
+v8: R$ 3.981,97
+v9: R$ 4.957,95
+v10: R$ 7.929,98
+
+m1: SULAMÉRICA COM COPART. (QUALICORP) 
+m2: Adesão
+m3: SUPREMO
+m4: AJUFE - Associação dos Juízes Federais do Brasil
+m5: Enfermaria (E)
+m6: EXATO ADESÃO TRAD. 16 > 1.1
+v1: R$ 345,99
+v2: R$ 476,49
+v3: R$ 517,56
+v4: R$ 614,13
+v5: R$ 670,02
+v6: R$ 741,63
+v7: R$ 847,48
+v8: R$ 1.042,30
+v9: R$ 1.297,78
+v10: R$ 2.075,73
+
+m1: SULAMÉRICA COM COPART. (QUALICORP) 
+m2: Adesão
+m3: SUPREMO
+m4: AJUFE - Associação dos Juízes Federais do Brasil
+m5: Apartamento (A)
+m6: EXATO ADESÃO TRAD. 16 > 1.1
+v1: R$ 378,07
+v2: R$ 520,68
+v3: R$ 565,55
+v4: R$ 671,07
+v5: R$ 732,14
+v6: R$ 810,43
+v7: R$ 926,05
+v8: R$ 1.138,96
+v9: R$ 1.418,13
+v10: R$ 2.268,21
+
+m1: SULAMÉRICA COM COPART. (QUALICORP) 
+m2: Adesão
+m3: SUPREMO
+m4: AJUFE - Associação dos Juízes Federais do Brasil
+m5: Apartamento (A)
+m6: ESPECIAL ADESÃO TRAD. 16 > 2.9
+v1: R$ 502,70
+v2: R$ 692,33
+v3: R$ 752,01
+v4: R$ 892,34
+v5: R$ 973,53
+v6: R$ 1.077,61
+v7: R$ 1.231,37
+v8: R$ 1.514,46
+v9: R$ 1.885,67
+v10: R$ 3.016,02
+
+m1: SULAMÉRICA COM COPART. (QUALICORP) 
+m2: Adesão
+m3: SUPREMO
+m4: AJUFE - Associação dos Juízes Federais do Brasil
+m5: Apartamento (A)
+m6: ESPECIAL ADESÃO TRAD. 16 > 3.4
+v1: R$ 525,15
+v2: R$ 723,23
+v3: R$ 785,57
+v4: R$ 932,16
+v5: R$ 1.016,99
+v6: R$ 1.125,70
+v7: R$ 1.286,34
+v8: R$ 1.582,07
+v9: R$ 1.969,84
+v10: R$ 3.150,65
+
+m1: SULAMÉRICA COM COPART. (QUALICORP) 
+m2: Adesão
+m3: SUPREMO
+m4: AJUFE - Associação dos Juízes Federais do Brasil
+m5: Apartamento (A)
+m6: ESPECIAL ADESÃO TRAD. 16 > 5.1
+v1: R$ 606,33
+v2: R$ 835,02
+v3: R$ 906,99
+v4: R$ 1.076,24
+v5: R$ 1.174,17
+v6: R$ 1.299,70
+v7: R$ 1.485,17
+v8: R$ 1.826,61
+v9: R$ 2.274,30
+v10: R$ 3.637,66
+
+m1: SULAMÉRICA COM COPART. (QUALICORP) 
+m2: Adesão
+m3: SUPREMO
+m4: AJUFE - Associação dos Juízes Federais do Brasil
+m5: Apartamento (A)
+m6: EXECUTIVO ADESÃO TRAD. 16 > 6.5
+v1: R$ 1.006,61
+v2: R$ 1.386,28
+v3: R$ 1.505,78
+v4: R$ 1.786,78
+v5: R$ 1.949,36
+v6: R$ 2.157,76
+v7: R$ 2.465,67
+v8: R$ 3.032,52
+v9: R$ 3.775,81
+v10: R$ 6.039,19
+
+m1: SULAMÉRICA COM COPART. (QUALICORP) 
+m2: Adesão
+m3: SUPREMO
+m4: AJUFE - Associação dos Juízes Federais do Brasil
+m5: Apartamento (A)
+m6: EXECUTIVO ADESÃO TRAD. 16 > 8.0
+v1: R$ 1.207,30
+v2: R$ 1.662,71
+v3: R$ 1.806,03
+v4: R$ 2.143,05
+v5: R$ 2.338,05
+v6: R$ 2.587,98
+v7: R$ 2.957,30
+v8: R$ 3.637,18
+v9: R$ 4.528,66
+v10: R$ 7.243,36
+
+m1: SULAMÉRICA COM COPART. (QUALICORP) 
+m2: Adesão
+m3: SUPREMO
+m4: AJUFE - Associação dos Juízes Federais do Brasil
+m5: Apartamento (A)
+m6: EXECUTIVO ADESÃO TRAD. 16 > 11.0
+v1: R$ 1.321,75
+v2: R$ 1.820,31
+v3: R$ 1.977,25
+v4: R$ 2.346,17
+v5: R$ 2.559,68
+v6: R$ 2.833,32
+v7: R$ 3.237,64
+v8: R$ 3.981,97
+v9: R$ 4.957,95
+v10: R$ 7.929,98
+
+m1: SULAMÉRICA COM COPART. (QUALICORP) 
+m2: Adesão
+m3: SUPREMO
+m4: AJUFE - Associação dos Juízes Federais do Brasil
+m5: Enfermaria (E)
+m6: EXATO ADESÃO TRAD. 16 > 1.1
+v1: R$ 345,99
+v2: R$ 476,49
+v3: R$ 517,56
+v4: R$ 614,13
+v5: R$ 670,02
+v6: R$ 741,63
+v7: R$ 847,48
+v8: R$ 1.042,30
+v9: R$ 1.297,78
+v10: R$ 2.075,73
+
+m1: SULAMÉRICA COM COPART. (QUALICORP) 
+m2: Adesão
+m3: SUPREMO
+m4: AJUFE - Associação dos Juízes Federais do Brasil
+m5: Apartamento (A)
+m6: EXATO ADESÃO TRAD. 16 > 1.1
+v1: R$ 378,07
+v2: R$ 520,68
+v3: R$ 565,55
+v4: R$ 671,07
+v5: R$ 732,14
+v6: R$ 810,43
+v7: R$ 926,05
+v8: R$ 1.138,96
+v9: R$ 1.418,13
+v10: R$ 2.268,21
+
+m1: SULAMÉRICA COM COPART. (QUALICORP) 
+m2: Adesão
+m3: SUPREMO
+m4: AJUFE - Associação dos Juízes Federais do Brasil
+m5: Apartamento (A)
+m6: ESPECIAL ADESÃO TRAD. 16 > 2.9
+v1: R$ 502,70
+v2: R$ 692,33
+v3: R$ 752,01
+v4: R$ 892,34
+v5: R$ 973,53
+v6: R$ 1.077,61
+v7: R$ 1.231,37
+v8: R$ 1.514,46
+v9: R$ 1.885,67
+v10: R$ 3.016,02
+
+m1: SULAMÉRICA COM COPART. (QUALICORP) 
+m2: Adesão
+m3: SUPREMO
+m4: AJUFE - Associação dos Juízes Federais do Brasil
+m5: Apartamento (A)
+m6: ESPECIAL ADESÃO TRAD. 16 > 3.4
+v1: R$ 525,15
+v2: R$ 723,23
+v3: R$ 785,57
+v4: R$ 932,16
+v5: R$ 1.016,99
+v6: R$ 1.125,70
+v7: R$ 1.286,34
+v8: R$ 1.582,07
+v9: R$ 1.969,84
+v10: R$ 3.150,65
+
+m1: SULAMÉRICA COM COPART. (QUALICORP) 
+m2: Adesão
+m3: SUPREMO
+m4: AJUFE - Associação dos Juízes Federais do Brasil
+m5: Apartamento (A)
+m6: ESPECIAL ADESÃO TRAD. 16 > 5.1
+v1: R$ 606,33
+v2: R$ 835,02
+v3: R$ 906,99
+v4: R$ 1.076,24
+v5: R$ 1.174,17
+v6: R$ 1.299,70
+v7: R$ 1.485,17
+v8: R$ 1.826,61
+v9: R$ 2.274,30
+v10: R$ 3.637,66
+
+m1: SULAMÉRICA COM COPART. (QUALICORP) 
+m2: Adesão
+m3: SUPREMO
+m4: AJUFE - Associação dos Juízes Federais do Brasil
+m5: Apartamento (A)
+m6: EXECUTIVO ADESÃO TRAD. 16 > 6.5
+v1: R$ 1.006,61
+v2: R$ 1.386,28
+v3: R$ 1.505,78
+v4: R$ 1.786,78
+v5: R$ 1.949,36
+v6: R$ 2.157,76
+v7: R$ 2.465,67
+v8: R$ 3.032,52
+v9: R$ 3.775,81
+v10: R$ 6.039,19
+
+m1: SULAMÉRICA COM COPART. (QUALICORP) 
+m2: Adesão
+m3: SUPREMO
+m4: AJUFE - Associação dos Juízes Federais do Brasil
+m5: Apartamento (A)
+m6: EXECUTIVO ADESÃO TRAD. 16 > 8.0
+v1: R$ 1.207,30
+v2: R$ 1.662,71
+v3: R$ 1.806,03
+v4: R$ 2.143,05
+v5: R$ 2.338,05
+v6: R$ 2.587,98
+v7: R$ 2.957,30
+v8: R$ 3.637,18
+v9: R$ 4.528,66
+v10: R$ 7.243,36
+
+m1: SULAMÉRICA COM COPART. (QUALICORP) 
+m2: Adesão
+m3: SUPREMO
+m4: AJUFE - Associação dos Juízes Federais do Brasil
+m5: Apartamento (A)
+m6: EXECUTIVO ADESÃO TRAD. 16 > 11.0
+v1: R$ 1.321,75
+v2: R$ 1.820,31
+v3: R$ 1.977,25
+v4: R$ 2.346,17
+v5: R$ 2.559,68
+v6: R$ 2.833,32
+v7: R$ 3.237,64
+v8: R$ 3.981,97
+v9: R$ 4.957,95
+v10: R$ 7.929,98
+

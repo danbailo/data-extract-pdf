@@ -1,0 +1,342 @@
+Modelo: PF_CLASSESLABORIOSAS_SaoPaulo
+
+m1: CLASSES LABORIOSAS 
+m2: Taxas
+m3: Tipo
+m4: Título
+m5: Enfermaria (E)
+m6: AACL ABC 200
+v1: R$ 147,38
+v2: R$ 476,53
+v3: R$ 334,07
+v4: R$ 182,48
+v5: R$ 697,29
+v6: R$ 434,29
+v7: R$ 160,10
+v8: R$ 791,44
+v9: R$ 536,11
+v10: R$ 220,23
+
+m1: CLASSES LABORIOSAS 
+m2: Taxas
+m3: Tipo
+m4: Título
+m5: Enfermaria (E)
+m6: AACL INT 200
+v1: R$ 162,12
+v2: R$ 619,50
+v3: R$ 384,18
+v4: R$ 200,73
+v5: R$ 992,24
+v6: R$ 542,86
+v7: R$ 208,12
+v8: R$ 215,55
+v9: R$ 696,94
+v10: R$ 242,25
+
+m1: CLASSES LABORIOSAS 
+m2: Taxas
+m3: Tipo
+m4: Título
+m5: Enfermaria (E)
+m6: AACL SP 200
+v1: R$ 178,34
+v2: R$ 881,55
+v3: R$ 480,22
+v4: R$ 260,93
+v5: R$ 218,27
+v6: R$ 705,72
+v7: R$ 228,94
+v8: R$ 237,11
+v9: R$ 906,02
+v10: R$ 278,59
+
+m1: CLASSES LABORIOSAS 
+m2: Taxas
+m3: Tipo
+m4: Título
+m5: Enfermaria (E)
+m6: https://app.simuladoronline.com/tabela/?201912231821
+v1: R$ 231,82
+v2: R$ 193,08
+v3: R$ 624,28
+v4: R$ 287,02
+v5: R$ 240,10
+v6: R$ 917,44
+v7: R$ 263,28
+v8: R$ 260,82
+v9: R$ 1.289,26
+v10: R$ 348,23
+
+m1: CLASSES LABORIOSAS 
+m2: Taxas
+m3: Tipo
+m4: Título
+m5: Enfermaria (E)
+m6: 3/7
+v1: R$ 255,00
+v2: R$ 212,39
+v3: R$ 811,57
+v4: R$ 330,08
+v5: R$ 264,11
+v6: R$ 1.305,51
+v7: R$ 329,10
+v8: R$ 339,04
+v9: R$ 140,01
+v10: R$ 452,70
+
+m1: CLASSES LABORIOSAS 
+m2: Taxas
+m3: Tipo
+m4: Título
+m5: Enfermaria (E)
+m6: 03/03/2020
+v1: R$ 293,25
+v2: R$ 233,63
+v3: R$ 1.154,87
+v4: R$ 412,59
+v5: R$ 343,31
+v6: R$ 132,32
+v7: R$ 427,82
+v8: R$ 372,94
+v9: R$ 154,01
+v10: R$ 588,53
+
+m1: CLASSES LABORIOSAS 
+m2: Taxas
+m3: Tipo
+m4: Título
+m5: Enfermaria (E)
+m6: Tabela :: Simulador Online
+v1: R$ 366,56
+v2: R$ 303,70
+v3: R$ 165,89
+v4: R$ 536,37
+v5: R$ 377,64
+v6: R$ 145,55
+v7: R$ 556,17
+v8: R$ 428,88
+v9: R$ 169,42
+v10: R$ 837,47
+
+m1: CLASSES LABORIOSAS 
+m2: Taxas
+m3: Tipo
+m4: Título
+m5: Apartamento (A)
+m6: AACL ABC 500
+v1: R$ 183,43
+v2: R$ 288,52
+v3: R$ 456,21
+v4: R$ 1.097,13
+v5: R$ 190,69
+v6: R$ 313,58
+v7: R$ 662,43
+v8: R$ 228,10
+v9: R$ 358,76
+v10: R$ 670,43
+
+m1: CLASSES LABORIOSAS 
+m2: Taxas
+m3: Tipo
+m4: Título
+m5: Apartamento (A)
+m6: AACL INT 500
+v1: R$ 201,77
+v2: R$ 317,37
+v3: R$ 593,07
+v4: R$ 157,60
+v5: R$ 247,88
+v6: R$ 391,96
+v7: R$ 942,63
+v8: R$ 250,91
+v9: R$ 412,58
+v10: R$ 871,57
+
+m1: CLASSES LABORIOSAS 
+m2: Taxas
+m3: Tipo
+m4: Título
+m5: Apartamento (A)
+m6: AACL SP 500
+v1: R$ 221,95
+v2: R$ 364,97
+v3: R$ 770,99
+v4: R$ 173,36
+v5: R$ 272,67
+v6: R$ 509,55
+v7: R$ 207,36
+v8: R$ 326,15
+v9: R$ 515,72
+v10: R$ 1.240,24
+
+m1: CLASSES LABORIOSAS 
+m2: Taxas
+m3: Tipo
+m4: Título
+m5: Enfermaria (E)
+m6: AACL ABC 200
+v1: R$ 147,38
+v2: R$ 476,53
+v3: R$ 334,07
+v4: R$ 182,48
+v5: R$ 697,29
+v6: R$ 434,29
+v7: R$ 160,10
+v8: R$ 791,44
+v9: R$ 536,11
+v10: R$ 220,23
+
+m1: CLASSES LABORIOSAS 
+m2: Taxas
+m3: Tipo
+m4: Título
+m5: Enfermaria (E)
+m6: AACL INT 200
+v1: R$ 162,12
+v2: R$ 619,50
+v3: R$ 384,18
+v4: R$ 200,73
+v5: R$ 992,24
+v6: R$ 542,86
+v7: R$ 208,12
+v8: R$ 215,55
+v9: R$ 696,94
+v10: R$ 242,25
+
+m1: CLASSES LABORIOSAS 
+m2: Taxas
+m3: Tipo
+m4: Título
+m5: Enfermaria (E)
+m6: AACL SP 200
+v1: R$ 178,34
+v2: R$ 881,55
+v3: R$ 480,22
+v4: R$ 260,93
+v5: R$ 218,27
+v6: R$ 705,72
+v7: R$ 228,94
+v8: R$ 237,11
+v9: R$ 906,02
+v10: R$ 278,59
+
+m1: CLASSES LABORIOSAS 
+m2: Taxas
+m3: Tipo
+m4: Título
+m5: Enfermaria (E)
+m6: https://app.simuladoronline.com/tabela/?201912231821
+v1: R$ 231,82
+v2: R$ 193,08
+v3: R$ 624,28
+v4: R$ 287,02
+v5: R$ 240,10
+v6: R$ 917,44
+v7: R$ 263,28
+v8: R$ 260,82
+v9: R$ 1.289,26
+v10: R$ 348,23
+
+m1: CLASSES LABORIOSAS 
+m2: Taxas
+m3: Tipo
+m4: Título
+m5: Enfermaria (E)
+m6: 3/7
+v1: R$ 255,00
+v2: R$ 212,39
+v3: R$ 811,57
+v4: R$ 330,08
+v5: R$ 264,11
+v6: R$ 1.305,51
+v7: R$ 329,10
+v8: R$ 339,04
+v9: R$ 140,01
+v10: R$ 452,70
+
+m1: CLASSES LABORIOSAS 
+m2: Taxas
+m3: Tipo
+m4: Título
+m5: Enfermaria (E)
+m6: 03/03/2020
+v1: R$ 293,25
+v2: R$ 233,63
+v3: R$ 1.154,87
+v4: R$ 412,59
+v5: R$ 343,31
+v6: R$ 132,32
+v7: R$ 427,82
+v8: R$ 372,94
+v9: R$ 154,01
+v10: R$ 588,53
+
+m1: CLASSES LABORIOSAS 
+m2: Taxas
+m3: Tipo
+m4: Título
+m5: Enfermaria (E)
+m6: Tabela :: Simulador Online
+v1: R$ 366,56
+v2: R$ 303,70
+v3: R$ 165,89
+v4: R$ 536,37
+v5: R$ 377,64
+v6: R$ 145,55
+v7: R$ 556,17
+v8: R$ 428,88
+v9: R$ 169,42
+v10: R$ 837,47
+
+m1: CLASSES LABORIOSAS 
+m2: Taxas
+m3: Tipo
+m4: Título
+m5: Apartamento (A)
+m6: AACL ABC 500
+v1: R$ 183,43
+v2: R$ 288,52
+v3: R$ 456,21
+v4: R$ 1.097,13
+v5: R$ 190,69
+v6: R$ 313,58
+v7: R$ 662,43
+v8: R$ 228,10
+v9: R$ 358,76
+v10: R$ 670,43
+
+m1: CLASSES LABORIOSAS 
+m2: Taxas
+m3: Tipo
+m4: Título
+m5: Apartamento (A)
+m6: AACL INT 500
+v1: R$ 201,77
+v2: R$ 317,37
+v3: R$ 593,07
+v4: R$ 157,60
+v5: R$ 247,88
+v6: R$ 391,96
+v7: R$ 942,63
+v8: R$ 250,91
+v9: R$ 412,58
+v10: R$ 871,57
+
+m1: CLASSES LABORIOSAS 
+m2: Taxas
+m3: Tipo
+m4: Título
+m5: Apartamento (A)
+m6: AACL SP 500
+v1: R$ 221,95
+v2: R$ 364,97
+v3: R$ 770,99
+v4: R$ 173,36
+v5: R$ 272,67
+v6: R$ 509,55
+v7: R$ 207,36
+v8: R$ 326,15
+v9: R$ 515,72
+v10: R$ 1.240,24
+

@@ -1,0 +1,546 @@
+Modelo: PF_UnimedRio_RiodeJaneiro
+
+m1: UNIMED RIO PF - COM COPARTICIPAÇÃO 
+m2: Taxas
+m3: Tipo
+m4: Título
+m5: Enfermaria (E)
+m6: UNIPART BÁSICO
+v1: R$ 297,95
+v2: R$ 876,01
+v3: R$ 441,75
+v4: R$ 763,79
+v5: R$ 1.899,42
+v6: R$ 557,26
+v7: R$ 409,03
+v8: R$ 675,92
+v9: R$ 1.165,29
+v10: R$ 40,00
+
+m1: UNIMED RIO PF - COM COPARTICIPAÇÃO 
+m2: Taxas
+m3: Tipo
+m4: Título
+m5: Enfermaria (E)
+m6: https://app.simuladoronline.com/tabela/?201912231821
+v1: R$ 384,36
+v2: R$ 1.095,01
+v3: R$ 568,95
+v4: R$ 776,86
+v5: R$ 2.446,37
+v6: R$ 730,01
+v7: R$ 526,81
+v8: R$ 593,02
+v9: R$ 1.500,84
+v10: R$ 325,80
+
+m1: UNIMED RIO PF - COM COPARTICIPAÇÃO 
+m2: Taxas
+m3: Tipo
+m4: Título
+m5: Enfermaria (E)
+m6: PERSONAL 2
+v1: R$ 415,11
+v2: R$ 1.784,87
+v3: R$ 477,09
+v4: R$ 1.000,56
+v5: R$ 297,95
+v6: R$ 876,01
+v7: R$ 441,75
+v8: R$ 763,79
+v9: R$ 1.899,42
+v10: R$ 342,95
+
+m1: UNIMED RIO PF - COM COPARTICIPAÇÃO 
+m2: Taxas
+m3: Tipo
+m4: Título
+m5: Enfermaria (E)
+m6: ALFA 2
+v1: R$ 448,32
+v2: R$ 317,08
+v3: R$ 614,47
+v4: R$ 932,23
+v5: R$ 384,36
+v6: R$ 1.095,01
+v7: R$ 568,95
+v8: R$ 776,86
+v9: R$ 2.446,37
+v10: R$ 420,28
+
+m1: UNIMED RIO PF - COM COPARTICIPAÇÃO 
+m2: Taxas
+m3: Tipo
+m4: Título
+m5: Enfermaria (E)
+m6: 3/6
+v1: R$ 493,15
+v2: R$ 408,38
+v3: R$ 524,80
+v4: R$ 1.200,67
+v5: R$ 415,11
+v6: R$ 1.784,87
+v7: R$ 477,09
+v8: R$ 1.000,56
+v9: R$ 25,00
+v10: R$ 442,41
+
+m1: UNIMED RIO PF - COM COPARTICIPAÇÃO 
+m2: Taxas
+m3: Tipo
+m4: Título
+m5: Enfermaria (E)
+m6: 03/03/2020
+v1: R$ 557,26
+v2: R$ 409,03
+v3: R$ 675,92
+v4: R$ 1.165,29
+v5: R$ 448,32
+v6: R$ 317,08
+v7: R$ 614,47
+v8: R$ 932,23
+v9: R$ 45,00
+v10: R$ 453,90
+
+m1: UNIMED RIO PF - COM COPARTICIPAÇÃO 
+m2: Taxas
+m3: Tipo
+m4: Título
+m5: Enfermaria (E)
+m6: Tabela :: Simulador Online
+v1: R$ 730,01
+v2: R$ 526,81
+v3: R$ 593,02
+v4: R$ 1.500,84
+v5: R$ 493,15
+v6: R$ 408,38
+v7: R$ 524,80
+v8: R$ 1.200,67
+v9: R$ 5,00
+v10: R$ 477,80
+
+m1: UNIMED RIO PF - COM COPARTICIPAÇÃO 
+m2: Taxas
+m3: Tipo
+m4: Título
+m5: Apartamento (A)
+m6: UNIPART BÁSICO
+v1: R$ 490,21
+v2: R$ 1.008,30
+v3: R$ 583,98
+v4: R$ 749,28
+v5: R$ 1.330,99
+v6: R$ 342,95
+v7: R$ 609,33
+v8: R$ 2.054,42
+v9: R$ 764,47
+v10: R$ 1.026,25
+
+m1: UNIMED RIO PF - COM COPARTICIPAÇÃO 
+m2: Taxas
+m3: Tipo
+m4: Título
+m5: Apartamento (A)
+m6: UNIPART ESPECIAL
+v1: R$ 516,02
+v2: R$ 1.197,33
+v3: R$ 707,84
+v4: R$ 908,19
+v5: R$ 1.613,27
+v6: R$ 420,28
+v7: R$ 641,41
+v8: R$ 363,53
+v9: R$ 546,99
+v10: R$ 890,68
+
+m1: UNIMED RIO PF - COM COPARTICIPAÇÃO 
+m2: Taxas
+m3: Tipo
+m4: Título
+m5: Apartamento (A)
+m6: BETA 2
+v1: R$ 539,23
+v2: R$ 1.260,38
+v3: R$ 506,47
+v4: R$ 679,91
+v5: R$ 1.336,03
+v6: R$ 442,41
+v7: R$ 798,22
+v8: R$ 452,70
+v9: R$ 681,16
+v10: R$ 1.109,16
+
+m1: UNIMED RIO PF - COM COPARTICIPAÇÃO 
+m2: Taxas
+m3: Tipo
+m4: Título
+m5: Apartamento (A)
+m6: DELTA 2
+v1: R$ 567,62
+v2: R$ 1.951,65
+v3: R$ 630,70
+v4: R$ 846,69
+v5: R$ 1.663,74
+v6: R$ 453,90
+v7: R$ 840,25
+v8: R$ 548,71
+v9: R$ 825,63
+v10: R$ 1.344,39
+
+m1: UNIMED RIO PF - COM COPARTICIPAÇÃO 
+m2: Taxas
+m3: Tipo
+m4: Título
+m5: Apartamento (A)
+m6: ÔMEGA PLUS
+v1: R$ 609,33
+v2: R$ 2.054,42
+v3: R$ 764,47
+v4: R$ 1.026,25
+v5: R$ 2.016,59
+v6: R$ 477,80
+v7: R$ 957,86
+v8: R$ 468,95
+v9: R$ 601,69
+v10: R$ 1.068,82
+
+m1: UNIMED RIO PF - COM COPARTICIPAÇÃO 
+m2: Taxas
+m3: Tipo
+m4: Título
+m5: Apartamento (A)
+m6: https://app.simuladoronline.com/tabela/?201912231821
+v1: R$ 641,41
+v2: R$ 363,53
+v3: R$ 546,99
+v4: R$ 890,68
+v5: R$ 2.177,73
+v6: R$ 490,21
+v7: R$ 1.008,30
+v8: R$ 583,98
+v9: R$ 749,28
+v10: R$ 1.330,99
+
+m1: UNIMED RIO PF - COM COPARTICIPAÇÃO 
+m2: Taxas
+m3: Tipo
+m4: Título
+m5: Apartamento (A)
+m6: 4/6
+v1: R$ 798,22
+v2: R$ 452,70
+v3: R$ 681,16
+v4: R$ 1.109,16
+v5: R$ 2.711,90
+v6: R$ 516,02
+v7: R$ 1.197,33
+v8: R$ 707,84
+v9: R$ 908,19
+v10: R$ 1.613,27
+
+m1: UNIMED RIO PF - COM COPARTICIPAÇÃO 
+m2: Taxas
+m3: Tipo
+m4: Título
+m5: Apartamento (A)
+m6: 03/03/2020
+v1: R$ 840,25
+v2: R$ 548,71
+v3: R$ 825,63
+v4: R$ 1.344,39
+v5: R$ 3.287,04
+v6: R$ 539,23
+v7: R$ 1.260,38
+v8: R$ 506,47
+v9: R$ 679,91
+v10: R$ 1.336,03
+
+m1: UNIMED RIO PF - COM COPARTICIPAÇÃO 
+m2: Taxas
+m3: Tipo
+m4: Título
+m5: Apartamento (A)
+m6: Tabela :: Simulador Online
+v1: R$ 957,86
+v2: R$ 468,95
+v3: R$ 601,69
+v4: R$ 1.068,82
+v5: R$ 325,80
+v6: R$ 567,62
+v7: R$ 1.951,65
+v8: R$ 630,70
+v9: R$ 846,69
+v10: R$ 1.663,74
+
+m1: UNIMED RIO PF - COM COPARTICIPAÇÃO 
+m2: Taxas
+m3: Tipo
+m4: Título
+m5: Enfermaria (E)
+m6: UNIPART BÁSICO
+v1: R$ 297,95
+v2: R$ 876,01
+v3: R$ 441,75
+v4: R$ 763,79
+v5: R$ 1.899,42
+v6: R$ 557,26
+v7: R$ 409,03
+v8: R$ 675,92
+v9: R$ 1.165,29
+v10: R$ 40,00
+
+m1: UNIMED RIO PF - COM COPARTICIPAÇÃO 
+m2: Taxas
+m3: Tipo
+m4: Título
+m5: Enfermaria (E)
+m6: https://app.simuladoronline.com/tabela/?201912231821
+v1: R$ 384,36
+v2: R$ 1.095,01
+v3: R$ 568,95
+v4: R$ 776,86
+v5: R$ 2.446,37
+v6: R$ 730,01
+v7: R$ 526,81
+v8: R$ 593,02
+v9: R$ 1.500,84
+v10: R$ 325,80
+
+m1: UNIMED RIO PF - COM COPARTICIPAÇÃO 
+m2: Taxas
+m3: Tipo
+m4: Título
+m5: Enfermaria (E)
+m6: PERSONAL 2
+v1: R$ 415,11
+v2: R$ 1.784,87
+v3: R$ 477,09
+v4: R$ 1.000,56
+v5: R$ 297,95
+v6: R$ 876,01
+v7: R$ 441,75
+v8: R$ 763,79
+v9: R$ 1.899,42
+v10: R$ 342,95
+
+m1: UNIMED RIO PF - COM COPARTICIPAÇÃO 
+m2: Taxas
+m3: Tipo
+m4: Título
+m5: Enfermaria (E)
+m6: ALFA 2
+v1: R$ 448,32
+v2: R$ 317,08
+v3: R$ 614,47
+v4: R$ 932,23
+v5: R$ 384,36
+v6: R$ 1.095,01
+v7: R$ 568,95
+v8: R$ 776,86
+v9: R$ 2.446,37
+v10: R$ 420,28
+
+m1: UNIMED RIO PF - COM COPARTICIPAÇÃO 
+m2: Taxas
+m3: Tipo
+m4: Título
+m5: Enfermaria (E)
+m6: 3/6
+v1: R$ 493,15
+v2: R$ 408,38
+v3: R$ 524,80
+v4: R$ 1.200,67
+v5: R$ 415,11
+v6: R$ 1.784,87
+v7: R$ 477,09
+v8: R$ 1.000,56
+v9: R$ 25,00
+v10: R$ 442,41
+
+m1: UNIMED RIO PF - COM COPARTICIPAÇÃO 
+m2: Taxas
+m3: Tipo
+m4: Título
+m5: Enfermaria (E)
+m6: 03/03/2020
+v1: R$ 557,26
+v2: R$ 409,03
+v3: R$ 675,92
+v4: R$ 1.165,29
+v5: R$ 448,32
+v6: R$ 317,08
+v7: R$ 614,47
+v8: R$ 932,23
+v9: R$ 45,00
+v10: R$ 453,90
+
+m1: UNIMED RIO PF - COM COPARTICIPAÇÃO 
+m2: Taxas
+m3: Tipo
+m4: Título
+m5: Enfermaria (E)
+m6: Tabela :: Simulador Online
+v1: R$ 730,01
+v2: R$ 526,81
+v3: R$ 593,02
+v4: R$ 1.500,84
+v5: R$ 493,15
+v6: R$ 408,38
+v7: R$ 524,80
+v8: R$ 1.200,67
+v9: R$ 5,00
+v10: R$ 477,80
+
+m1: UNIMED RIO PF - COM COPARTICIPAÇÃO 
+m2: Taxas
+m3: Tipo
+m4: Título
+m5: Apartamento (A)
+m6: UNIPART BÁSICO
+v1: R$ 490,21
+v2: R$ 1.008,30
+v3: R$ 583,98
+v4: R$ 749,28
+v5: R$ 1.330,99
+v6: R$ 342,95
+v7: R$ 609,33
+v8: R$ 2.054,42
+v9: R$ 764,47
+v10: R$ 1.026,25
+
+m1: UNIMED RIO PF - COM COPARTICIPAÇÃO 
+m2: Taxas
+m3: Tipo
+m4: Título
+m5: Apartamento (A)
+m6: UNIPART ESPECIAL
+v1: R$ 516,02
+v2: R$ 1.197,33
+v3: R$ 707,84
+v4: R$ 908,19
+v5: R$ 1.613,27
+v6: R$ 420,28
+v7: R$ 641,41
+v8: R$ 363,53
+v9: R$ 546,99
+v10: R$ 890,68
+
+m1: UNIMED RIO PF - COM COPARTICIPAÇÃO 
+m2: Taxas
+m3: Tipo
+m4: Título
+m5: Apartamento (A)
+m6: BETA 2
+v1: R$ 539,23
+v2: R$ 1.260,38
+v3: R$ 506,47
+v4: R$ 679,91
+v5: R$ 1.336,03
+v6: R$ 442,41
+v7: R$ 798,22
+v8: R$ 452,70
+v9: R$ 681,16
+v10: R$ 1.109,16
+
+m1: UNIMED RIO PF - COM COPARTICIPAÇÃO 
+m2: Taxas
+m3: Tipo
+m4: Título
+m5: Apartamento (A)
+m6: DELTA 2
+v1: R$ 567,62
+v2: R$ 1.951,65
+v3: R$ 630,70
+v4: R$ 846,69
+v5: R$ 1.663,74
+v6: R$ 453,90
+v7: R$ 840,25
+v8: R$ 548,71
+v9: R$ 825,63
+v10: R$ 1.344,39
+
+m1: UNIMED RIO PF - COM COPARTICIPAÇÃO 
+m2: Taxas
+m3: Tipo
+m4: Título
+m5: Apartamento (A)
+m6: ÔMEGA PLUS
+v1: R$ 609,33
+v2: R$ 2.054,42
+v3: R$ 764,47
+v4: R$ 1.026,25
+v5: R$ 2.016,59
+v6: R$ 477,80
+v7: R$ 957,86
+v8: R$ 468,95
+v9: R$ 601,69
+v10: R$ 1.068,82
+
+m1: UNIMED RIO PF - COM COPARTICIPAÇÃO 
+m2: Taxas
+m3: Tipo
+m4: Título
+m5: Apartamento (A)
+m6: https://app.simuladoronline.com/tabela/?201912231821
+v1: R$ 641,41
+v2: R$ 363,53
+v3: R$ 546,99
+v4: R$ 890,68
+v5: R$ 2.177,73
+v6: R$ 490,21
+v7: R$ 1.008,30
+v8: R$ 583,98
+v9: R$ 749,28
+v10: R$ 1.330,99
+
+m1: UNIMED RIO PF - COM COPARTICIPAÇÃO 
+m2: Taxas
+m3: Tipo
+m4: Título
+m5: Apartamento (A)
+m6: 4/6
+v1: R$ 798,22
+v2: R$ 452,70
+v3: R$ 681,16
+v4: R$ 1.109,16
+v5: R$ 2.711,90
+v6: R$ 516,02
+v7: R$ 1.197,33
+v8: R$ 707,84
+v9: R$ 908,19
+v10: R$ 1.613,27
+
+m1: UNIMED RIO PF - COM COPARTICIPAÇÃO 
+m2: Taxas
+m3: Tipo
+m4: Título
+m5: Apartamento (A)
+m6: 03/03/2020
+v1: R$ 840,25
+v2: R$ 548,71
+v3: R$ 825,63
+v4: R$ 1.344,39
+v5: R$ 3.287,04
+v6: R$ 539,23
+v7: R$ 1.260,38
+v8: R$ 506,47
+v9: R$ 679,91
+v10: R$ 1.336,03
+
+m1: UNIMED RIO PF - COM COPARTICIPAÇÃO 
+m2: Taxas
+m3: Tipo
+m4: Título
+m5: Apartamento (A)
+m6: Tabela :: Simulador Online
+v1: R$ 957,86
+v2: R$ 468,95
+v3: R$ 601,69
+v4: R$ 1.068,82
+v5: R$ 325,80
+v6: R$ 567,62
+v7: R$ 1.951,65
+v8: R$ 630,70
+v9: R$ 846,69
+v10: R$ 1.663,74
+

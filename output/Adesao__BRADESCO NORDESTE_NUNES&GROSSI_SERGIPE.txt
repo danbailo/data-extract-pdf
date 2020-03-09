@@ -1,0 +1,240 @@
+Modelo: Adesao__BRADESCO NORDESTE_NUNES&GROSSI_SERGIPE
+
+m1: BRADESCO NORDESTE (NUNES&GROSSI) 
+m2: Carência
+m3: CARÊNCIAS BRADESCO NORDESTE (NUNES&GROSSI)
+m4: Atendimentos de urgências e emergências;
+m5: Enfermaria (E)
+m6: FLEX-E
+v1: R$ 284,08
+v2: R$ 353,43
+v3: R$ 414,96
+v4: R$ 507,20
+v5: R$ 565,39
+v6: R$ 588,84
+v7: R$ 696,08
+v8: R$ 813,30
+v9: R$ 967,49
+v10: R$ 1.704,44
+
+m1: BRADESCO NORDESTE (NUNES&GROSSI) 
+m2: Carência
+m3: CARÊNCIAS BRADESCO NORDESTE (NUNES&GROSSI)
+m4: Atendimentos de urgências e emergências;
+m5: Enfermaria (E)
+m6: TNE
+v1: R$ 378,44
+v2: R$ 470,81
+v3: R$ 552,78
+v4: R$ 675,67
+v5: R$ 753,18
+v6: R$ 784,43
+v7: R$ 927,28
+v8: R$ 1.083,43
+v9: R$ 1.288,84
+v10: R$ 2.270,61
+
+m1: BRADESCO NORDESTE (NUNES&GROSSI) 
+m2: Carência
+m3: CARÊNCIAS BRADESCO NORDESTE (NUNES&GROSSI)
+m4: Atendimentos de urgências e emergências;
+m5: Apartamento (A)
+m6: FLEX-P
+v1: R$ 355,08
+v2: R$ 441,76
+v3: R$ 518,67
+v4: R$ 633,97
+v5: R$ 706,69
+v6: R$ 736,01
+v7: R$ 870,04
+v8: R$ 1.016,56
+v9: R$ 1.209,30
+v10: R$ 2.130,44
+
+m1: BRADESCO NORDESTE (NUNES&GROSSI) 
+m2: Carência
+m3: CARÊNCIAS BRADESCO NORDESTE (NUNES&GROSSI)
+m4: Atendimentos de urgências e emergências;
+m5: Apartamento (A)
+m6: TNP
+v1: R$ 504,58
+v2: R$ 627,75
+v3: R$ 737,05
+v4: R$ 900,89
+v5: R$ 1.004,23
+v6: R$ 1.045,91
+v7: R$ 1.236,36
+v8: R$ 1.444,56
+v9: R$ 1.718,46
+v10: R$ 3.027,44
+
+m1: BRADESCO NORDESTE (NUNES&GROSSI) 
+m2: Carência
+m3: CARÊNCIAS BRADESCO NORDESTE (NUNES&GROSSI)
+m4: Atendimentos de urgências e emergências;
+m5: Apartamento (A)
+m6: TN PLUS 3
+v1: R$ 926,30
+v2: R$ 1.152,41
+v3: R$ 1.353,04
+v4: R$ 1.653,83
+v5: R$ 1.843,51
+v6: R$ 1.920,02
+v7: R$ 2.269,65
+v8: R$ 2.651,87
+v9: R$ 3.154,66
+v10: R$ 5.557,69
+
+m1: BRADESCO NORDESTE (NUNES&GROSSI) 
+m2: Carência
+m3: CARÊNCIAS BRADESCO NORDESTE (NUNES&GROSSI)
+m4: Atendimentos de urgências e emergências;
+m5: Apartamento (A)
+m6: TN PLUS 4
+v1: R$ 1.105,62
+v2: R$ 1.375,53
+v3: R$ 1.614,99
+v4: R$ 1.974,01
+v5: R$ 2.200,42
+v6: R$ 2.291,75
+v7: R$ 2.709,07
+v8: R$ 3.165,28
+v9: R$ 3.765,42
+v10: R$ 6.633,69
+
+m1: BRADESCO NORDESTE (NUNES&GROSSI) 
+m2: Carência
+m3: CARÊNCIAS BRADESCO NORDESTE (NUNES&GROSSI)
+m4: Atendimentos de urgências e emergências;
+m5: Apartamento (A)
+m6: TN PLUS 6
+v1: R$ 1.269,25
+v2: R$ 1.579,06
+v3: R$ 1.853,97
+v4: R$ 2.266,13
+v5: R$ 2.526,04
+v6: R$ 2.630,86
+v7: R$ 3.109,96
+v8: R$ 3.633,67
+v9: R$ 4.322,62
+v10: R$ 7.615,43
+
+m1: BRADESCO NORDESTE (NUNES&GROSSI) 
+m2: Carência
+m3: CARÊNCIAS BRADESCO NORDESTE (NUNES&GROSSI)
+m4: Atendimentos de urgências e emergências;
+m5: Enfermaria (E)
+m6: FLEX-E
+v1: R$ 284,08
+v2: R$ 353,43
+v3: R$ 414,96
+v4: R$ 507,20
+v5: R$ 565,39
+v6: R$ 588,84
+v7: R$ 696,08
+v8: R$ 813,30
+v9: R$ 967,49
+v10: R$ 1.704,44
+
+m1: BRADESCO NORDESTE (NUNES&GROSSI) 
+m2: Carência
+m3: CARÊNCIAS BRADESCO NORDESTE (NUNES&GROSSI)
+m4: Atendimentos de urgências e emergências;
+m5: Enfermaria (E)
+m6: TNE
+v1: R$ 378,44
+v2: R$ 470,81
+v3: R$ 552,78
+v4: R$ 675,67
+v5: R$ 753,18
+v6: R$ 784,43
+v7: R$ 927,28
+v8: R$ 1.083,43
+v9: R$ 1.288,84
+v10: R$ 2.270,61
+
+m1: BRADESCO NORDESTE (NUNES&GROSSI) 
+m2: Carência
+m3: CARÊNCIAS BRADESCO NORDESTE (NUNES&GROSSI)
+m4: Atendimentos de urgências e emergências;
+m5: Apartamento (A)
+m6: FLEX-P
+v1: R$ 355,08
+v2: R$ 441,76
+v3: R$ 518,67
+v4: R$ 633,97
+v5: R$ 706,69
+v6: R$ 736,01
+v7: R$ 870,04
+v8: R$ 1.016,56
+v9: R$ 1.209,30
+v10: R$ 2.130,44
+
+m1: BRADESCO NORDESTE (NUNES&GROSSI) 
+m2: Carência
+m3: CARÊNCIAS BRADESCO NORDESTE (NUNES&GROSSI)
+m4: Atendimentos de urgências e emergências;
+m5: Apartamento (A)
+m6: TNP
+v1: R$ 504,58
+v2: R$ 627,75
+v3: R$ 737,05
+v4: R$ 900,89
+v5: R$ 1.004,23
+v6: R$ 1.045,91
+v7: R$ 1.236,36
+v8: R$ 1.444,56
+v9: R$ 1.718,46
+v10: R$ 3.027,44
+
+m1: BRADESCO NORDESTE (NUNES&GROSSI) 
+m2: Carência
+m3: CARÊNCIAS BRADESCO NORDESTE (NUNES&GROSSI)
+m4: Atendimentos de urgências e emergências;
+m5: Apartamento (A)
+m6: TN PLUS 3
+v1: R$ 926,30
+v2: R$ 1.152,41
+v3: R$ 1.353,04
+v4: R$ 1.653,83
+v5: R$ 1.843,51
+v6: R$ 1.920,02
+v7: R$ 2.269,65
+v8: R$ 2.651,87
+v9: R$ 3.154,66
+v10: R$ 5.557,69
+
+m1: BRADESCO NORDESTE (NUNES&GROSSI) 
+m2: Carência
+m3: CARÊNCIAS BRADESCO NORDESTE (NUNES&GROSSI)
+m4: Atendimentos de urgências e emergências;
+m5: Apartamento (A)
+m6: TN PLUS 4
+v1: R$ 1.105,62
+v2: R$ 1.375,53
+v3: R$ 1.614,99
+v4: R$ 1.974,01
+v5: R$ 2.200,42
+v6: R$ 2.291,75
+v7: R$ 2.709,07
+v8: R$ 3.165,28
+v9: R$ 3.765,42
+v10: R$ 6.633,69
+
+m1: BRADESCO NORDESTE (NUNES&GROSSI) 
+m2: Carência
+m3: CARÊNCIAS BRADESCO NORDESTE (NUNES&GROSSI)
+m4: Atendimentos de urgências e emergências;
+m5: Apartamento (A)
+m6: TN PLUS 6
+v1: R$ 1.269,25
+v2: R$ 1.579,06
+v3: R$ 1.853,97
+v4: R$ 2.266,13
+v5: R$ 2.526,04
+v6: R$ 2.630,86
+v7: R$ 3.109,96
+v8: R$ 3.633,67
+v9: R$ 4.322,62
+v10: R$ 7.615,43
+
