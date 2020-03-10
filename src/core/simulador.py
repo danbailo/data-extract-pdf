@@ -33,6 +33,12 @@ class Simulador:
             return pdfs
         return [self.path]
 
+    def get_last_index_change(self, text_splitted):
+        for i in range(len(text_splitted)-1, 0, -1):
+            if self.last_change.match(text_splitted[i]):
+                return i
+
+
     def get_text(self, pdfs):
         pdfs = self.get_data()
         need_path = True
@@ -46,7 +52,6 @@ class Simulador:
             tables = defaultdict(lambda: defaultdict(lambda: defaultdict(list)))
             headers = {}
             n = 1
-            n_other_pages = 1
             values = []
 
             if need_path:
@@ -66,9 +71,15 @@ class Simulador:
 
             state = 1
             first_page = True
-            for i in range(len(text_splitted)):
 
-                last_change = self.last_change.match(text_splitted[i])
+            last_index = self.get_last_index_change(text_splitted)
+
+            update_values = True
+            for i in range(len(text_splitted)):
+                if i == last_index:
+                    update_values = False
+
+                last_change = self.last_change.match(text_splitted[i])           
 
                 if first_page: #primeira tabela antes do "Última Alteração: xx/xx/xxxx"                    
                     if state == 1:
@@ -107,7 +118,6 @@ class Simulador:
                             m3 = ""                              
                         if m4 == text_splitted[i-1]:
                             m4 = ""
-                        #n += 1
                 
                     match_value = self.value.match(text_splitted[i])
                     if match_value:
@@ -117,42 +127,42 @@ class Simulador:
                         values.append(new_value)
 
                     if last_change:
-                        index = i                        
+                        index = i                    
                         first_page = False
                                        
                 else: # tabelas apos a primeira ocorrendia do "Última Alteração: xx/xx/xxxx"
                     last_change = self.last_change.match(text_splitted[index])
                     title_table = self.title_table.match(text_splitted[index])
-                    if last_change:
-                        if not self.title_table.match(text_splitted[index+1]):
-                            m2 = text_splitted[index+1]
-                            m3 = text_splitted[index+2]
-                            m4 = text_splitted[index+3]                        
-                    if title_table:
-                        # if not headers[str(n*-1)]:
-                        headers[str(n*-1)] = (m1,m2,m3,m4)
-                        index_title_table = index + 1
-                        n_other_pages += 1
+                    if update_values:                    
+                        if last_change:
+                            after_last_change = self.title_table.match(text_splitted[index+1])
+                            if not after_last_change:
+                                m2 = text_splitted[index+1]
+                                m3 = text_splitted[index+2]
+                                m4 = text_splitted[index+3]   
+                        if title_table:
+                            headers[str(n*-1)] = (m1,m2,m3,m4)
+                            index_title_table = index + 1
 
-                        match_age_range = self.age_range.match(text_splitted[index_title_table])
+                            match_age_range = self.age_range.match(text_splitted[index_title_table])
 
-                        if match_age_range:
-                            if match_age_range.group(1) == "Faixa Etária":
-                                k = 1
-                                while not re.match(r"0.+", text_splitted[index_title_table+k]):
-                                    sub_table = text_splitted[index_title_table+k]
-                                    tables[n][title_table.string][sub_table] = []
-                                    k += 1
-                            elif match_age_range.group(2) == "Faixa":
-                                l = 2
-                                while not re.match(r"0.+", text_splitted[index_title_table+l]):                                
-                                    if text_splitted[index_title_table+l].split(" ")[-1].upper() == m2.upper():
-                                        sub_table = text_splitted[index_title_table+l] + " " + text_splitted[index_title_table+l+1]
-                                    elif text_splitted[index_title_table+l+1].split(" ")[0].upper() == m2.upper():
-                                        sub_table = text_splitted[index_title_table+l] + " " + text_splitted[index_title_table+l+1] + " " + text_splitted[index_title_table+l+2]
-                                    tables[n][title_table.string][sub_table] = []                                                                                         
-                                    l += 1
-                                n += 1                         
+                            if match_age_range:
+                                if match_age_range.group(1) == "Faixa Etária":
+                                    k = 1
+                                    while not re.match(r"0.+", text_splitted[index_title_table+k]):
+                                        sub_table = text_splitted[index_title_table+k]
+                                        tables[n][title_table.string][sub_table] = []
+                                        k += 1
+                                elif match_age_range.group(2) == "Faixa":
+                                    l = 2
+                                    while not re.match(r"0.+", text_splitted[index_title_table+l]):                                
+                                        if text_splitted[index_title_table+l].split(" ")[-1].upper() == m2.upper():
+                                            sub_table = text_splitted[index_title_table+l] + " " + text_splitted[index_title_table+l+1]
+                                        elif text_splitted[index_title_table+l+1].split(" ")[0].upper() == m2.upper():
+                                            sub_table = text_splitted[index_title_table+l] + " " + text_splitted[index_title_table+l+1] + " " + text_splitted[index_title_table+l+2]
+                                        tables[n][title_table.string][sub_table] = []                                                                                         
+                                        l += 1
+                                    n += 1                         
                     
                     match_value = self.value.match(text_splitted[index])
                     if match_value:
@@ -160,7 +170,6 @@ class Simulador:
                         if new_value[:3] != "R$ ":
                             new_value = "R$ " + match_value.string
                         values.append(new_value)
-                    
                     index += 1
                     
             for n_table in tables: #insercao dos valores nas tabelas

@@ -4,30 +4,27 @@ import itertools
 import json
 
 if __name__ == "__main__":
-    #path = os.path.join(".", "new_samples", "Adesao__BRADESCO NORDESTE_NUNES&GROSSI_SERGIPE.pdf")
-    path = os.path.join(".", "new_samples", "Adesao_Sulmareica_Qualicorp_Alagoas.pdf")
+    path = os.path.join(".", "new_samples")
+    #path = os.path.join(".", "new_samples", "Adesao_Sulmareica_Qualicorp_Alagoas.pdf")
     simulador = Simulador(path)
     pdfs = simulador.get_data()
 
     simulador.get_text(pdfs)
 
-    print(len(simulador.data.items()))
-
     for pdf,values in simulador.data.items():
-        for value in values:
-            print(value)
-    exit()
-
-    for pdf,values in simulador.data.items():
+        state = 1
         pdf_name = pdf[:-4]
         file = open(os.path.join(".", "output", pdf_name+".txt"), "w")
-        file.write("Modelo: " + pdf_name + "\n\n")        
-        for i in range(len(values)):
-            for prepared_data in list(itertools.islice(values, i, len(values), int(len(values)/2))):
-                if isinstance(prepared_data, tuple):
-                    m1, m2, m3, m4 = prepared_data
-                if isinstance(prepared_data, dict):
-                    for table, subtable in prepared_data.items():
+        file.write("Modelo: " + pdf_name + "\n\n")
+
+        while len(values) != 0:
+            for i, value in enumerate(values):
+                if isinstance(value, tuple) and state == 1:
+                    m1, m2, m3, m4 = value
+                    del values[i]
+                    state = 2
+                elif isinstance(value, dict) and state == 2:
+                    for table, subtable in value.items():
                         m5 = table
                         for subtable_name, table_values in subtable.items():
                             m6 = subtable_name
@@ -48,5 +45,7 @@ if __name__ == "__main__":
                             file.write("v8: " + v8 + "\n")
                             file.write("v9: " + v9 + "\n")        
                             file.write("v10: " + v10 + "\n\n")
+                    del values[i]
+                    state = 1
         file.close()
             
