@@ -2,18 +2,21 @@ from core import Simulador
 import os
 import itertools
 import json
-from itertools import zip_longest
-
-def grouper(iterable, n, fillvalue=None):
-    args = [iter(iterable)] * n
-    return zip_longest(*args, fillvalue=fillvalue)
 
 if __name__ == "__main__":
-    path = os.path.join(".", "new_samples")
+    #path = os.path.join(".", "new_samples", "Adesao__BRADESCO NORDESTE_NUNES&GROSSI_SERGIPE.pdf")
+    path = os.path.join(".", "new_samples", "Adesao_Sulmareica_Qualicorp_Alagoas.pdf")
     simulador = Simulador(path)
     pdfs = simulador.get_data()
 
     simulador.get_text(pdfs)
+
+    print(len(simulador.data.items()))
+
+    for pdf,values in simulador.data.items():
+        for value in values:
+            print(value)
+    exit()
 
     for pdf,values in simulador.data.items():
         pdf_name = pdf[:-4]
@@ -24,9 +27,9 @@ if __name__ == "__main__":
                 if isinstance(prepared_data, tuple):
                     m1, m2, m3, m4 = prepared_data
                 if isinstance(prepared_data, dict):
-                   for table, subtable in prepared_data.items():
-                       m5 = table
-                       for subtable_name, table_values in subtable.items():
+                    for table, subtable in prepared_data.items():
+                        m5 = table
+                        for subtable_name, table_values in subtable.items():
                             m6 = subtable_name
                             v1, v2, v3, v4, v5, v6, v7, v8, v9, v10 = table_values
                             file.write("m1: " + m1 + "\n")

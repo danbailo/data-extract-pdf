@@ -83,6 +83,7 @@ class Simulador:
                             if self.msg.match(m4):
                                 m4 = ""                            
                             headers[str(n*-1)] = (m1,m2,m3,m4)
+
                         else:
                             m1 = m1 + text_splitted[i] + " "
 
@@ -128,6 +129,7 @@ class Simulador:
                             m3 = text_splitted[index+2]
                             m4 = text_splitted[index+3]                        
                     if title_table:
+                        # if not headers[str(n*-1)]:
                         headers[str(n*-1)] = (m1,m2,m3,m4)
                         index_title_table = index + 1
                         n_other_pages += 1
@@ -151,8 +153,7 @@ class Simulador:
                                     tables[n][title_table.string][sub_table] = []                                                                                         
                                     l += 1
                                 n += 1                         
-
-
+                    
                     match_value = self.value.match(text_splitted[index])
                     if match_value:
                         new_value = match_value.string
@@ -173,8 +174,7 @@ class Simulador:
                     for symbol, row in zip(tables[n_table][class_], range(n_symbols)):                        
                         tables[n_table][class_][symbol] = list(itertools.islice(values_of_table, row, len_table, n_symbols))
 
-            data = json.loads(json.dumps(tables, ensure_ascii=False))
-            headers.update(data)
+            headers.update(tables)
 
             if not need_path:
                 pdf = pdf.split("/")[-1]
