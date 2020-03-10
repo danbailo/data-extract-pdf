@@ -5,6 +5,7 @@ import platform
 import json
 import os
 import re
+from numpy import delete
 
 SYSTEM = platform.system()
 
@@ -19,7 +20,11 @@ class Simulador:
         self.age_range = re.compile(r"(Faixa Etária)|(Faixa)")
         self.age = re.compile(r"(anos)")
         self.value = re.compile(r"R\$\s(.+\d$)|((\d+.\d+\.\d+.+)|(\d+\.\d+.+)|(\d+\,\d+))")
-        self.msg = re.compile(r"(Tabela\sde\s\d+\sà\s\d+\svidas\/beneficiários)|(Faixa Etária)")
+
+        self.msg = re.compile(r"(Tabela\sde\s\d+\sà\s\d+\svidas\/beneficiários)")
+        self.link = re.compile(r"(https:\/\/.*)")
+
+        self.desnecessary = re.compile(r"(Tabela\sde\s\d+\sà\s\d+\svidas\/beneficiários)|(https:\/\/.*)|(\d\/\d{1,2})|(Tabela :: Simulador Online)|(\d{2}\/\d{2}\/\d{4})")
 
         self.last_change = re.compile(r"(Última\sAlteração\W\s\d{2}\/\d{2}\/\d{2,4})")
         self.title_table = re.compile(r"(\w+\s\W\w+\W)")
@@ -52,7 +57,9 @@ class Simulador:
             tables = defaultdict(lambda: defaultdict(lambda: defaultdict(list)))
             headers = {}
             n = 1
+            n_2 = 1
             values = []
+            exclude_values = set()
 
             if need_path:
                 text = textract.process(os.path.join(self.path, pdf))
@@ -60,19 +67,34 @@ class Simulador:
                 text = textract.process(pdf)
             
             text_splitted = text.decode("utf-8").replace('\xa0', '\n').split("\n")
+            text_splitted = [re.sub(pattern=r"\x0c", repl="", string=t) for t in text_splitted]             
 
             if SYSTEM == "Windows":
                 text_splitted = [re.sub(pattern=r"\r", repl="", string=t) for t in text_splitted]             
 
-            for empty in text_splitted:
-                if empty == '': text_splitted.remove(empty)
+            for i, desnecessary in enumerate(text_splitted):
+                match_desnecesary = self.desnecessary.match(desnecessary)
+                if match_desnecesary:
+                    exclude_values.add(i)
+                if desnecessary == "":
+                    exclude_values.add(i)
 
-            text_splitted = text_splitted[2:]
+            exclude_values = list(exclude_values)
+
+            text_splitted = delete(text_splitted, exclude_values).tolist()
+
+            print(text_splitted)
+
+            
+            # del text_splitted[:2]
+            last_index = self.get_last_index_change(text_splitted)
+            text_splitted = text_splitted[:last_index]
+
+            print(text_splitted)
+            exit()
 
             state = 1
             first_page = True
-
-            last_index = self.get_last_index_change(text_splitted)
 
             update_values = True
             for i in range(len(text_splitted)):
@@ -93,7 +115,9 @@ class Simulador:
                                 m3 = ""
                             if self.msg.match(m4):
                                 m4 = ""                            
-                            headers[str(n*-1)] = (m1,m2,m3,m4)
+                            headers[str(n_2*-1)] = (m1,m2,m3,m4)
+                            n_2 += 1
+                            #print(str(n*-1), (m1,m2,m3,m4))
 
                         else:
                             m1 = m1 + text_splitted[i] + " "
@@ -139,21 +163,24 @@ class Simulador:
                             if not after_last_change:
                                 m2 = text_splitted[index+1]
                                 m3 = text_splitted[index+2]
-                                m4 = text_splitted[index+3]   
+                                m4 = text_splitted[index+3]
+                                #print((m1,m2,m3,m4))
+                                headers[str(n_2*-1)] = (m1,m2,m3,m4)
+                                n_2 += 1
                         if title_table:
-                            headers[str(n*-1)] = (m1,m2,m3,m4)
+                            # headers[str(n*-1)] = (m1,m2,m3,m4)
                             index_title_table = index + 1
 
                             match_age_range = self.age_range.match(text_splitted[index_title_table])
 
                             if match_age_range:
-                                if match_age_range.group(1) == "Faixa Etária":
+                                if match_age_range.string == "Faixa Etária":
                                     k = 1
                                     while not re.match(r"0.+", text_splitted[index_title_table+k]):
                                         sub_table = text_splitted[index_title_table+k]
                                         tables[n][title_table.string][sub_table] = []
                                         k += 1
-                                elif match_age_range.group(2) == "Faixa":
+                                elif match_age_range.string == "Faixa":
                                     l = 2
                                     while not re.match(r"0.+", text_splitted[index_title_table+l]):                                
                                         if text_splitted[index_title_table+l].split(" ")[-1].upper() == m2.upper():
@@ -182,6 +209,8 @@ class Simulador:
 
                     for symbol, row in zip(tables[n_table][class_], range(n_symbols)):                        
                         tables[n_table][class_][symbol] = list(itertools.islice(values_of_table, row, len_table, n_symbols))
+
+            print(json.dumps(tables, indent=4, ensure_ascii=False))
 
             headers.update(tables)
 

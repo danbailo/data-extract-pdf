@@ -4,12 +4,21 @@ import itertools
 import json
 
 if __name__ == "__main__":
-    path = os.path.join(".", "new_samples")
-    #path = os.path.join(".", "new_samples", "Adesao_Sulmareica_Qualicorp_Alagoas.pdf")
+    #path = os.path.join(".", "new_samples", "PJ_HAPVIDA _Fortaleza.pdf")
+    path = os.path.join(".", "new_samples", "PF_CLASSESLABORIOSAS_SaoPaulo.pdf")
     simulador = Simulador(path)
     pdfs = simulador.get_data()
 
     simulador.get_text(pdfs)
+
+
+    # for pdf,values in simulador.data.items():
+    #     state = 1
+    #     pdf_name = pdf[:-4]
+    #     file = open(os.path.join(".", "output", pdf_name+".txt"), "w")
+    #     file.write("Modelo: " + pdf_name + "\n\n")
+    #     for i, value in enumerate(values):
+    #         print(i)
 
     for pdf,values in simulador.data.items():
         state = 1
@@ -20,8 +29,9 @@ if __name__ == "__main__":
         while len(values) != 0:
             for i, value in enumerate(values):
                 if isinstance(value, tuple) and state == 1:
+                    print(value)
                     m1, m2, m3, m4 = value
-                    del values[i]
+                    values.pop(i)
                     state = 2
                 elif isinstance(value, dict) and state == 2:
                     for table, subtable in value.items():
@@ -45,7 +55,7 @@ if __name__ == "__main__":
                             file.write("v8: " + v8 + "\n")
                             file.write("v9: " + v9 + "\n")        
                             file.write("v10: " + v10 + "\n\n")
-                    del values[i]
+                    values.pop(i)
                     state = 1
         file.close()
             
