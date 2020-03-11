@@ -149,6 +149,8 @@ class Simulador:
                                 j += 1
                             m6 = text[i][2:j]
 
+                        del text[i][:j]
+
                         columns = []
                         if len(m6) == 1:
                             columns.append(m6[0])
@@ -162,13 +164,16 @@ class Simulador:
                                     elif m6[k].split(" ")[0].upper() == m2.upper():
                                         joined_text = m6[k-1] + " " + m6[k] + " " + m6[k+1]
                                         columns.append(joined_text)
-                            
+                                                
+                        # print(text[i][:j])
+                        values = []                        
                         print("m1:",m1)
                         print("m2:",m2)
                         print("m3:",m3)
                         print("m4:",m4)
                         print("m5:",m5)
                         print("m6:",columns)
+                        print("values:",values)
 
                         print()
                     
