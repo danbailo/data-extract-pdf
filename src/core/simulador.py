@@ -89,6 +89,17 @@ class Simulador:
                         prepaired_text.append(new_text[i][j])
                 final_text.append(prepaired_text)
 
-            print(final_text)
+            all_text = []
+            key = final_text[0][0][:-4]
+            for i in range(len(final_text)):
+                if final_text[i][0] == "Taxas":
+                    for j in range(len(final_text[i])):
+                        if key in final_text[i][j]:
+                            all_text.append(final_text[i][j:])
+                else:
+                    all_text.append(final_text[i])
+
+            for i in all_text:
+                print(i)
 
             exit()
