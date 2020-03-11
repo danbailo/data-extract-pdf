@@ -18,7 +18,7 @@ class Simulador:
         self.phone = re.compile(r"\(\d\d\)\W\d{4,5}\W\d{4,5}")
         self.years = re.compile(r"anos")
         self.age_range = re.compile(r"(Faixa Etária)|(Faixa)")
-        self.first_age_range = re.compile(r"(0\sa\s18).+")
+        self.first_age_range = re.compile(r"(0\sa\s18)")
         self.age = re.compile(r"(anos)")
         self.value = re.compile(r"R\$\s(.+\d$)|((\d+.\d+\.\d+.+)|(\d+\.\d+.+)|(\d+\,\d+))")
 
@@ -127,20 +127,36 @@ class Simulador:
                                 m3 = text[i][:j][1]
                                 m4 = text[i][:j][2]
                                 del text[i][:j]
+                            elif len(text[i][:j]) == 4:
+                                m2 = text[i][:j][0]
+                                m3 = text[i][:j][1]
+                                m4 = text[i][:j][2]
+                                del text[i][:j]
                             m5 = text[i][0]
                             del text[i][0]
                             j = j-2
                         else:
                             m5 = text[i][j]
                             del text[i][j]
-                        print(text[i][j])
+                        
+                        match_age_range = self.age_range.match(text[i][:j+1][0])
+                        if match_age_range.string == "Faixa Etária":                        
+                            while not self.first_age_range.match(text[i][j]):
+                                j += 1
+                            m6 = text[i][1:j]
+                        elif match_age_range.string == "Faixa":                            
+                            while not self.first_age_range.match(text[i][j]):
+                                j += 1
+                            m6 = text[i][2:j]
+                        print("m1:",m1)
+                        print("m2:",m2)
+                        print("m3:",m3)
+                        print("m4:",m4)
+                        print("m5:",m5)
+                        print("m6:",m6)
 
-                        # print("m1:",m1)
-                        # print("m2:",m2)
-                        # print("m3:",m3)
-                        # print("m4:",m4)
-                        # print("m5:",m5)
                         print()
+                    
                     
                     j += 1
                 print()

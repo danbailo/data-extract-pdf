@@ -5,8 +5,8 @@ import json
 
 if __name__ == "__main__":
     path = os.path.join(".", "new_samples")
-    path = os.path.join(".", "new_samples", "Adesao_Sulmareica_Qualicorp_Alagoas.pdf")
     path = os.path.join(".", "new_samples", "PF_UnimedRio_RiodeJaneiro.pdf")
+    path = os.path.join(".", "new_samples", "Adesao_Sulmareica_Qualicorp_Alagoas.pdf")
 
     simulador = Simulador(path)
     pdfs = simulador.get_data()
