@@ -4,14 +4,16 @@ import itertools
 import json
 
 if __name__ == "__main__":
+    path = os.path.join(".", "new_samples", "Adesao_Sulmareica_Qualicorp_Alagoas.pdf")
     path = os.path.join(".", "new_samples")
-    path = os.path.join(".", "new_samples", "PJ_HAPVIDA _Fortaleza.pdf")
-    path = os.path.join(".", "new_samples", "PF_UnimedRio_RiodeJaneiro.pdf")
+    # path = os.path.join(".", "new_samples", "PF_UnimedRio_RiodeJaneiro.pdf")
 
     simulador = Simulador(path)
     pdfs = simulador.get_data()
 
-    simulador.get_text(pdfs)
+    prepaired_data = simulador.prepare_text(pdfs)
+
+    print(prepaired_data.keys())
     exit()
 
     # for pdf,values in simulador.data.items():

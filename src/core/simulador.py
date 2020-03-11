@@ -46,8 +46,8 @@ class Simulador:
             if self.last_change.match(text_splitted[i]):
                 return i
 
-
-    def get_text(self, pdfs):
+    def prepare_text(self, pdfs):
+        prepaired_data = {}
         pdfs = self.get_data()
         need_path = True
 
@@ -57,9 +57,9 @@ class Simulador:
         for pdf in pdfs:
             if not need_path:
                 pdf_name = pdf.split("/")[-1]
-
-            exclude_values = set()
-
+            else:
+                pdf_name = pdf
+            
             if need_path:
                 text = textract.process(os.path.join(self.path, pdf))
             else:
@@ -79,7 +79,7 @@ class Simulador:
             for i in range(len(text_splitted)):
                 new_text.append(text_splitted[i].split("\n"))
 
-            final_text = []
+            all_text = []
             for i in range(len(new_text)):
                 prepaired_text = []
                 for j in range(len(new_text[i])):
@@ -87,19 +87,23 @@ class Simulador:
                         new_text[i][j] = ""
                     if new_text[i][j]!="":
                         prepaired_text.append(new_text[i][j])
-                final_text.append(prepaired_text)
+                all_text.append(prepaired_text)
 
-            all_text = []
-            key = final_text[0][0][:-4]
-            for i in range(len(final_text)):
-                if final_text[i][0] == "Taxas":
-                    for j in range(len(final_text[i])):
-                        if key in final_text[i][j]:
-                            all_text.append(final_text[i][j:])
+            final_text = []
+            key = all_text[0][0][:-4]
+            for i in range(len(all_text)):
+                if all_text[i][0] == "Taxas":
+                    for j in range(len(all_text[i])):
+                        if key in all_text[i][j]:
+                            final_text.append(all_text[i][j:])
+                if "Elegibilidade" in all_text[i][0]:
+                    for j in range(len(all_text[i])):
+                        if key in all_text[i][j]:
+                            final_text.append(all_text[i][j:])                            
                 else:
-                    all_text.append(final_text[i])
+                    final_text.append(all_text[i])
+            prepaired_data[pdf_name] = final_text
+        return prepaired_data
 
-            for i in all_text:
-                print(i)
-
-            exit()
+    def extract_info(self, prepaired_text):
+        pass
