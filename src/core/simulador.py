@@ -18,6 +18,7 @@ class Simulador:
         self.phone = re.compile(r"\(\d\d\)\W\d{4,5}\W\d{4,5}")
         self.years = re.compile(r"anos")
         self.age_range = re.compile(r"(Faixa Etária)|(Faixa)")
+        self.first_age_range = re.compile(r"(0\sa\s18).+")
         self.age = re.compile(r"(anos)")
         self.value = re.compile(r"R\$\s(.+\d$)|((\d+.\d+\.\d+.+)|(\d+\.\d+.+)|(\d+\,\d+))")
 
@@ -49,16 +50,11 @@ class Simulador:
         need_path = True
 
         if len(pdfs) == 1 and self.file is False:
-            need_path = False
+            need_path = False            
 
         for pdf in pdfs:
-            
-            m1 = ''
-            tables = defaultdict(lambda: defaultdict(lambda: defaultdict(list)))
-            headers = {}
-            n = 1
-            n_2 = 1
-            values = []
+            if not need_path:
+                pdf_name = pdf.split("/")[-1]
             exclude_values = set()
 
             if need_path:
@@ -83,15 +79,87 @@ class Simulador:
 
             text_splitted = delete(text_splitted, exclude_values).tolist()
 
-            print(text_splitted)
-
-            
-            # del text_splitted[:2]
             last_index = self.get_last_index_change(text_splitted)
             text_splitted = text_splitted[:last_index]
 
-            print(text_splitted)
+            key = text_splitted[0].split(" ")[0]
+
+            for i in range(len(text_splitted)):
+                if text_splitted[i]=="Taxas":
+                    index_initial = i
+                if key in text_splitted[i]:
+                    index_final = i - 1
+
+            del text_splitted[index_initial:index_final]
+
+            headers = {}
+            values = []
+            is_table = False
+            is_info = True
+            n_table = 1
+            tables = {}
+            tables
+            i = 0
+            while len(text_splitted) != 0:
+
+                phone_match = self.phone.match(text_splitted[i])
+                if phone_match:
+                    m1 = " ".join(text_splitted[:i])
+                    del text_splitted[:i+1]
+                age_range_match = self.age_range.match(text_splitted[i])                
+                if age_range_match:
+                    if len(text_splitted[:i-1]) == 1:
+                        m2 = text_splitted[:i-1]
+                        m3, m4 = "", ""
+                        del text_splitted[:i-1]
+
+                    elif len(text_splitted[:i-1]) == 2:
+                        m2, m3 = text_splitted[:i-1]
+                        m4 = ""
+                        del text_splitted[:i-1]
+
+                    elif len(text_splitted[:i-1]) == 3:
+                        m2, m3, m4 = text_splitted[:i-1]
+                        del text_splitted[:i-1]
+                    
+                    tables[(pdf_name[:-4],m1,m2,m3,m4)] = {}
+                    # m5 = text_splitted[0]
+                    # del text_splitted[:i-1]
+                
+                # last_change_match = self.last_change.match(text_splitted[i])
+                # if last_change_match:
+                #     title_table = self.title_table.match(text_splitted[0])
+                #     if title_table:
+                #         is_table = True
+                #         is_info = False
+                #         m5 = text_splitted[0]
+                #         del text_splitted[0]
+                #         tables[(pdf_name[:-4],m1,m2,m3,m4)][m5] = {}
+                first_age_range_match = self.first_age_range.match(text_splitted[i])
+                if first_age_range_match:
+                    m5 = text_splitted[0]
+                    del text_splitted[0]
+                    tables[(pdf_name[:-4],m1,m2,m3,m4)][m5] = {}
+                    i -= 1
+                    for column in text_splitted[:i]:
+                        if not self.age_range.match(column):
+                            m6 = column
+                            tables[(pdf_name[:-4],m1,m2,m3,m4)][m5][m6] = []
+                    del text_splitted[:i]
+                last_change_match = self.last_change.match(text_splitted[i])
+                if last_change_match:
+                    for value in text_splitted[:i]:
+                        if self.value.match(value):
+                            # tables[(pdf_name[:-4],m1,m2,m3,m4)][m5][m6].append(value)
+                            values.append(value)
+                    del text_splitted[:i]
+                print(text_splitted)
+                i += 1
+
             exit()
+
+
+##############################################################################################################################
 
             state = 1
             first_page = True
@@ -130,6 +198,7 @@ class Simulador:
                             m = 1
                             while not re.match(r"0.+", text_splitted[i+k]):                            
                                 tables[n][text_splitted[i-1]][text_splitted[i+k]] = []
+                                # n += 1
                                 k += 1
                         if match_age_range.string == "Faixa":
                             while not re.match(r"0.+", text_splitted[i+m]):
@@ -137,11 +206,13 @@ class Simulador:
                                     m += 1
                                     continue
                                 tables[n][text_splitted[i-1]][text_splitted[i+m]] = []
+                                # n += 1
                                 m += 1
                         if m3 == text_splitted[i-1]:
                             m3 = ""                              
                         if m4 == text_splitted[i-1]:
                             m4 = ""
+                        
                 
                     match_value = self.value.match(text_splitted[i])
                     if match_value:
@@ -213,9 +284,6 @@ class Simulador:
             print(json.dumps(tables, indent=4, ensure_ascii=False))
 
             headers.update(tables)
-
-            if not need_path:
-                pdf = pdf.split("/")[-1]
 
             self.data[pdf] = list(headers.values())
 
