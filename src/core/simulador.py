@@ -70,7 +70,6 @@ class Simulador:
             
             text_splitted = re.split(r"(Última\sAlteração\W\s\d{2}\/\d{2}\/\d{2,4})", text)
 
-
             for t in text_splitted:
                 if self.last_change.match(t):
                     text_splitted.remove(t)
@@ -102,4 +101,47 @@ class Simulador:
         return prepaired_data
 
     def extract_info(self, prepaired_text):
-        pass
+        for pdf, text in prepaired_text.items():
+            i = 0
+            while i < len(text):
+                print("TABELA {}".format(i))
+                j = 0
+                while j < len(text[i]):
+                    if self.phone.match(text[i][j]):
+                       m1 = " ".join(text[i][:j])
+                       del text[i][:j+1]
+                    if self.title_table.match(text[i][j]): #formando as tabelas
+                        if len(text[i][:j]) > 0: #contem informacao antes da tabela
+                            if len(text[i][:j]) == 1:
+                                m2 = text[i][:j][0]
+                                m3 = ""
+                                m4 = ""
+                                del text[i][:j]                        
+                            elif len(text[i][:j]) == 2:
+                                m2 = text[i][:j][0]
+                                m3 = text[i][:j][1]
+                                m4 = ""
+                                del text[i][:j]
+                            elif len(text[i][:j]) == 3:
+                                m2 = text[i][:j][0]
+                                m3 = text[i][:j][1]
+                                m4 = text[i][:j][2]
+                                del text[i][:j]
+                            m5 = text[i][0]
+                            del text[i][0]
+                            j = j-2
+                        else:
+                            m5 = text[i][j]
+                            del text[i][j]
+                        print(text[i][j])
+
+                        # print("m1:",m1)
+                        # print("m2:",m2)
+                        # print("m3:",m3)
+                        # print("m4:",m4)
+                        # print("m5:",m5)
+                        print()
+                    
+                    j += 1
+                print()
+                i += 1
