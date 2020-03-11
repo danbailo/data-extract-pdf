@@ -92,14 +92,10 @@ class Simulador:
             final_text = []
             key = all_text[0][0][:-4]
             for i in range(len(all_text)):
-                if all_text[i][0] == "Taxas":
+                if all_text[i][0] == "Taxas" or "Elegibilidade" in all_text[i][0]:
                     for j in range(len(all_text[i])):
                         if key in all_text[i][j]:
-                            final_text.append(all_text[i][j:])
-                if "Elegibilidade" in all_text[i][0]:
-                    for j in range(len(all_text[i])):
-                        if key in all_text[i][j]:
-                            final_text.append(all_text[i][j:])                            
+                            final_text.append(all_text[i][j:])                         
                 else:
                     final_text.append(all_text[i])
             prepaired_data[pdf_name] = final_text
