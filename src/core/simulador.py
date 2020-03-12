@@ -18,7 +18,7 @@ class Simulador:
         self.phone = re.compile(r"\(\d\d\)\W\d{4,5}\W\d{4,5}")
         self.years = re.compile(r"anos")
         self.age_range = re.compile(r"(Faixa Etária)|(Faixa)")
-        self.first_age_range = re.compile(r"(0\sa\s18)")
+        self.first_age_range = re.compile(r"(0\sa\s18)|(0a)")
         self.age = re.compile(r"(anos)")
         self.value = re.compile(r"R\$\s(.+\d$)|((\d+.\d+\.\d+.+)|(\d+\.\d+.+)|(\d+\,\d+))")
 
@@ -106,6 +106,7 @@ class Simulador:
         return prepaired_data
 
     def extract_info(self, prepaired_text):
+        # print(prepaired_text)
         data = defaultdict(lambda: defaultdict(lambda: defaultdict(lambda: defaultdict(lambda: defaultdict(lambda: defaultdict(list))))))
         for pdf, text in prepaired_text.items():
             i = 0
@@ -115,10 +116,14 @@ class Simulador:
                 pass
             while i < len(text):
                 j = 0
+                first_m1 = text[0][0]
                 while j < len(text[i]):
                     if self.phone.match(text[i][j]):
-                       m1 = " ".join(text[i][:j])
-                       del text[i][:j+1]
+                        if first_m1 not in text[i][:j]:
+                            m1 = first_m1 + " " + " ".join(text[i][:j])
+                        else:
+                            m1 = " ".join(text[i][:j])                            
+                        del text[i][:j+1]
                     if self.title_table.match(text[i][j]): #formando as tabelas
                         if len(text[i][:j]) > 0: #contem informacao antes da tabela
                             if len(text[i][:j]) == 1:
@@ -154,13 +159,13 @@ class Simulador:
                             break
                         
                         if match_age_range:
-                            if match_age_range.string == "Faixa Etária":
+                            if match_age_range.string == "Faixa Etária":                                
                                 try:                     
-                                    while not self.first_age_range.match(text[i][j]):
+                                    while not self.first_age_range.match(text[i][j]):                                        
                                         j += 1
                                 except IndexError:
                                     break
-                                m6 = text[i][1:j]
+                                m6 = text[i][1:j]                                
                                 del text[i][1:j]
                             elif match_age_range.string == "Faixa":
                                 try:
@@ -168,10 +173,12 @@ class Simulador:
                                         j += 1
                                 except IndexError:
                                     break
-                                m6 = text[i][2:j]
+                                m6 = text[i][2:j]                                
                                 del text[i][2:j]
+                        # del text[i][2:j]
+
                         columns = []
-                        state = 1
+                        state = 1                        
                         
                         try:
                             if len(m6) == 1:
