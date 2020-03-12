@@ -32,9 +32,6 @@ class Simulador:
         self.last_change_lb = re.compile(r"(Última Alteração: \d{2}\/\d{2}\/\d{2,4}\\n)")
         self.title_table = re.compile(r"(\w+\s\W\w+\W)")
 
-        self.data = {}
-        
-
     def get_data(self):
         if self.file:
             pdfs = [pdf for pdf in os.listdir(self.path) if pdf[-4:] == ".pdf"]
@@ -56,9 +53,9 @@ class Simulador:
 
         for pdf in pdfs:
             if not need_path:
-                pdf_name = pdf.split("/")[-1]
+                pdf_name = pdf.split("/")[-1][:-4]
             else:
-                pdf_name = pdf
+                pdf_name = pdf[:-4]
             
             if need_path:
                 text = textract.process(os.path.join(self.path, pdf))
@@ -70,6 +67,7 @@ class Simulador:
             
             text_splitted = re.split(r"(Última\sAlteração\W\s\d{2}\/\d{2}\/\d{2,4})", text)
 
+            
             for t in text_splitted:
                 if self.last_change.match(t):
                     text_splitted.remove(t)
@@ -94,17 +92,22 @@ class Simulador:
                 if all_text[i][0] == "Taxas" or "Elegibilidade" in all_text[i][0]:
                     for j in range(len(all_text[i])):
                         if key in all_text[i][j]:
-                            final_text.append(all_text[i][j:])                         
+                            final_text.append(all_text[i][j:])
+                if all_text[i][1] == "Título" or all_text[i][1] == "Tipo" or all_text[i][0] == "Carência":
+                    continue
                 else:
                     final_text.append(all_text[i])
             prepaired_data[pdf_name] = final_text
         return prepaired_data
 
     def extract_info(self, prepaired_text):
+        print(prepaired_text)
+        exit()
+        data = defaultdict(lambda: defaultdict(lambda: defaultdict(lambda: defaultdict(lambda: defaultdict(lambda: defaultdict(list))))))
         for pdf, text in prepaired_text.items():
+            print(pdf)
             i = 0
             while i < len(text):
-                print("TABELA {}".format(i))
                 j = 0
                 while j < len(text[i]):
                     if self.phone.match(text[i][j]):
@@ -139,18 +142,23 @@ class Simulador:
                             m5 = text[i][j]
                             del text[i][j]
                         
-                        match_age_range = self.age_range.match(text[i][:j+1][0])
-                        if match_age_range.string == "Faixa Etária":                        
-                            while not self.first_age_range.match(text[i][j]):
-                                j += 1
-                            m6 = text[i][1:j]
-                        elif match_age_range.string == "Faixa":                            
-                            while not self.first_age_range.match(text[i][j]):
-                                j += 1
-                            m6 = text[i][2:j]
-
-                        del text[i][:j]
-
+                        try:
+                            match_age_range = self.age_range.match(text[i][:j+1][0])
+                        except IndexError:
+                            break
+                        
+                        if match_age_range:
+                            if match_age_range.string == "Faixa Etária":                        
+                                while not self.first_age_range.match(text[i][j]):
+                                    j += 1
+                                m6 = text[i][1:j]
+                                del text[i][1:j]
+                            elif match_age_range.string == "Faixa":                            
+                                while not self.first_age_range.match(text[i][j]):
+                                    j += 1
+                                m6 = text[i][2:j]
+                                del text[i][2:j]
+                        # del text[i][:j]
                         columns = []
                         state = 1
                         
@@ -173,20 +181,15 @@ class Simulador:
                                         elif m6[k].split(" ")[0].upper() == m2.upper():
                                             joined_text = m6[k-1] + " " + m6[k] + " " + m6[k+1]
                                             columns.append(joined_text)
-                                                
-                        # print(text[i][:j])
-                        values = []                        
-                        print("m1:",m1)
-                        print("m2:",m2)
-                        print("m3:",m3)
-                        print("m4:",m4)
-                        print("m5:",m5)
-                        print("m6:",columns)
-                        print("values:",values)
-
-                        print()
-                    
-                    
+                        values = []                                           
+                        for value in text[i][1:]:
+                            match_value = self.value.match(value)
+                            if match_value:
+                                # v = "R$ " + match_value[1]
+                                values.append(v)
+                        for n in range(len(columns)):
+                            data[pdf][i][(m1, m2, m3, m4)][m5][columns[n]] = list(itertools.islice(values, n, len(values), len(columns)))
                     j += 1
-                print()
                 i += 1
+        return data
+            
