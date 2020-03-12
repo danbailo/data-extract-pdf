@@ -1,0 +1,19 @@
+Modelo: Tabela 2 Simulador Online - PF
+
+m1: EVERCROSS
+m2: Individual
+m3: Agosto 2019 - TAXA DE CADASTRO: (Por Contrato) - R$ 15,00 POR CONTRATO
+m4: 
+m5: Ambulatório (AMB)
+m6: INDIVIDUAL
+v1: R$ 86,35
+v2: R$ 116,58
+v3: R$ 122,95
+v4: R$ 133,05
+v5: R$ 147,26
+v6: R$ 165,38
+v7: R$ 197,28
+v8: R$ 209,65
+v9: R$ 268,90
+v10: R$ 449,74
+

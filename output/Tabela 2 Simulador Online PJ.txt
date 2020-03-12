@@ -1,0 +1,206 @@
+Modelo: Tabela 2 Simulador Online PJ
+
+m1: AMIL - Sem Coparticipação
+m2: PME/Empresarial
+m3: COMPULSÓRIA
+m4: Fevereiro 2020
+m5: Enfermaria (E)
+m6: AMIL 200
+v1: R$ 195,73
+v2: R$ 244,66
+v3: R$ 305,82
+v4: R$ 336,41
+v5: R$ 353,22
+v6: R$ 388,55
+v7: R$ 485,68
+v8: R$ 534,25
+v9: R$ 667,82
+v10: R$ 1.168,69
+
+m1: AMIL - Sem Coparticipação
+m2: PME/Empresarial
+m3: COMPULSÓRIA
+m4: Fevereiro 2020
+m5: Enfermaria (E)
+m6: AMIL 400
+v1: R$ 235,62
+v2: R$ 294,52
+v3: R$ 368,15
+v4: R$ 404,96
+v5: R$ 425,21
+v6: R$ 467,72
+v7: R$ 584,65
+v8: R$ 643,12
+v9: R$ 803,90
+v10: R$ 1.406,83
+
+m1: AMIL - Sem Coparticipação
+m2: PME/Empresarial
+m3: COMPULSÓRIA
+m4: Fevereiro 2020
+m5: Apartamento (A)
+m6: AMIL 200
+v1: R$ 211,11
+v2: R$ 263,88
+v3: R$ 329,85
+v4: R$ 362,84
+v5: R$ 380,98
+v6: R$ 419,08
+v7: R$ 523,85
+v8: R$ 576,24
+v9: R$ 720,30
+v10: R$ 1.260,53
+
+m1: AMIL - Sem Coparticipação
+m2: PME/Empresarial
+m3: COMPULSÓRIA
+m4: Fevereiro 2020
+m5: Apartamento (A)
+m6: AMIL 400
+v1: R$ 258,00
+v2: R$ 322,50
+v3: R$ 403,13
+v4: R$ 443,43
+v5: R$ 465,61
+v6: R$ 512,17
+v7: R$ 640,21
+v8: R$ 704,23
+v9: R$ 880,29
+v10: R$ 1.540,52
+
+m1: AMIL - Sem Coparticipação
+m2: PME/Empresarial
+m3: COMPULSÓRIA
+m4: Fevereiro 2020
+m5: Apartamento (A)
+m6: AMIL 500
+v1: R$ 270,50
+v2: R$ 338,13
+v3: R$ 422,66
+v4: R$ 464,93
+v5: R$ 488,17
+v6: R$ 536,99
+v7: R$ 671,24
+v8: R$ 738,36
+v9: R$ 922,96
+v10: R$ 1.615,18
+
+m1: AMIL - Sem Coparticipação
+m2: PME/Empresarial
+m3: COMPULSÓRIA
+m4: Fevereiro 2020
+m5: Apartamento (A)
+m6: AMIL 700
+v1: R$ 295,93
+v2: R$ 369,91
+v3: R$ 462,39
+v4: R$ 508,63
+v5: R$ 534,06
+v6: R$ 587,47
+v7: R$ 734,34
+v8: R$ 807,77
+v9: R$ 1.009,71
+v10: R$ 1.767,00
+
+m1: AMIL - Sem Coparticipação
+m2: PME/Empresarial
+m3: COMPULSÓRIA
+m4: Fevereiro 2020
+m5: Enfermaria (E)
+m6: AMIL 200
+v1: R$ 185,94
+v2: R$ 232,43
+v3: R$ 290,53
+v4: R$ 319,59
+v5: R$ 335,56
+v6: R$ 369,12
+v7: R$ 461,40
+v8: R$ 507,54
+v9: R$ 634,43
+v10: R$ 1.110,25
+
+m1: AMIL - Sem Coparticipação
+m2: PME/Empresarial
+m3: COMPULSÓRIA
+m4: Fevereiro 2020
+m5: Enfermaria (E)
+m6: AMIL 400
+v1: R$ 223,84
+v2: R$ 279,79
+v3: R$ 349,74
+v4: R$ 384,72
+v5: R$ 403,95
+v6: R$ 444,34
+v7: R$ 555,42
+v8: R$ 610,96
+v9: R$ 763,71
+v10: R$ 1.336,49
+
+m1: AMIL - Sem Coparticipação
+m2: PME/Empresarial
+m3: COMPULSÓRIA
+m4: Fevereiro 2020
+m5: Apartamento (A)
+m6: AMIL 200
+v1: R$ 200,55
+v2: R$ 250,69
+v3: R$ 313,36
+v4: R$ 344,69
+v5: R$ 361,93
+v6: R$ 398,13
+v7: R$ 497,66
+v8: R$ 547,43
+v9: R$ 684,28
+v10: R$ 1.197,50
+
+m1: AMIL - Sem Coparticipação
+m2: PME/Empresarial
+m3: COMPULSÓRIA
+m4: Fevereiro 2020
+m5: Apartamento (A)
+m6: AMIL 400
+v1: R$ 245,10
+v2: R$ 306,37
+v3: R$ 382,97
+v4: R$ 421,26
+v5: R$ 442,33
+v6: R$ 486,56
+v7: R$ 608,20
+v8: R$ 669,02
+v9: R$ 836,28
+v10: R$ 1.463,49
+
+m1: AMIL - Sem Coparticipação
+m2: PME/Empresarial
+m3: COMPULSÓRIA
+m4: Fevereiro 2020
+m5: Apartamento (A)
+m6: AMIL 500
+v1: R$ 256,97
+v2: R$ 321,22
+v3: R$ 401,53
+v4: R$ 441,68
+v5: R$ 463,76
+v6: R$ 510,14
+v7: R$ 637,67
+v8: R$ 701,45
+v9: R$ 876,81
+v10: R$ 1.534,42
+
+m1: AMIL - Sem Coparticipação
+m2: PME/Empresarial
+m3: COMPULSÓRIA
+m4: Fevereiro 2020
+m5: Apartamento (A)
+m6: AMIL 700
+v1: R$ 281,13
+v2: R$ 351,42
+v3: R$ 439,27
+v4: R$ 483,20
+v5: R$ 507,36
+v6: R$ 558,10
+v7: R$ 697,62
+v8: R$ 767,38
+v9: R$ 959,23
+v10: R$ 1.678,65
+
