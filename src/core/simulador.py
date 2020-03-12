@@ -5,7 +5,6 @@ import platform
 import json
 import os
 import re
-from numpy import delete
 
 SYSTEM = platform.system()
 
@@ -67,7 +66,6 @@ class Simulador:
             
             text_splitted = re.split(r"(Última\sAlteração\W\s\d{2}\/\d{2}\/\d{2,4})", text)
 
-
             without_lastchange = []
 
             for i in range(len(text_splitted)):
@@ -119,7 +117,7 @@ class Simulador:
                 first_m1 = text[0][0]
                 while j < len(text[i]):
                     if self.phone.match(text[i][j]):
-                        if first_m1 not in text[i][:j]:
+                        if first_m1 not in text[i][:j] and not self.age_range.match(first_m1):
                             m1 = first_m1 + " " + " ".join(text[i][:j])
                         else:
                             m1 = " ".join(text[i][:j])                            
