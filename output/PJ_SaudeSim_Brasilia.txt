@@ -1,9 +1,9 @@
 Modelo: PJ_SaudeSim_Brasilia
 
-m1: SAÚDE SIM 
-m2: Taxas
-m3: Título
-m4: Valor
+m1: SAÚDE SIM
+m2: PME/Empresarial
+m3: VALORES COM COPARTICIPAÇÃO
+m4: Novembro 2019 - Taxa de Cadastro: (Por Contrato) - R$50,00
 m5: Ambulatório (AMB)
 m6: SIM ESSENCIAL
 v1: R$ 81,41
@@ -17,10 +17,10 @@ v8: R$ 237,72
 v9: R$ 318,55
 v10: R$ 477,83
 
-m1: SAÚDE SIM 
-m2: Taxas
-m3: Título
-m4: Valor
+m1: SAÚDE SIM
+m2: PME/Empresarial
+m3: VALORES COM COPARTICIPAÇÃO
+m4: Novembro 2019 - Taxa de Cadastro: (Por Contrato) - R$50,00
 m5: Enfermaria (E)
 m6: SIM 10
 v1: R$ 132,00
@@ -34,10 +34,10 @@ v8: R$ 385,46
 v9: R$ 516,52
 v10: R$ 774,80
 
-m1: SAÚDE SIM 
-m2: Taxas
-m3: Título
-m4: Valor
+m1: SAÚDE SIM
+m2: PME/Empresarial
+m3: VALORES COM COPARTICIPAÇÃO
+m4: Novembro 2019 - Taxa de Cadastro: (Por Contrato) - R$50,00
 m5: Enfermaria (E)
 m6: SIM 20
 v1: R$ 145,20
@@ -51,10 +51,10 @@ v8: R$ 424,01
 v9: R$ 568,17
 v10: R$ 852,28
 
-m1: SAÚDE SIM 
-m2: Taxas
-m3: Título
-m4: Valor
+m1: SAÚDE SIM
+m2: PME/Empresarial
+m3: VALORES COM COPARTICIPAÇÃO
+m4: Novembro 2019 - Taxa de Cadastro: (Por Contrato) - R$50,00
 m5: Apartamento (A)
 m6: SIM 20
 v1: R$ 168,96
@@ -68,10 +68,10 @@ v8: R$ 493,39
 v9: R$ 661,15
 v10: R$ 991,75
 
-m1: SAÚDE SIM 
-m2: Taxas
-m3: Título
-m4: Valor
+m1: SAÚDE SIM
+m2: PME/Empresarial
+m3: VALORES COM COPARTICIPAÇÃO
+m4: Novembro 2019 - Taxa de Cadastro: (Por Contrato) - R$50,00
 m5: Ambulatório (AMB)
 m6: SIM ESSENCIAL
 v1: R$ 81,41
@@ -85,54 +85,190 @@ v8: R$ 237,72
 v9: R$ 318,55
 v10: R$ 477,83
 
-m1: SAÚDE SIM 
-m2: Taxas
-m3: Título
-m4: Valor
+m1: SAÚDE SIM
+m2: PME/Empresarial
+m3: VALORES COM COPARTICIPAÇÃO
+m4: Novembro 2019 - Taxa de Cadastro: (Por Contrato) - R$50,00
 m5: Enfermaria (E)
 m6: SIM 10
-v1: R$ 132,00
-v2: R$ 142,56
-v3: R$ 159,67
-v4: R$ 182,03
-v5: R$ 211,15
-v6: R$ 249,16
-v7: R$ 323,91
-v8: R$ 385,46
-v9: R$ 516,52
-v10: R$ 774,80
+v1: R$ 118,80
+v2: R$ 128,30
+v3: R$ 143,70
+v4: R$ 163,82
+v5: R$ 190,03
+v6: R$ 224,24
+v7: R$ 291,52
+v8: R$ 346,92
+v9: R$ 464,87
+v10: R$ 697,32
 
-m1: SAÚDE SIM 
-m2: Taxas
-m3: Título
-m4: Valor
+m1: SAÚDE SIM
+m2: PME/Empresarial
+m3: VALORES COM COPARTICIPAÇÃO
+m4: Novembro 2019 - Taxa de Cadastro: (Por Contrato) - R$50,00
 m5: Enfermaria (E)
 m6: SIM 20
-v1: R$ 145,20
-v2: R$ 156,82
-v3: R$ 175,64
-v4: R$ 200,23
-v5: R$ 232,27
-v6: R$ 274,08
-v7: R$ 356,30
-v8: R$ 424,01
-v9: R$ 568,17
-v10: R$ 852,28
+v1: R$ 130,68
+v2: R$ 141,13
+v3: R$ 158,06
+v4: R$ 180,19
+v5: R$ 209,02
+v6: R$ 246,65
+v7: R$ 320,65
+v8: R$ 381,56
+v9: R$ 511,30
+v10: R$ 766,95
 
-m1: SAÚDE SIM 
-m2: Taxas
-m3: Título
-m4: Valor
+m1: SAÚDE SIM
+m2: PME/Empresarial
+m3: VALORES COM COPARTICIPAÇÃO
+m4: Novembro 2019 - Taxa de Cadastro: (Por Contrato) - R$50,00
 m5: Apartamento (A)
 m6: SIM 20
-v1: R$ 168,96
-v2: R$ 182,48
-v3: R$ 204,37
-v4: R$ 232,99
-v5: R$ 270,27
-v6: R$ 318,93
-v7: R$ 414,60
-v8: R$ 493,39
-v9: R$ 661,15
-v10: R$ 991,75
+v1: R$ 152,06
+v2: R$ 164,23
+v3: R$ 183,94
+v4: R$ 209,70
+v5: R$ 243,25
+v6: R$ 287,04
+v7: R$ 373,14
+v8: R$ 444,05
+v9: R$ 595,04
+v10: R$ 892,57
+
+m1: SAÚDE SIM
+m2: PME/Empresarial
+m3: VALORES SEM COPARTICIPAÇÃO
+m4: Novembro 2019 - Taxa de Cadastro: (Por Contrato) - R$50,00
+m5: Ambulatório (AMB)
+m6: SIM ESSENCIAL
+v1: R$ 101,76
+v2: R$ 109,90
+v3: R$ 123,09
+v4: R$ 140,32
+v5: R$ 162,77
+v6: R$ 192,07
+v7: R$ 249,70
+v8: R$ 297,15
+v9: R$ 398,19
+v10: R$ 597,28
+
+m1: SAÚDE SIM
+m2: PME/Empresarial
+m3: VALORES SEM COPARTICIPAÇÃO
+m4: Novembro 2019 - Taxa de Cadastro: (Por Contrato) - R$50,00
+m5: Enfermaria (E)
+m6: SIM 10
+v1: R$ 165,00
+v2: R$ 178,20
+v3: R$ 199,58
+v4: R$ 227,53
+v5: R$ 263,94
+v6: R$ 311,45
+v7: R$ 404,89
+v8: R$ 481,83
+v9: R$ 645,65
+v10: R$ 968,50
+
+m1: SAÚDE SIM
+m2: PME/Empresarial
+m3: VALORES SEM COPARTICIPAÇÃO
+m4: Novembro 2019 - Taxa de Cadastro: (Por Contrato) - R$50,00
+m5: Enfermaria (E)
+m6: SIM 20
+v1: R$ 192,83
+v2: R$ 208,26
+v3: R$ 233,25
+v4: R$ 265,90
+v5: R$ 308,44
+v6: R$ 363,96
+v7: R$ 473,15
+v8: R$ 563,05
+v9: R$ 754,48
+v10: R$ 1.131,72
+
+m1: SAÚDE SIM
+m2: PME/Empresarial
+m3: VALORES SEM COPARTICIPAÇÃO
+m4: Novembro 2019 - Taxa de Cadastro: (Por Contrato) - R$50,00
+m5: Apartamento (A)
+m6: SIM 20
+v1: R$ 212,50
+v2: R$ 229,50
+v3: R$ 257,04
+v4: R$ 293,03
+v5: R$ 339,92
+v6: R$ 401,10
+v7: R$ 521,43
+v8: R$ 620,50
+v9: R$ 831,47
+v10: R$ 1.247,21
+
+m1: SAÚDE SIM
+m2: PME/Empresarial
+m3: VALORES SEM COPARTICIPAÇÃO
+m4: Novembro 2019 - Taxa de Cadastro: (Por Contrato) - R$50,00
+m5: Ambulatório (AMB)
+m6: SIM ESSENCIAL
+v1: R$ 101,76
+v2: R$ 109,90
+v3: R$ 123,09
+v4: R$ 140,32
+v5: R$ 162,77
+v6: R$ 192,07
+v7: R$ 249,70
+v8: R$ 297,14
+v9: R$ 398,18
+v10: R$ 597,28
+
+m1: SAÚDE SIM
+m2: PME/Empresarial
+m3: VALORES SEM COPARTICIPAÇÃO
+m4: Novembro 2019 - Taxa de Cadastro: (Por Contrato) - R$50,00
+m5: Enfermaria (E)
+m6: SIM 10
+v1: R$ 148,50
+v2: R$ 160,38
+v3: R$ 179,62
+v4: R$ 204,77
+v5: R$ 237,54
+v6: R$ 280,30
+v7: R$ 364,40
+v8: R$ 433,64
+v9: R$ 581,09
+v10: R$ 871,65
+
+m1: SAÚDE SIM
+m2: PME/Empresarial
+m3: VALORES SEM COPARTICIPAÇÃO
+m4: Novembro 2019 - Taxa de Cadastro: (Por Contrato) - R$50,00
+m5: Enfermaria (E)
+m6: SIM 20
+v1: R$ 173,55
+v2: R$ 187,43
+v3: R$ 209,92
+v4: R$ 239,31
+v5: R$ 277,59
+v6: R$ 327,56
+v7: R$ 425,83
+v8: R$ 506,74
+v9: R$ 679,03
+v10: R$ 1.018,55
+
+m1: SAÚDE SIM
+m2: PME/Empresarial
+m3: VALORES SEM COPARTICIPAÇÃO
+m4: Novembro 2019 - Taxa de Cadastro: (Por Contrato) - R$50,00
+m5: Apartamento (A)
+m6: SIM 20
+v1: R$ 191,25
+v2: R$ 206,55
+v3: R$ 231,34
+v4: R$ 263,73
+v5: R$ 305,92
+v6: R$ 360,99
+v7: R$ 469,29
+v8: R$ 558,45
+v9: R$ 748,32
+v10: R$ 1.122,48
 

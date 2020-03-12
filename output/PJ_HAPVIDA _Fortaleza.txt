@@ -1,342 +1,410 @@
 Modelo: PJ_HAPVIDA _Fortaleza
 
-m1: HAPVIDA COM COPARTICIPAÇÃO 
-m2: Taxas
-m3: Título
-m4: Valor
+m1: HAPVIDA COM COPARTICIPAÇÃO
+m2: PME/Empresarial
+m3: COM ODONTO
+m4: Fevereiro 2020 - Taxa de Inscrição: (Por Beneficiário) - R$ 10,00
 m5: Ambulatório (AMB)
 m6: NOSSO PLANO AMB + ODONTO
 v1: R$ 94,44
-v2: R$ 118,44
-v3: R$ 156,64
-v4: R$ 232,97
-v5: R$ 495,05
-v6: R$ 127,23
-v7: R$ 142,49
-v8: R$ 159,57
-v9: R$ 183,50
-v10: R$ 211,01
+v2: R$ 105,76
+v3: R$ 118,44
+v4: R$ 136,21
+v5: R$ 156,64
+v6: R$ 186,39
+v7: R$ 232,97
+v8: R$ 291,21
+v9: R$ 495,05
+v10: R$ 554,44
 
-m1: HAPVIDA COM COPARTICIPAÇÃO 
-m2: Taxas
-m3: Título
-m4: Valor
+m1: HAPVIDA COM COPARTICIPAÇÃO
+m2: PME/Empresarial
+m3: COM ODONTO
+m4: Fevereiro 2020 - Taxa de Inscrição: (Por Beneficiário) - R$ 10,00
+m5: Enfermaria (E)
+m6: NOSSO PLANO + ODONTO
+v1: R$ 127,23
+v2: R$ 142,49
+v3: R$ 159,57
+v4: R$ 183,50
+v5: R$ 211,01
+v6: R$ 251,11
+v7: R$ 313,89
+v8: R$ 392,36
+v9: R$ 667,01
+v10: R$ 747,04
+
+m1: HAPVIDA COM COPARTICIPAÇÃO
+m2: PME/Empresarial
+m3: COM ODONTO
+m4: Fevereiro 2020 - Taxa de Inscrição: (Por Beneficiário) - R$ 10,00
+m5: Enfermaria (E)
+m6: MIX + ODONTO
+v1: R$ 180,03
+v2: R$ 201,62
+v3: R$ 225,80
+v4: R$ 259,67
+v5: R$ 298,61
+v6: R$ 355,35
+v7: R$ 444,15
+v8: R$ 555,20
+v9: R$ 943,83
+v10: R$ 1.057,10
+
+m1: HAPVIDA COM COPARTICIPAÇÃO
+m2: PME/Empresarial
+m3: COM ODONTO
+m4: Fevereiro 2020 - Taxa de Inscrição: (Por Beneficiário) - R$ 10,00
+m5: Apartamento (A)
+m6: NOSSO PLANO + ODONTO
+v1: R$ 190,82
+v2: R$ 213,71
+v3: R$ 239,36
+v4: R$ 275,26
+v5: R$ 316,53
+v6: R$ 376,65
+v7: R$ 470,81
+v8: R$ 588,51
+v9: R$ 1.000,46
+v10: R$ 1.120,51
+
+m1: HAPVIDA COM COPARTICIPAÇÃO
+m2: PME/Empresarial
+m3: COM ODONTO
+m4: Fevereiro 2020 - Taxa de Inscrição: (Por Beneficiário) - R$ 10,00
+m5: Apartamento (A)
+m6: MIX + ODONTO
+v1: R$ 270,04
+v2: R$ 302,44
+v3: R$ 338,71
+v4: R$ 389,53
+v5: R$ 447,94
+v6: R$ 533,04
+v7: R$ 666,31
+v8: R$ 832,86
+v9: R$ 1.415,86
+v10: R$ 1.585,76
+
+m1: HAPVIDA COM COPARTICIPAÇÃO
+m2: PME/Empresarial
+m3: SEM ODONTO
+m4: Fevereiro 2020 - Taxa de Inscrição: (Por Beneficiário) - R$ 10,00
 m5: Ambulatório (AMB)
 m6: NOSSO PLANO AMB
-v1: R$ 105,76
-v2: R$ 136,21
-v3: R$ 186,39
-v4: R$ 291,21
-v5: R$ 554,44
-v6: R$ 180,03
-v7: R$ 201,62
-v8: R$ 225,80
-v9: R$ 259,67
-v10: R$ 298,61
-
-m1: HAPVIDA COM COPARTICIPAÇÃO 
-m2: Taxas
-m3: Título
-m4: Valor
-m5: Enfermaria (E)
-m6: NOSSO PLANO + ODONTO
-v1: R$ 251,11
-v2: R$ 392,36
-v3: R$ 747,04
-v4: R$ 213,71
-v5: R$ 275,26
-v6: R$ 376,65
-v7: R$ 588,51
-v8: R$ 1.120,51
-v9: R$ 136,80
-v10: R$ 269,08
-
-m1: HAPVIDA COM COPARTICIPAÇÃO 
-m2: Taxas
-m3: Título
-m4: Valor
-m5: Enfermaria (E)
-m6: MIX + ODONTO
-v1: R$ 355,35
-v2: R$ 555,20
-v3: R$ 1.057,10
-v4: R$ 302,44
-v5: R$ 389,53
-v6: R$ 533,04
-v7: R$ 832,86
-v8: R$ 1.585,76
-v9: R$ 157,32
-v10: R$ 336,35
-
-m1: HAPVIDA COM COPARTICIPAÇÃO 
-m2: Taxas
-m3: Título
-m4: Valor
-m5: Enfermaria (E)
-m6: NOSSO PLANO
-v1: R$ 313,89
-v2: R$ 667,01
-v3: R$ 190,82
-v4: R$ 239,36
-v5: R$ 316,53
-v6: R$ 470,81
-v7: R$ 1.000,46
-v8: R$ 109,08
-v9: R$ 180,92
-v10: R$ 571,78
-
-m1: HAPVIDA COM COPARTICIPAÇÃO 
-m2: Taxas
-m3: Título
-m4: Valor
-m5: Enfermaria (E)
-m6: MIX
-v1: R$ 444,15
-v2: R$ 943,83
-v3: R$ 270,04
-v4: R$ 338,71
-v5: R$ 447,94
-v6: R$ 666,31
-v7: R$ 1.415,86
-v8: R$ 122,15
-v9: R$ 215,28
+v1: R$ 109,08
+v2: R$ 122,15
+v3: R$ 136,80
+v4: R$ 157,32
+v5: R$ 180,92
+v6: R$ 215,28
+v7: R$ 269,08
+v8: R$ 336,35
+v9: R$ 571,78
 v10: R$ 640,38
 
-m1: HAPVIDA COM COPARTICIPAÇÃO 
-m2: Taxas
-m3: Título
-m4: Valor
-m5: Apartamento (A)
-m6: NOSSO PLANO + ODONTO
+m1: HAPVIDA COM COPARTICIPAÇÃO
+m2: PME/Empresarial
+m3: SEM ODONTO
+m4: Fevereiro 2020 - Taxa de Inscrição: (Por Beneficiário) - R$ 10,00
+m5: Enfermaria (E)
+m6: NOSSO PLANO
 v1: R$ 146,95
-v2: R$ 184,30
-v3: R$ 243,72
-v4: R$ 362,54
-v5: R$ 770,40
-v6: R$ 220,40
-v7: R$ 276,46
-v8: R$ 365,59
-v9: R$ 543,79
-v10: R$ 1.155,53
+v2: R$ 164,58
+v3: R$ 184,30
+v4: R$ 211,94
+v5: R$ 243,72
+v6: R$ 290,03
+v7: R$ 362,54
+v8: R$ 453,18
+v9: R$ 770,40
+v10: R$ 862,83
 
-m1: HAPVIDA COM COPARTICIPAÇÃO 
-m2: Taxas
-m3: Título
-m4: Valor
-m5: Apartamento (A)
-m6: MIX + ODONTO
+m1: HAPVIDA COM COPARTICIPAÇÃO
+m2: PME/Empresarial
+m3: SEM ODONTO
+m4: Fevereiro 2020 - Taxa de Inscrição: (Por Beneficiário) - R$ 10,00
+m5: Enfermaria (E)
+m6: MIX
 v1: R$ 207,93
-v2: R$ 260,80
-v3: R$ 344,89
-v4: R$ 512,99
-v5: R$ 1.090,12
-v6: R$ 311,90
-v7: R$ 391,21
-v8: R$ 517,37
-v9: R$ 769,59
-v10: R$ 1.635,32
+v2: R$ 232,87
+v3: R$ 260,80
+v4: R$ 299,92
+v5: R$ 344,89
+v6: R$ 410,43
+v7: R$ 512,99
+v8: R$ 641,26
+v9: R$ 1.090,12
+v10: R$ 1.220,95
 
-m1: HAPVIDA COM COPARTICIPAÇÃO 
-m2: Taxas
-m3: Título
-m4: Valor
+m1: HAPVIDA COM COPARTICIPAÇÃO
+m2: PME/Empresarial
+m3: SEM ODONTO
+m4: Fevereiro 2020 - Taxa de Inscrição: (Por Beneficiário) - R$ 10,00
 m5: Apartamento (A)
 m6: NOSSO PLANO
-v1: R$ 164,58
-v2: R$ 211,94
-v3: R$ 290,03
-v4: R$ 453,18
-v5: R$ 862,83
-v6: R$ 246,84
-v7: R$ 317,93
-v8: R$ 435,03
-v9: R$ 679,73
+v1: R$ 220,40
+v2: R$ 246,84
+v3: R$ 276,46
+v4: R$ 317,93
+v5: R$ 365,59
+v6: R$ 435,03
+v7: R$ 543,79
+v8: R$ 679,73
+v9: R$ 1.155,53
 v10: R$ 1.294,19
 
-m1: HAPVIDA COM COPARTICIPAÇÃO 
-m2: Taxas
-m3: Título
-m4: Valor
+m1: HAPVIDA COM COPARTICIPAÇÃO
+m2: PME/Empresarial
+m3: SEM ODONTO
+m4: Fevereiro 2020 - Taxa de Inscrição: (Por Beneficiário) - R$ 10,00
 m5: Apartamento (A)
 m6: MIX
-v1: R$ 232,87
-v2: R$ 299,92
-v3: R$ 410,43
-v4: R$ 641,26
-v5: R$ 1.220,95
-v6: R$ 349,32
-v7: R$ 449,91
-v8: R$ 615,66
-v9: R$ 961,95
+v1: R$ 311,90
+v2: R$ 349,32
+v3: R$ 391,21
+v4: R$ 449,91
+v5: R$ 517,37
+v6: R$ 615,66
+v7: R$ 769,59
+v8: R$ 961,95
+v9: R$ 1.635,32
 v10: R$ 1.831,55
 
-m1: HAPVIDA COM COPARTICIPAÇÃO 
-m2: Taxas
-m3: Título
-m4: Valor
-m5: Ambulatório (AMB)
-m6: NOSSO PLANO AMB + ODONTO
-v1: R$ 94,44
-v2: R$ 118,44
-v3: R$ 156,64
-v4: R$ 232,97
-v5: R$ 495,05
-v6: R$ 127,23
-v7: R$ 142,49
-v8: R$ 159,57
-v9: R$ 183,50
-v10: R$ 211,01
-
-m1: HAPVIDA COM COPARTICIPAÇÃO 
-m2: Taxas
-m3: Título
-m4: Valor
-m5: Ambulatório (AMB)
-m6: NOSSO PLANO AMB
-v1: R$ 105,76
-v2: R$ 136,21
-v3: R$ 186,39
-v4: R$ 291,21
-v5: R$ 554,44
-v6: R$ 180,03
-v7: R$ 201,62
-v8: R$ 225,80
-v9: R$ 259,67
-v10: R$ 298,61
-
-m1: HAPVIDA COM COPARTICIPAÇÃO 
-m2: Taxas
-m3: Título
-m4: Valor
+m1: HAPVIDA SEM COPARTICIPAÇÃO
+m2: PME/Empresarial
+m3: COM ODONTO
+m4: Janeiro 2020 - Taxa de Inscrição: (Por Beneficiário) - R$10,00
 m5: Enfermaria (E)
 m6: NOSSO PLANO + ODONTO
-v1: R$ 251,11
-v2: R$ 392,36
-v3: R$ 747,04
-v4: R$ 213,71
-v5: R$ 275,26
-v6: R$ 376,65
-v7: R$ 588,51
-v8: R$ 1.120,51
-v9: R$ 136,80
-v10: R$ 269,08
+v1: R$ 158,32
+v2: R$ 175,55
+v3: R$ 194,84
+v4: R$ 221,84
+v5: R$ 252,91
+v6: R$ 298,16
+v7: R$ 369,02
+v8: R$ 457,59
+v9: R$ 767,60
+v10: R$ 857,95
 
-m1: HAPVIDA COM COPARTICIPAÇÃO 
-m2: Taxas
-m3: Título
-m4: Valor
+m1: HAPVIDA SEM COPARTICIPAÇÃO
+m2: PME/Empresarial
+m3: COM ODONTO
+m4: Janeiro 2020 - Taxa de Inscrição: (Por Beneficiário) - R$10,00
 m5: Enfermaria (E)
 m6: MIX + ODONTO
-v1: R$ 355,35
-v2: R$ 555,20
-v3: R$ 1.057,10
-v4: R$ 302,44
-v5: R$ 389,53
-v6: R$ 533,04
-v7: R$ 832,86
-v8: R$ 1.585,76
-v9: R$ 157,32
-v10: R$ 336,35
+v1: R$ 216,98
+v2: R$ 241,25
+v3: R$ 268,43
+v4: R$ 306,48
+v5: R$ 350,25
+v6: R$ 414,00
+v7: R$ 513,81
+v8: R$ 638,58
+v9: R$ 1.075,30
+v10: R$ 1.202,54
 
-m1: HAPVIDA COM COPARTICIPAÇÃO 
-m2: Taxas
-m3: Título
-m4: Valor
-m5: Enfermaria (E)
-m6: NOSSO PLANO
-v1: R$ 313,89
-v2: R$ 667,01
-v3: R$ 190,82
-v4: R$ 239,36
-v5: R$ 316,53
-v6: R$ 470,81
-v7: R$ 1.000,46
-v8: R$ 109,08
-v9: R$ 180,92
-v10: R$ 571,78
-
-m1: HAPVIDA COM COPARTICIPAÇÃO 
-m2: Taxas
-m3: Título
-m4: Valor
-m5: Enfermaria (E)
-m6: MIX
-v1: R$ 444,15
-v2: R$ 943,83
-v3: R$ 270,04
-v4: R$ 338,71
-v5: R$ 447,94
-v6: R$ 666,31
-v7: R$ 1.415,86
-v8: R$ 122,15
-v9: R$ 215,28
-v10: R$ 640,38
-
-m1: HAPVIDA COM COPARTICIPAÇÃO 
-m2: Taxas
-m3: Título
-m4: Valor
+m1: HAPVIDA SEM COPARTICIPAÇÃO
+m2: PME/Empresarial
+m3: COM ODONTO
+m4: Janeiro 2020 - Taxa de Inscrição: (Por Beneficiário) - R$10,00
 m5: Apartamento (A)
 m6: NOSSO PLANO + ODONTO
-v1: R$ 146,95
-v2: R$ 184,30
-v3: R$ 243,72
-v4: R$ 362,54
-v5: R$ 770,40
-v6: R$ 220,40
-v7: R$ 276,46
-v8: R$ 365,59
-v9: R$ 543,79
-v10: R$ 1.155,53
+v1: R$ 230,13
+v2: R$ 255,97
+v3: R$ 284,89
+v4: R$ 325,41
+v5: R$ 372,01
+v6: R$ 439,89
+v7: R$ 546,18
+v8: R$ 679,03
+v9: R$ 1.144,05
+v10: R$ 1.279,57
 
-m1: HAPVIDA COM COPARTICIPAÇÃO 
-m2: Taxas
-m3: Título
-m4: Valor
+m1: HAPVIDA SEM COPARTICIPAÇÃO
+m2: PME/Empresarial
+m3: COM ODONTO
+m4: Janeiro 2020 - Taxa de Inscrição: (Por Beneficiário) - R$10,00
+m5: Enfermaria (E)
+m6: NOSSO PLANO + ODONTO
+v1: R$ 146,10
+v2: R$ 162,62
+v3: R$ 181,16
+v4: R$ 207,08
+v5: R$ 236,88
+v6: R$ 280,32
+v7: R$ 348,34
+v8: R$ 433,36
+v9: R$ 730,93
+v10: R$ 817,64
+
+m1: HAPVIDA SEM COPARTICIPAÇÃO
+m2: PME/Empresarial
+m3: COM ODONTO
+m4: Janeiro 2020 - Taxa de Inscrição: (Por Beneficiário) - R$10,00
+m5: Enfermaria (E)
+m6: MIX + ODONTO
+v1: R$ 203,31
+v2: R$ 226,72
+v3: R$ 252,94
+v4: R$ 289,64
+v5: R$ 331,82
+v6: R$ 393,33
+v7: R$ 489,54
+v8: R$ 609,86
+v9: R$ 1.031,00
+v10: R$ 1.153,72
+
+m1: HAPVIDA SEM COPARTICIPAÇÃO
+m2: PME/Empresarial
+m3: COM ODONTO
+m4: Janeiro 2020 - Taxa de Inscrição: (Por Beneficiário) - R$10,00
+m5: Apartamento (A)
+m6: NOSSO PLANO + ODONTO
+v1: R$ 215,04
+v2: R$ 239,84
+v3: R$ 267,63
+v4: R$ 306,53
+v5: R$ 351,27
+v6: R$ 416,44
+v7: R$ 518,46
+v8: R$ 646,03
+v9: R$ 1.092,48
+v10: R$ 1.222,57
+
+m1: HAPVIDA SEM COPARTICIPAÇÃO
+m2: PME/Empresarial
+m3: COM ODONTO
+m4: Janeiro 2020 - Taxa de Inscrição: (Por Beneficiário) - R$10,00
 m5: Apartamento (A)
 m6: MIX + ODONTO
-v1: R$ 207,93
-v2: R$ 260,80
-v3: R$ 344,89
-v4: R$ 512,99
-v5: R$ 1.090,12
-v6: R$ 311,90
-v7: R$ 391,21
-v8: R$ 517,37
-v9: R$ 769,59
-v10: R$ 1.635,32
+v1: R$ 300,85
+v2: R$ 335,96
+v3: R$ 375,26
+v4: R$ 430,31
+v5: R$ 493,61
+v6: R$ 585,62
+v7: R$ 730,24
+v8: R$ 910,72
+v9: R$ 1.542,44
+v10: R$ 1.726,54
 
-m1: HAPVIDA COM COPARTICIPAÇÃO 
-m2: Taxas
-m3: Título
-m4: Valor
+m1: HAPVIDA SEM COPARTICIPAÇÃO
+m2: PME/Empresarial
+m3: SEM ODONTO
+m4: Janeiro 2020 - Taxa de Inscrição: (Por Beneficiário) - R$10,00
+m5: Enfermaria (E)
+m6: NOSSO PLANO
+v1: R$ 165,87
+v2: R$ 185,77
+v3: R$ 208,05
+v4: R$ 239,24
+v5: R$ 275,12
+v6: R$ 327,38
+v7: R$ 409,23
+v8: R$ 511,53
+v9: R$ 869,59
+v10: R$ 973,94
+
+m1: HAPVIDA SEM COPARTICIPAÇÃO
+m2: PME/Empresarial
+m3: SEM ODONTO
+m4: Janeiro 2020 - Taxa de Inscrição: (Por Beneficiário) - R$10,00
+m5: Enfermaria (E)
+m6: MIX
+v1: R$ 233,62
+v2: R$ 261,65
+v3: R$ 293,05
+v4: R$ 336,99
+v5: R$ 387,55
+v6: R$ 461,18
+v7: R$ 576,46
+v8: R$ 720,57
+v9: R$ 1.224,98
+v10: R$ 1.371,94
+
+m1: HAPVIDA SEM COPARTICIPAÇÃO
+m2: PME/Empresarial
+m3: SEM ODONTO
+m4: Janeiro 2020 - Taxa de Inscrição: (Por Beneficiário) - R$10,00
 m5: Apartamento (A)
 m6: NOSSO PLANO
-v1: R$ 164,58
-v2: R$ 211,94
-v3: R$ 290,03
-v4: R$ 453,18
-v5: R$ 862,83
-v6: R$ 246,84
-v7: R$ 317,93
-v8: R$ 435,03
-v9: R$ 679,73
-v10: R$ 1.294,19
+v1: R$ 248,81
+v2: R$ 278,66
+v3: R$ 312,06
+v4: R$ 358,86
+v5: R$ 412,68
+v6: R$ 491,08
+v7: R$ 613,85
+v8: R$ 767,29
+v9: R$ 1.304,39
+v10: R$ 1.460,91
 
-m1: HAPVIDA COM COPARTICIPAÇÃO 
-m2: Taxas
-m3: Título
-m4: Valor
+m1: HAPVIDA SEM COPARTICIPAÇÃO
+m2: PME/Empresarial
+m3: SEM ODONTO
+m4: Janeiro 2020 - Taxa de Inscrição: (Por Beneficiário) - R$10,00
+m5: Enfermaria (E)
+m6: NOSSO PLANO
+v1: R$ 189,54
+v2: R$ 212,26
+v3: R$ 237,76
+v4: R$ 273,39
+v5: R$ 314,37
+v6: R$ 374,10
+v7: R$ 467,62
+v8: R$ 584,53
+v9: R$ 993,69
+v10: R$ 1.112,91
+
+m1: HAPVIDA SEM COPARTICIPAÇÃO
+m2: PME/Empresarial
+m3: SEM ODONTO
+m4: Janeiro 2020 - Taxa de Inscrição: (Por Beneficiário) - R$10,00
+m5: Enfermaria (E)
+m6: MIX
+v1: R$ 268,21
+v2: R$ 300,40
+v3: R$ 336,45
+v4: R$ 386,91
+v5: R$ 444,91
+v6: R$ 529,44
+v7: R$ 661,77
+v8: R$ 827,21
+v9: R$ 1.406,28
+v10: R$ 1.575,02
+
+m1: HAPVIDA SEM COPARTICIPAÇÃO
+m2: PME/Empresarial
+m3: SEM ODONTO
+m4: Janeiro 2020 - Taxa de Inscrição: (Por Beneficiário) - R$10,00
+m5: Apartamento (A)
+m6: NOSSO PLANO
+v1: R$ 284,34
+v2: R$ 318,44
+v3: R$ 356,65
+v4: R$ 410,14
+v5: R$ 471,65
+v6: R$ 561,26
+v7: R$ 701,54
+v8: R$ 876,95
+v9: R$ 1.490,82
+v10: R$ 1.669,69
+
+m1: HAPVIDA SEM COPARTICIPAÇÃO
+m2: PME/Empresarial
+m3: SEM ODONTO
+m4: Janeiro 2020 - Taxa de Inscrição: (Por Beneficiário) - R$10,00
 m5: Apartamento (A)
 m6: MIX
-v1: R$ 232,87
-v2: R$ 299,92
-v3: R$ 410,43
-v4: R$ 641,26
-v5: R$ 1.220,95
-v6: R$ 349,32
-v7: R$ 449,91
-v8: R$ 615,66
-v9: R$ 961,95
-v10: R$ 1.831,55
+v1: R$ 402,33
+v2: R$ 450,60
+v3: R$ 504,64
+v4: R$ 580,33
+v5: R$ 667,37
+v6: R$ 794,16
+v7: R$ 992,74
+v8: R$ 1.240,90
+v9: R$ 2.109,51
+v10: R$ 2.362,65
 
