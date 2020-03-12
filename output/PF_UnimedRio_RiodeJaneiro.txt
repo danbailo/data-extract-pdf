@@ -102,7 +102,7 @@ v8: R$ 1.200,67
 v9: R$ 1.500,84
 v10: R$ 2.446,37
 
-m1: Faixa Etária UNIMED RIO PF - SEM COPARTICIPAÇÃO
+m1: UNIMED RIO PF - SEM COPARTICIPAÇÃO
 m2: Individual
 m3: Janeiro 2020 - Taxa de Implantação: (Por Titular) - R$15,00
 m4: 
@@ -119,7 +119,7 @@ v8: R$ 957,86
 v9: R$ 1.197,33
 v10: R$ 1.951,65
 
-m1: Faixa Etária UNIMED RIO PF - SEM COPARTICIPAÇÃO
+m1: UNIMED RIO PF - SEM COPARTICIPAÇÃO
 m2: Individual
 m3: Janeiro 2020 - Taxa de Implantação: (Por Titular) - R$15,00
 m4: 
@@ -136,7 +136,7 @@ v8: R$ 1.008,30
 v9: R$ 1.260,38
 v10: R$ 2.054,42
 
-m1: Faixa Etária UNIMED RIO PF - SEM COPARTICIPAÇÃO
+m1: UNIMED RIO PF - SEM COPARTICIPAÇÃO
 m2: Individual
 m3: Janeiro 2020 - Taxa de Implantação: (Por Titular) - R$15,00
 m4: 
@@ -153,7 +153,7 @@ v8: R$ 1.068,82
 v9: R$ 1.336,03
 v10: R$ 2.177,73
 
-m1: Faixa Etária UNIMED RIO PF - SEM COPARTICIPAÇÃO
+m1: UNIMED RIO PF - SEM COPARTICIPAÇÃO
 m2: Individual
 m3: Janeiro 2020 - Taxa de Implantação: (Por Titular) - R$15,00
 m4: 
@@ -170,7 +170,7 @@ v8: R$ 1.330,99
 v9: R$ 1.663,74
 v10: R$ 2.711,90
 
-m1: Faixa Etária UNIMED RIO PF - SEM COPARTICIPAÇÃO
+m1: UNIMED RIO PF - SEM COPARTICIPAÇÃO
 m2: Individual
 m3: Janeiro 2020 - Taxa de Implantação: (Por Titular) - R$15,00
 m4: 
@@ -187,7 +187,7 @@ v8: R$ 1.613,27
 v9: R$ 2.016,59
 v10: R$ 3.287,04
 
-m1: Faixa Etária UNIMED RIO PF - SEM COPARTICIPAÇÃO
+m1: UNIMED RIO PF - SEM COPARTICIPAÇÃO
 m2: Familiar
 m3: Janeiro 2020 - Taxa de Implantação: (Por Titular) - R$15,00
 m4: 
@@ -204,7 +204,7 @@ v8: R$ 957,86
 v9: R$ 1.197,33
 v10: R$ 1.951,65
 
-m1: Faixa Etária UNIMED RIO PF - SEM COPARTICIPAÇÃO
+m1: UNIMED RIO PF - SEM COPARTICIPAÇÃO
 m2: Familiar
 m3: Janeiro 2020 - Taxa de Implantação: (Por Titular) - R$15,00
 m4: 
@@ -221,7 +221,7 @@ v8: R$ 1.008,30
 v9: R$ 1.260,38
 v10: R$ 2.054,42
 
-m1: Faixa Etária UNIMED RIO PF - SEM COPARTICIPAÇÃO
+m1: UNIMED RIO PF - SEM COPARTICIPAÇÃO
 m2: Familiar
 m3: Janeiro 2020 - Taxa de Implantação: (Por Titular) - R$15,00
 m4: 
@@ -238,7 +238,7 @@ v8: R$ 1.068,82
 v9: R$ 1.336,03
 v10: R$ 2.177,73
 
-m1: Faixa Etária UNIMED RIO PF - SEM COPARTICIPAÇÃO
+m1: UNIMED RIO PF - SEM COPARTICIPAÇÃO
 m2: Familiar
 m3: Janeiro 2020 - Taxa de Implantação: (Por Titular) - R$15,00
 m4: 
@@ -255,7 +255,7 @@ v8: R$ 1.330,99
 v9: R$ 1.663,74
 v10: R$ 2.711,90
 
-m1: Faixa Etária UNIMED RIO PF - SEM COPARTICIPAÇÃO
+m1: UNIMED RIO PF - SEM COPARTICIPAÇÃO
 m2: Familiar
 m3: Janeiro 2020 - Taxa de Implantação: (Por Titular) - R$15,00
 m4: 
