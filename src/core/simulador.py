@@ -106,10 +106,13 @@ class Simulador:
         return prepaired_data
 
     def extract_info(self, prepaired_text):
-        print(prepaired_text)
         data = defaultdict(lambda: defaultdict(lambda: defaultdict(lambda: defaultdict(lambda: defaultdict(lambda: defaultdict(list))))))
         for pdf, text in prepaired_text.items():
             i = 0
+            try:
+                del m1,m2,m3,m4,m5
+            except UnboundLocalError:
+                pass
             while i < len(text):
                 j = 0
                 while j < len(text[i]):
@@ -193,12 +196,13 @@ class Simulador:
                         except UnboundLocalError:
                             continue
 
-                        values = []                                           
+                        values = []
                         for value in text[i][1:]:
                             match_value = self.value.match(value)
                             if match_value:
                                 v = "R$ " + match_value.string.split(" ")[-1]
                                 values.append(v)
+                        # if m1 !='' and m2 !='' and m3 !='' and m4 !='' and m5 !='':
                         for n in range(len(columns)):
                             data[pdf][i][(m1, m2, m3, m4)][m5][columns[n]] = list(itertools.islice(values, n, len(values), len(columns)))
                     j += 1
