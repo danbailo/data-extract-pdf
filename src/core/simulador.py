@@ -106,9 +106,9 @@ class Simulador:
         return prepaired_data
 
     def extract_info(self, prepaired_text):
+        print(prepaired_text)
         data = defaultdict(lambda: defaultdict(lambda: defaultdict(lambda: defaultdict(lambda: defaultdict(lambda: defaultdict(list))))))
         for pdf, text in prepaired_text.items():
-            print(pdf)
             i = 0
             while i < len(text):
                 j = 0
@@ -151,38 +151,48 @@ class Simulador:
                             break
                         
                         if match_age_range:
-                            if match_age_range.string == "Faixa Etária":                        
-                                while not self.first_age_range.match(text[i][j]):
-                                    j += 1
+                            if match_age_range.string == "Faixa Etária":
+                                try:                     
+                                    while not self.first_age_range.match(text[i][j]):
+                                        j += 1
+                                except IndexError:
+                                    break
                                 m6 = text[i][1:j]
                                 del text[i][1:j]
-                            elif match_age_range.string == "Faixa":                            
-                                while not self.first_age_range.match(text[i][j]):
-                                    j += 1
+                            elif match_age_range.string == "Faixa":
+                                try:
+                                    while not self.first_age_range.match(text[i][j]):
+                                        j += 1
+                                except IndexError:
+                                    break
                                 m6 = text[i][2:j]
                                 del text[i][2:j]
                         columns = []
                         state = 1
                         
-                        if len(m6) == 1:
-                            columns.append(m6[0])
+                        try:
+                            if len(m6) == 1:
+                                columns.append(m6[0])
 
-                        elif len(m6) > 1:
-                            if state == 1:
-                                for k in range(len(m6)):
-                                    if m2.upper() in m6[k].upper():
-                                        state = 2
-                                        break
-                                    columns.append(m6[k])
-                            if state == 2:
-                                for k in range(len(m6)):
-                                    splited = m6[k].split(" ")
-                                    if len(splited) > 1:
-                                        if m6[k].split(" ")[1].upper() == m2.upper():
-                                            columns.append(m6[k] + " " + m6[k+1])                                
-                                        elif m6[k].split(" ")[0].upper() == m2.upper():
-                                            joined_text = m6[k-1] + " " + m6[k] + " " + m6[k+1]
-                                            columns.append(joined_text)
+                            elif len(m6) > 1:
+                                if state == 1:
+                                    for k in range(len(m6)):
+                                        if m2.upper() in m6[k].upper():
+                                            state = 2
+                                            break
+                                        columns.append(m6[k])
+                                if state == 2:
+                                    for k in range(len(m6)):
+                                        splited = m6[k].split(" ")
+                                        if len(splited) > 1:
+                                            if m6[k].split(" ")[1].upper() == m2.upper():
+                                                columns.append(m6[k] + " " + m6[k+1])                                
+                                            elif m6[k].split(" ")[0].upper() == m2.upper():
+                                                joined_text = m6[k-1] + " " + m6[k] + " " + m6[k+1]
+                                                columns.append(joined_text)  
+                        except UnboundLocalError:
+                            continue
+
                         values = []                                           
                         for value in text[i][1:]:
                             match_value = self.value.match(value)
