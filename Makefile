@@ -11,7 +11,7 @@ help:
 prepare-dev:
 	sudo apt update
 	sudo apt full-upgrade -y
-	sudo apt install python3 python3-pip python3-psycopg2 postgresql postgresql-contrib -y 
+	sudo apt install python3 python3-pip -y 
 	${PYTHON} -m pip install -U pip --user
 	${PYTHON} -m pip install -r requirements.txt --user
 
