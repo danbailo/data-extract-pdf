@@ -1,0 +1,87 @@
+Modelo: Tabela 3 Simulador Online - PF
+
+m1: UNIMED RIO PF - SEM COPARTICIPAÇÃO
+m2: Individual
+m3: Janeiro 2020 - Taxa de Implantação: (Por Titular) - R$15,00
+m4: 
+m5: Enfermaria (E)
+m6: PERSONAL 2
+v1: R$ 325,80
+v2: R$ 420,28
+v3: R$ 453,90
+v4: R$ 490,21
+v5: R$ 539,23
+v6: R$ 609,33
+v7: R$ 798,22
+v8: R$ 957,86
+v9: R$ 1.197,33
+v10: R$ 1.951,65
+
+m1: UNIMED RIO PF - SEM COPARTICIPAÇÃO
+m2: Individual
+m3: Janeiro 2020 - Taxa de Implantação: (Por Titular) - R$15,00
+m4: 
+m5: Enfermaria (E)
+m6: ALFA 2
+v1: R$ 342,95
+v2: R$ 442,41
+v3: R$ 477,80
+v4: R$ 516,02
+v5: R$ 567,62
+v6: R$ 641,41
+v7: R$ 840,25
+v8: R$ 1.008,30
+v9: R$ 1.260,38
+v10: R$ 2.054,42
+
+m1: UNIMED RIO PF - SEM COPARTICIPAÇÃO
+m2: Individual
+m3: Janeiro 2020 - Taxa de Implantação: (Por Titular) - R$15,00
+m4: 
+m5: Apartamento (A)
+m6: BETA 2
+v1: R$ 363,53
+v2: R$ 468,95
+v3: R$ 506,47
+v4: R$ 546,99
+v5: R$ 601,69
+v6: R$ 679,91
+v7: R$ 890,68
+v8: R$ 1.068,82
+v9: R$ 1.336,03
+v10: R$ 2.177,73
+
+m1: UNIMED RIO PF - SEM COPARTICIPAÇÃO
+m2: Individual
+m3: Janeiro 2020 - Taxa de Implantação: (Por Titular) - R$15,00
+m4: 
+m5: Apartamento (A)
+m6: DELTA 2
+v1: R$ 452,70
+v2: R$ 583,98
+v3: R$ 630,70
+v4: R$ 681,16
+v5: R$ 749,28
+v6: R$ 846,69
+v7: R$ 1.109,16
+v8: R$ 1.330,99
+v9: R$ 1.663,74
+v10: R$ 2.711,90
+
+m1: UNIMED RIO PF - SEM COPARTICIPAÇÃO
+m2: Individual
+m3: Janeiro 2020 - Taxa de Implantação: (Por Titular) - R$15,00
+m4: 
+m5: Apartamento (A)
+m6: ÔMEGA PLUS
+v1: R$ 548,71
+v2: R$ 707,84
+v3: R$ 764,47
+v4: R$ 825,63
+v5: R$ 908,19
+v6: R$ 1.026,25
+v7: R$ 1.344,39
+v8: R$ 1.613,27
+v9: R$ 2.016,59
+v10: R$ 3.287,04
+

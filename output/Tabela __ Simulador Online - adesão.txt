@@ -1,0 +1,36 @@
+Modelo: Tabela __ Simulador Online - adesão
+
+m1: AMIL ONE - Com Coparticipação (QUALICORP)
+m2: Adesão
+m3: PREMIUM
+m4: ABRACEM - Assoc.Bras.dos Consultores Empres. e Prof. Liberais
+m5: Apartamento (A)
+m6: LINCX LT3
+v1: R$ 659,14
+v2: R$ 823,94
+v3: R$ 1.029,93
+v4: R$ 1.132,92
+v5: R$ 1.189,56
+v6: R$ 1.308,51
+v7: R$ 1.635,64
+v8: R$ 1.799,20
+v9: R$ 2.249,02
+v10: R$ 3.935,79
+
+m1: AMIL ONE - Com Coparticipação (QUALICORP)
+m2: Adesão
+m3: PREMIUM
+m4: ABRACEM - Assoc.Bras.dos Consultores Empres. e Prof. Liberais
+m5: Apartamento (A)
+m6: LINCX LT4
+v1: R$ 1.262,29
+v2: R$ 1.577,87
+v3: R$ 1.972,34
+v4: R$ 2.169,58
+v5: R$ 2.278,06
+v6: R$ 2.505,88
+v7: R$ 3.132,34
+v8: R$ 3.445,59
+v9: R$ 4.306,98
+v10: R$ 7.537,22
+

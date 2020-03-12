@@ -1,0 +1,410 @@
+Modelo: Tabela 3 Simulador Online PJ
+
+m1: NOTREDAME INTERMEDICA SEM COPARTICIPAÇÃO
+m2: PME/Empresarial
+m3: Janeiro 2020
+m4: 
+m5: Enfermaria (E)
+m6: SMART 300
+v1: R$ 123,13
+v2: R$ 166,19
+v3: R$ 196,40
+v4: R$ 205,20
+v5: R$ 212,05
+v6: R$ 233,25
+v7: R$ 303,23
+v8: R$ 394,19
+v9: R$ 512,45
+v10: R$ 738,60
+
+m1: NOTREDAME INTERMEDICA SEM COPARTICIPAÇÃO
+m2: PME/Empresarial
+m3: Janeiro 2020
+m4: 
+m5: Enfermaria (E)
+m6: SMART 400
+v1: R$ 130,61
+v2: R$ 176,29
+v3: R$ 208,34
+v4: R$ 217,68
+v5: R$ 224,95
+v6: R$ 247,43
+v7: R$ 321,67
+v8: R$ 418,17
+v9: R$ 543,62
+v10: R$ 783,52
+
+m1: NOTREDAME INTERMEDICA SEM COPARTICIPAÇÃO
+m2: PME/Empresarial
+m3: Janeiro 2020
+m4: 
+m5: Enfermaria (E)
+m6: SMART 500
+v1: R$ 142,60
+v2: R$ 192,48
+v3: R$ 227,48
+v4: R$ 237,67
+v5: R$ 245,61
+v6: R$ 270,17
+v7: R$ 351,22
+v8: R$ 456,59
+v9: R$ 593,56
+v10: R$ 855,50
+
+m1: NOTREDAME INTERMEDICA SEM COPARTICIPAÇÃO
+m2: PME/Empresarial
+m3: Janeiro 2020
+m4: 
+m5: Enfermaria (E)
+m6: ADVANCE 600
+v1: R$ 185,15
+v2: R$ 249,92
+v3: R$ 295,36
+v4: R$ 308,59
+v5: R$ 318,91
+v6: R$ 350,80
+v7: R$ 456,03
+v8: R$ 592,85
+v9: R$ 770,71
+v10: R$ 1.110,83
+
+m1: NOTREDAME INTERMEDICA SEM COPARTICIPAÇÃO
+m2: PME/Empresarial
+m3: Janeiro 2020
+m4: 
+m5: Enfermaria (E)
+m6: ADVANCE 700
+v1: R$ 209,05
+v2: R$ 282,20
+v3: R$ 333,48
+v4: R$ 348,44
+v5: R$ 360,05
+v6: R$ 396,06
+v7: R$ 514,88
+v8: R$ 669,35
+v9: R$ 870,16
+v10: R$ 1.254,14
+
+m1: NOTREDAME INTERMEDICA SEM COPARTICIPAÇÃO
+m2: PME/Empresarial
+m3: Janeiro 2020
+m4: 
+m5: Apartamento (A)
+m6: SMART 400
+v1: R$ 161,95
+v2: R$ 218,58
+v3: R$ 258,34
+v4: R$ 269,90
+v5: R$ 278,92
+v6: R$ 306,81
+v7: R$ 398,85
+v8: R$ 518,52
+v9: R$ 674,06
+v10: R$ 971,53
+
+m1: NOTREDAME INTERMEDICA SEM COPARTICIPAÇÃO
+m2: PME/Empresarial
+m3: Janeiro 2020
+m4: 
+m5: Apartamento (A)
+m6: SMART 500
+v1: R$ 176,81
+v2: R$ 238,66
+v3: R$ 282,05
+v4: R$ 294,69
+v5: R$ 304,52
+v6: R$ 334,98
+v7: R$ 435,47
+v8: R$ 566,10
+v9: R$ 735,94
+v10: R$ 1.060,70
+
+m1: NOTREDAME INTERMEDICA SEM COPARTICIPAÇÃO
+m2: PME/Empresarial
+m3: Janeiro 2020
+m4: 
+m5: Apartamento (A)
+m6: ADVANCE 600
+v1: R$ 220,37
+v2: R$ 297,45
+v3: R$ 351,51
+v4: R$ 367,26
+v5: R$ 379,55
+v6: R$ 417,50
+v7: R$ 542,75
+v8: R$ 705,57
+v9: R$ 917,24
+v10: R$ 1.322,03
+
+m1: NOTREDAME INTERMEDICA SEM COPARTICIPAÇÃO
+m2: PME/Empresarial
+m3: Janeiro 2020
+m4: 
+m5: Apartamento (A)
+m6: ADVANCE 700
+v1: R$ 238,33
+v2: R$ 321,70
+v3: R$ 380,20
+v4: R$ 397,23
+v5: R$ 410,49
+v6: R$ 451,55
+v7: R$ 587,00
+v8: R$ 763,12
+v9: R$ 992,03
+v10: R$ 1.429,82
+
+m1: NOTREDAME INTERMEDICA SEM COPARTICIPAÇÃO
+m2: PME/Empresarial
+m3: Janeiro 2020
+m4: 
+m5: Apartamento (A)
+m6: PREMIUM 900.1 CARE
+v1: R$ 303,98
+v2: R$ 410,30
+v3: R$ 484,89
+v4: R$ 506,61
+v5: R$ 523,54
+v6: R$ 575,88
+v7: R$ 748,66
+v8: R$ 973,25
+v9: R$ 1.265,23
+v10: R$ 1.823,57
+
+m1: NOTREDAME INTERMEDICA SEM COPARTICIPAÇÃO
+m2: PME/Empresarial
+m3: Janeiro 2020
+m4: 
+m5: Apartamento (A)
+m6: PREMIUM 900.1
+v1: R$ 340,45
+v2: R$ 459,54
+v3: R$ 543,08
+v4: R$ 567,41
+v5: R$ 586,37
+v6: R$ 644,99
+v7: R$ 838,49
+v8: R$ 1.090,04
+v9: R$ 1.417,06
+v10: R$ 2.042,40
+
+m1: NOTREDAME INTERMEDICA SEM COPARTICIPAÇÃO
+m2: PME/Empresarial
+m3: Janeiro 2020
+m4: 
+m5: Apartamento (A)
+m6: INFINITY 1000.1
+v1: R$ 738,22
+v2: R$ 996,42
+v3: R$ 1.177,56
+v4: R$ 1.230,33
+v5: R$ 1.271,42
+v6: R$ 1.398,55
+v7: R$ 1.818,13
+v8: R$ 2.363,55
+v9: R$ 3.072,64
+v10: R$ 4.428,59
+
+m1: NOTREDAME INTERMEDICA SEM COPARTICIPAÇÃO
+m2: PME/Empresarial
+m3: Janeiro 2020
+m4: 
+m5: Enfermaria (E)
+m6: SMART 300
+v1: R$ 113,28
+v2: R$ 152,89
+v3: R$ 180,68
+v4: R$ 188,78
+v5: R$ 195,08
+v6: R$ 214,61
+v7: R$ 278,97
+v8: R$ 362,66
+v9: R$ 471,47
+v10: R$ 679,51
+
+m1: NOTREDAME INTERMEDICA SEM COPARTICIPAÇÃO
+m2: PME/Empresarial
+m3: Janeiro 2020
+m4: 
+m5: Enfermaria (E)
+m6: SMART 400
+v1: R$ 120,16
+v2: R$ 162,19
+v3: R$ 191,68
+v4: R$ 200,27
+v5: R$ 206,96
+v6: R$ 227,65
+v7: R$ 295,93
+v8: R$ 384,71
+v9: R$ 500,13
+v10: R$ 720,85
+
+m1: NOTREDAME INTERMEDICA SEM COPARTICIPAÇÃO
+m2: PME/Empresarial
+m3: Janeiro 2020
+m4: 
+m5: Enfermaria (E)
+m6: SMART 500
+v1: R$ 131,19
+v2: R$ 177,09
+v3: R$ 209,29
+v4: R$ 218,66
+v5: R$ 225,95
+v6: R$ 248,55
+v7: R$ 323,13
+v8: R$ 420,06
+v9: R$ 546,08
+v10: R$ 787,07
+
+m1: NOTREDAME INTERMEDICA SEM COPARTICIPAÇÃO
+m2: PME/Empresarial
+m3: Janeiro 2020
+m4: 
+m5: Enfermaria (E)
+m6: ADVANCE 600
+v1: R$ 170,33
+v2: R$ 229,92
+v3: R$ 271,74
+v4: R$ 283,91
+v5: R$ 293,39
+v6: R$ 322,72
+v7: R$ 419,56
+v8: R$ 545,43
+v9: R$ 709,05
+v10: R$ 1.021,96
+
+m1: NOTREDAME INTERMEDICA SEM COPARTICIPAÇÃO
+m2: PME/Empresarial
+m3: Janeiro 2020
+m4: 
+m5: Enfermaria (E)
+m6: ADVANCE 700
+v1: R$ 192,32
+v2: R$ 259,61
+v3: R$ 306,79
+v4: R$ 320,55
+v5: R$ 331,25
+v6: R$ 364,38
+v7: R$ 473,70
+v8: R$ 615,81
+v9: R$ 800,54
+v10: R$ 1.153,81
+
+m1: NOTREDAME INTERMEDICA SEM COPARTICIPAÇÃO
+m2: PME/Empresarial
+m3: Janeiro 2020
+m4: 
+m5: Apartamento (A)
+m6: SMART 400
+v1: R$ 148,99
+v2: R$ 201,10
+v3: R$ 237,66
+v4: R$ 248,31
+v5: R$ 256,61
+v6: R$ 282,26
+v7: R$ 366,95
+v8: R$ 477,04
+v9: R$ 620,14
+v10: R$ 893,80
+
+m1: NOTREDAME INTERMEDICA SEM COPARTICIPAÇÃO
+m2: PME/Empresarial
+m3: Janeiro 2020
+m4: 
+m5: Apartamento (A)
+m6: SMART 500
+v1: R$ 162,66
+v2: R$ 219,56
+v3: R$ 259,49
+v4: R$ 271,10
+v5: R$ 280,16
+v6: R$ 308,17
+v7: R$ 400,64
+v8: R$ 520,82
+v9: R$ 677,06
+v10: R$ 975,85
+
+m1: NOTREDAME INTERMEDICA SEM COPARTICIPAÇÃO
+m2: PME/Empresarial
+m3: Janeiro 2020
+m4: 
+m5: Apartamento (A)
+m6: ADVANCE 600
+v1: R$ 202,73
+v2: R$ 273,65
+v3: R$ 323,40
+v4: R$ 337,89
+v5: R$ 349,18
+v6: R$ 384,10
+v7: R$ 499,33
+v8: R$ 649,13
+v9: R$ 843,86
+v10: R$ 1.216,26
+
+m1: NOTREDAME INTERMEDICA SEM COPARTICIPAÇÃO
+m2: PME/Empresarial
+m3: Janeiro 2020
+m4: 
+m5: Apartamento (A)
+m6: ADVANCE 700
+v1: R$ 219,28
+v2: R$ 295,97
+v3: R$ 349,78
+v4: R$ 365,45
+v5: R$ 377,65
+v6: R$ 415,42
+v7: R$ 540,05
+v8: R$ 702,06
+v9: R$ 912,67
+v10: R$ 1.315,43
+
+m1: NOTREDAME INTERMEDICA SEM COPARTICIPAÇÃO
+m2: PME/Empresarial
+m3: Janeiro 2020
+m4: 
+m5: Apartamento (A)
+m6: PREMIUM 900.1 CARE
+v1: R$ 279,66
+v2: R$ 377,48
+v3: R$ 446,10
+v4: R$ 466,08
+v5: R$ 481,66
+v6: R$ 529,81
+v7: R$ 688,76
+v8: R$ 895,39
+v9: R$ 1.164,01
+v10: R$ 1.677,69
+
+m1: NOTREDAME INTERMEDICA SEM COPARTICIPAÇÃO
+m2: PME/Empresarial
+m3: Janeiro 2020
+m4: 
+m5: Apartamento (A)
+m6: PREMIUM 900.1
+v1: R$ 313,22
+v2: R$ 422,78
+v3: R$ 499,64
+v4: R$ 522,02
+v5: R$ 539,46
+v6: R$ 593,39
+v7: R$ 771,42
+v8: R$ 1.002,83
+v9: R$ 1.303,69
+v10: R$ 1.879,01
+
+m1: NOTREDAME INTERMEDICA SEM COPARTICIPAÇÃO
+m2: PME/Empresarial
+m3: Janeiro 2020
+m4: 
+m5: Apartamento (A)
+m6: INFINITY 1000.1
+v1: R$ 679,13
+v2: R$ 916,67
+v3: R$ 1.083,31
+v4: R$ 1.131,86
+v5: R$ 1.169,66
+v6: R$ 1.286,61
+v7: R$ 1.672,61
+v8: R$ 2.174,38
+v9: R$ 2.826,71
+v10: R$ 4.074,15
+
