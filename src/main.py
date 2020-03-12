@@ -6,9 +6,6 @@ import json
 if __name__ == "__main__":
 
     path = os.path.join(".", "samples")
-    path = os.path.join(".", "joined_samples", "Tabela __ Simulador Online - PJ.pdf")
-    path = os.path.join(".", "new_samples")
-    path = os.path.join(".", "joined_samples")
     
     simulador = Simulador(path)
     pdfs = simulador.get_data()
