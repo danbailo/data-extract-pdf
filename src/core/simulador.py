@@ -67,14 +67,21 @@ class Simulador:
             
             text_splitted = re.split(r"(Última\sAlteração\W\s\d{2}\/\d{2}\/\d{2,4})", text)
 
-            
-            for t in text_splitted:
-                if self.last_change.match(t):
-                    text_splitted.remove(t)
+
+            without_lastchange = []
+
+            for i in range(len(text_splitted)):
+                if self.last_change.match(text_splitted[i]):
+                    last_index = i
+
+            for i in range(len(text_splitted)):
+                if i == last_index: break
+                if not self.last_change.match(text_splitted[i]):
+                    without_lastchange.append(text_splitted[i])
 
             new_text = []
-            for i in range(len(text_splitted)):
-                new_text.append(text_splitted[i].split("\n"))
+            for i in range(len(without_lastchange)):
+                new_text.append(without_lastchange[i].split("\n"))
 
             all_text = []
             for i in range(len(new_text)):
@@ -93,16 +100,12 @@ class Simulador:
                     for j in range(len(all_text[i])):
                         if key in all_text[i][j]:
                             final_text.append(all_text[i][j:])
-                if all_text[i][1] == "Título" or all_text[i][1] == "Tipo" or all_text[i][0] == "Carência":
-                    continue
                 else:
                     final_text.append(all_text[i])
             prepaired_data[pdf_name] = final_text
         return prepaired_data
 
     def extract_info(self, prepaired_text):
-        print(prepaired_text)
-        exit()
         data = defaultdict(lambda: defaultdict(lambda: defaultdict(lambda: defaultdict(lambda: defaultdict(lambda: defaultdict(list))))))
         for pdf, text in prepaired_text.items():
             print(pdf)
@@ -158,7 +161,6 @@ class Simulador:
                                     j += 1
                                 m6 = text[i][2:j]
                                 del text[i][2:j]
-                        # del text[i][:j]
                         columns = []
                         state = 1
                         
@@ -185,7 +187,7 @@ class Simulador:
                         for value in text[i][1:]:
                             match_value = self.value.match(value)
                             if match_value:
-                                # v = "R$ " + match_value[1]
+                                v = "R$ " + match_value.string.split(" ")[-1]
                                 values.append(v)
                         for n in range(len(columns)):
                             data[pdf][i][(m1, m2, m3, m4)][m5][columns[n]] = list(itertools.islice(values, n, len(values), len(columns)))
