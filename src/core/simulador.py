@@ -5,8 +5,6 @@ import platform
 import os
 import re
 
-SYSTEM = platform.system()
-
 class Simulador:
     def __init__(self, path):
         self.path = path
@@ -52,9 +50,6 @@ class Simulador:
             text = text.decode("utf-8").replace('\xa0', '\n')
             text = text.replace('\x0c', '\n')
 
-            if SYSTEM == "Windows":
-                text_splitted = [re.sub(pattern=r"\r", repl="", string=t) for t in text_splitted]            
-            
             text_splitted = re.split(r"(Última\sAlteração\W\s\d{2}\/\d{2}\/\d{2,4})", text)
 
             without_lastchange = []
