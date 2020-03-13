@@ -3,10 +3,12 @@ PYTHON=/usr/bin/python3
 
 .DEFAULT: help
 help:
-	@echo "make prepare-dev"
+	@echo "\nmake prepare-dev"
 	@echo "       Prepara ambiente de desenvolvimento, use apenas uma vez.\n"	
-	@echo "make run $(file)"
+	@echo "make run"
 	@echo "       Executa o programa principal\n"
+	@echo "make run path=CAMINHO_DA_PASTA/ARQUIVO"
+	@echo "       Executa o programa principal passando o caminho da pasta/arquivo conténdo os PDFs.\n"	
 
 prepare-dev:
 	sudo apt update
