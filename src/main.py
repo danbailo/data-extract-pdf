@@ -1,23 +1,23 @@
 from core import Simulador
-import os
+from utils import get_path
 import itertools
-import json
+import os
 
 if __name__ == "__main__":
 
-    path = os.path.join(".", "samples")
-    
-    simulador = Simulador(path)
+    simulador = Simulador(get_path())
     pdfs = simulador.get_data()
+
+    print("\nExtraindo dados de {len_pdf} PDFs...\n".format(len_pdf=len(pdfs)))
 
     prepaired_data = simulador.prepare_text(pdfs)
 
-    data = simulador.extract_info(prepaired_data)
+    data = simulador.extract_info(prepaired_data)    
 
     for pdf, all_values in data.items():
+        print('Os dados do arquivo "{pdf}.pdf" foram extraidos com sucesso!'.format(pdf=pdf))
         file = open(os.path.join(".", "output", pdf+".txt"), "w")
         file.write("Modelo: " + pdf + "\n\n")  
-        print(pdf)      
         for value in all_values.values():
             for key, tables in value.items():
                 m1, m2, m3, m4 = key

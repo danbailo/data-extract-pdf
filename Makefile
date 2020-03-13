@@ -5,7 +5,7 @@ PYTHON=/usr/bin/python3
 help:
 	@echo "make prepare-dev"
 	@echo "       Prepara ambiente de desenvolvimento, use apenas uma vez.\n"	
-	@echo "make run"
+	@echo "make run $(file)"
 	@echo "       Executa o programa principal\n"
 
 prepare-dev:
@@ -16,4 +16,4 @@ prepare-dev:
 	${PYTHON} -m pip install -r requirements.txt --user
 
 run: src
-	${PYTHON} src/main.py
+	${PYTHON} src/main.py $(path)

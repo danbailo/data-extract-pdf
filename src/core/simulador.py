@@ -2,7 +2,6 @@ from collections import defaultdict
 import itertools
 import textract
 import platform
-import json
 import os
 import re
 
@@ -12,23 +11,12 @@ class Simulador:
     def __init__(self, path):
         self.path = path
         self.file = os.path.isdir(path)
-
-        #patterns
         self.phone = re.compile(r"\(\d\d\)\W\d{4,5}\W\d{4,5}")
-        self.years = re.compile(r"anos")
         self.age_range = re.compile(r"(Faixa Etária)|(Faixa)")
         self.first_age_range = re.compile(r"(0\sa\s18)|(0a)")
-        self.age = re.compile(r"(anos)")
         self.value = re.compile(r"R\$\s(.+\d$)|((\d+.\d+\.\d+.+)|(\d+\.\d+.+)|(\d+\,\d+))")
-
-        self.msg = re.compile(r"(Tabela\sde\s\d+\sà\s\d+\svidas\/beneficiários)")
-        self.link = re.compile(r"(https:\/\/.*)")
-
-        # self.desnecessary = re.compile(r"(Tabela\sde\s\d+\sà\s\d+\svidas\/beneficiários)|(https:\/\/.*)|(\d\/\d{1,2})|(Tabela :: Simulador Online)|(\d{2}\/\d{2}\/\d{4})|\(\d\d\)\W\d{4,5}\W\d{4,5}")
         self.desnecessary = re.compile(r"(Tabela\sde\s\d+\sà\s\d+\svidas\/beneficiários)|(https:\/\/.*)|(\d\/\d{1,2})|(Tabela :: Simulador Online)|(\d{2}\/\d{2}\/\d{4})")
-
         self.last_change = re.compile(r"(Última\sAlteração\W\s\d{2}\/\d{2}\/\d{2,4})")
-        self.last_change_lb = re.compile(r"(Última Alteração: \d{2}\/\d{2}\/\d{2,4}\\n)")
         self.title_table = re.compile(r"(\w+\s\W\w+\W)")
 
     def get_data(self):
@@ -63,11 +51,13 @@ class Simulador:
             
             text = text.decode("utf-8").replace('\xa0', '\n')
             text = text.replace('\x0c', '\n')
+
+            if SYSTEM == "Windows":
+                text_splitted = [re.sub(pattern=r"\r", repl="", string=t) for t in text_splitted]            
             
             text_splitted = re.split(r"(Última\sAlteração\W\s\d{2}\/\d{2}\/\d{2,4})", text)
 
             without_lastchange = []
-
             for i in range(len(text_splitted)):
                 if self.last_change.match(text_splitted[i]):
                     last_index = i
@@ -100,7 +90,9 @@ class Simulador:
                             final_text.append(all_text[i][j:])
                 else:
                     final_text.append(all_text[i])
+
             prepaired_data[pdf_name] = final_text
+
         return prepaired_data
 
     def extract_info(self, prepaired_text):
