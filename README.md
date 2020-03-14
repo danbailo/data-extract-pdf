@@ -9,6 +9,7 @@ Este projeto consiste em coletar dados de determinados arquivos `.pdfs`.
 É preciso que o(s) seguinte(s) programas estejam instalados na máquina:
 
 * `make`
+* `Python 3.7`
 
 ---
 ## Dependências
