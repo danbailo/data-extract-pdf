@@ -1,7 +1,7 @@
 # Extração de dados - PDF's
 
 ## Descrição
-Este projeto consiste em coletar dados de determinados arquivos `.pdfs`.
+Este projeto consiste em coletar dados de determinados arquivos `.pdfs`. A saída do programa será gravado na pasta `/output/`, onde será gravado um arquivo `.txt` com o nome de cada PDF contendo os dados coletados.
 
 ---
 ## Requisitos
@@ -9,7 +9,7 @@ Este projeto consiste em coletar dados de determinados arquivos `.pdfs`.
 É preciso que o(s) seguinte(s) programas estejam instalados na máquina:
 
 * `make`
-* `Python 3.7`
+* `Python 3.7.5`
 
 ---
 ## Dependências
